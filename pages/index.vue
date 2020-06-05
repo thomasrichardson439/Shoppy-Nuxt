@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-      <div class="md:overflow-hidden shoppy-hero bg_top_head">
+      <div class="md:overflow-hidden shoppy-hero shoppy-home-top-bg">
           <div class="px-4 py-20 md:py-4">
               <div class="container mx-auto shoppy-hero--inner">
                   <div class="md:flex md:flex-wrap">
@@ -26,12 +26,12 @@
                           <a
                               href="#"
                               class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-3 px-8 text-white rounded-lg shadow border-solid border border-white">
-                              <img src="/images/applestore.png" alt="">
+                              <img src="~assets/images/home/applestore.png" alt="">
                           </a>
                           <a
                               href="#"
                               class="mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-white rounded-lg shadow border-solid border border-white">
-                              <img src="/images/googleplay.png" alt="">
+                              <img src="~assets/images/home/googleplay.png" alt="">
                           </a>
                       </div>
                       <div class="md:w-1/2">
@@ -86,19 +86,19 @@
                             <div class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16">
                                 <ul class="list-none">
                                     <li class="flex content-center mb-3">
-                                        <img src="/images/blue_check.png" alt="" class="mr-3">
+                                        <img src="~assets/images/home/blue_check.png" alt="" class="mr-3">
                                         Feature or benefit 1
                                     </li>
                                     <li class="flex content-center mb-3">
-                                        <img src="/images/blue_check.png" alt="" class="mr-3">
+                                        <img src="~assets/images/home/blue_check.png" alt="" class="mr-3">
                                         Feature or benefit 1
                                     </li>
                                     <li class="flex content-center mb-3">
-                                        <img src="/images/blue_check.png" alt="" class="mr-3">
+                                        <img src="~assets/images/home/blue_check.png" alt="" class="mr-3">
                                         Feature or benefit 1
                                     </li>
                                     <li class="flex content-center mb-3">
-                                        <img src="/images/blue_check.png" alt="" class="mr-3">
+                                        <img src="~assets/images/home/blue_check.png" alt="" class="mr-3">
                                         Feature or benefit 1
                                     </li>
                                 </ul>
@@ -134,19 +134,19 @@
                         <div class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-80">
                             <ul class="list-none">
                                 <li class="flex content-center mb-3">
-                                    <img src="/images/purple_check.png" alt="" class="mr-3">
+                                    <img src="~assets/images/home/purple_check.png" alt="" class="mr-3">
                                     Feature or benefit 1
                                 </li>
                                 <li class="flex content-center mb-3">
-                                    <img src="/images/purple_check.png" alt="" class="mr-3">
+                                    <img src="~assets/images/home/purple_check.png" alt="" class="mr-3">
                                     Feature or benefit 1
                                 </li>
                                 <li class="flex content-center mb-3">
-                                    <img src="/images/purple_check.png" alt="" class="mr-3">
+                                    <img src="~assets/images/home/purple_check.png" alt="" class="mr-3">
                                     Feature or benefit 1
                                 </li>
                                 <li class="flex content-center mb-3">
-                                    <img src="/images/purple_check.png" alt="" class="mr-3">
+                                    <img src="~assets/images/home/purple_check.png" alt="" class="mr-3">
                                     Feature or benefit 1
                                 </li>
                             </ul>
@@ -187,19 +187,19 @@
                             <div class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16">
                                 <ul class="list-none">
                                     <li class="flex content-center mb-3">
-                                        <img src="/images/green_check.png" alt="" class="mr-3">
+                                        <img src="~assets/images/home/green_check.png" alt="" class="mr-3">
                                         Feature or benefit 1
                                     </li>
                                     <li class="flex content-center mb-3">
-                                        <img src="/images/green_check.png" alt="" class="mr-3">
+                                        <img src="~assets/images/home/green_check.png" alt="" class="mr-3">
                                         Feature or benefit 1
                                     </li>
                                     <li class="flex content-center mb-3">
-                                        <img src="/images/green_check.png" alt="" class="mr-3">
+                                        <img src="~assets/images/home/green_check.png" alt="" class="mr-3">
                                         Feature or benefit 1
                                     </li>
                                     <li class="flex content-center mb-3">
-                                        <img src="/images/green_check.png" alt="" class="mr-3">
+                                        <img src="~assets/images/home/green_check.png" alt="" class="mr-3">
                                         Feature or benefit 1
                                     </li>
                                 </ul>
@@ -227,13 +227,13 @@
             </div>
         </div>
     </div>
-    <div class="home_pay_box_wrap">
+    <div class="shoppy-home-pay-box_wrap">
         <div class="container mx-auto flex flex-wrap justify-center">
-            <img src="/images/bitcoin.png" alt="" class="home_pay_box mx-8 shadow-lg">
-            <img src="/images/paypal.png" alt="" class="home_pay_box mx-8 shadow-lg">
-            <img src="/images/litecoin.png" alt="" class="home_pay_box mx-8 shadow-lg">
-            <img src="/images/stripe.png" alt="" class="home_pay_box mx-8 shadow-lg">
-            <img src="/images/etherium.png" alt="" class="home_pay_box mx-8 shadow-lg">
+            <img src="~assets/images/home/bitcoin.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
+            <img src="~assets/images/home/paypal.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
+            <img src="~assets/images/home/litecoin.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
+            <img src="~assets/images/home/stripe.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
+            <img src="~assets/images/home/etherium.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
         </div>
     </div>
     <div class="container mx-auto">
@@ -265,12 +265,12 @@
                     <div class="shadow-lg bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div class="mb-8">
                         <p class="text-sm text-gray-600 flex items-center">
-                            <img src="/images/comma.png" alt="" class="mb-8">
+                            <img src="~assets/images/home/comma.png" alt="" class="mb-8">
                         </p>
                         <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
                         </div>
                         <div class="flex items-center">
-                        <img class="w-10 h-10 rounded-full mr-4" src="/images/face.png" alt="Avatar of Jonathan Reinink">
+                        <img class="w-10 h-10 rounded-full mr-4" src="~assets/images/home/face.png" alt="Avatar of Jonathan Reinink">
                         <div class="text-sm">
                             <p class="text-gray-900 leading-none font-bold">Jonathan Reinink</p>
                             <p class="text-gray-600">Founder of bla-bla company</p>
@@ -284,12 +284,12 @@
                     <div class="shadow-lg bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div class="mb-8">
                         <p class="text-sm text-gray-600 flex items-center">
-                            <img src="/images/comma.png" alt="" class="mb-8">
+                            <img src="~assets/images/home/comma.png" alt="" class="mb-8">
                         </p>
                         <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
                         </div>
                         <div class="flex items-center">
-                        <img class="w-10 h-10 rounded-full mr-4" src="/images/face.png" alt="Avatar of Jonathan Reinink">
+                        <img class="w-10 h-10 rounded-full mr-4" src="~assets/images/home/face.png" alt="Avatar of Jonathan Reinink">
                         <div class="text-sm">
                             <p class="text-gray-900 leading-none font-bold">Jonathan Reinink</p>
                             <p class="text-gray-600">Founder of bla-bla company</p>

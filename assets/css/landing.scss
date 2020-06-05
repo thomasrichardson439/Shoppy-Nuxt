@@ -116,18 +116,26 @@
     background: #15212a;
 }
 
-.bg_top_head{
-    background-image: url('/images/home_top_bg.png');
+.shoppy-home-top-bg {
+    background-image: url(~assets/images/home/home_top_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.home_pay_box{
+
+.shoppy-home-bottom-bg {
+    background-image: url(~assets/images/home/home_bottom_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+.shoppy-home-pay-box {
     width: 110px;
     height: 110px;
     background-color: white;
     border: 30px solid white;
     border-radius: 10px;
-    &_wrap{
+    &_wrap {
         margin-top: -55px;
     }
 }

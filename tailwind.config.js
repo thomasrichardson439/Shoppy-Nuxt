@@ -22,10 +22,7 @@ module.exports = {
                 ligth_blue_bg: '#f7fafc',
                 purple: '#ad26b4'
             }
-        },
-        // backgroundColor: theme => ({
-        //     'green': '#a4d037',
-        // })
+        }
     },
     variants: {
         opacity: ['disabled']

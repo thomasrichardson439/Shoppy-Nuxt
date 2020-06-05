@@ -343,7 +343,7 @@
 
         <nuxt/>
 
-        <div class="bg-bluely">
+        <div class="shoppy-home-bottom-bg">
             <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div class="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div class="xl:col-span-1">
@@ -407,7 +407,7 @@
                         <div class="md:grid md:grid-cols-2 md:gap-8">
                             <div>
                                 <h4
-                                    class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+                                    class="text-sm leading-5 font-semibold tracking-wider text-white uppercase">
                                     Solutions</h4>
                                 <ul class="mt-4">
                                     <li>
@@ -434,7 +434,7 @@
                             </div>
                             <div class="mt-12 md:mt-0">
                                 <h4
-                                    class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+                                    class="text-sm leading-5 font-semibold tracking-wider text-white uppercase">
                                     Support</h4>
                                 <ul class="mt-4">
                                     <li>
@@ -462,7 +462,7 @@
                         <div class="md:grid md:grid-cols-2 md:gap-8">
                             <div>
                                 <h4
-                                    class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase"
+                                    class="text-sm leading-5 font-semibold tracking-wider text-white uppercase"
                                 >Company</h4>
                                 <ul class="mt-4">
                                     <li>
@@ -490,7 +490,7 @@
                             </div>
                             <div class="mt-12 md:mt-0">
                                 <h4
-                                    class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase"
+                                    class="text-sm leading-5 font-semibold tracking-wider text-white uppercase"
                                 >Legal</h4>
                                 <ul class="mt-4">
                                     <li>
