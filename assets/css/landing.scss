@@ -14,7 +14,7 @@
 
 .shoppy-hero {
     position: relative;
-    padding: 6vw 4vw 2vw 4vw;
+    padding: 6vw 4vw 15vw 4vw;
     margin-top: -75px;
 
     &:before {
@@ -114,4 +114,20 @@
     padding: 8vw 4vw 6vw;
     height: auto;
     background: #15212a;
+}
+
+.bg_top_head{
+    background-image: url('/images/home_top_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home_pay_box{
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border: 30px solid white;
+    border-radius: 10px;
+    &_wrap{
+        margin-top: -55px;
+    }
 }

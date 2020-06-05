@@ -16,9 +16,16 @@ module.exports = {
                 shoppy: '#1c2360',
                 answers: '#d948b0',
                 ecommerce: '#1a1e28',
-                lightpink: '#f750ff'
+                lightpink: '#f750ff',
+                green: '#a4d037',
+                ligth_blue: '#3eb0ef',
+                ligth_blue_bg: '#f7fafc',
+                purple: '#ad26b4'
             }
-        }
+        },
+        // backgroundColor: theme => ({
+        //     'green': '#a4d037',
+        // })
     },
     variants: {
         opacity: ['disabled']

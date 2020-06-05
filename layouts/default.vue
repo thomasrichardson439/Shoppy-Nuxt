@@ -323,14 +323,14 @@
                         <div class="flex items-center space-x-8">
                             <router-link to='/auth/login'>
                                 <a
-                                class="text-base leading-6 font-medium text-white focus:outline-none focus:text-gray-900">
+                                class="border-solid border-2 border-white inline-flex items-center justify-center px-7 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
                                     Sign in
                                 </a>
                             </router-link>
                             <span class="inline-flex rounded-md shadow-sm">
                             <router-link to='/auth/signup'>
                                 <a
-                                class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
+                                class="inline-flex items-center justify-center px-7 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green hover:bg-green focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
                                     Sign up
                                 </a>
                             </router-link>
