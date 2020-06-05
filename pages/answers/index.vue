@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="shoppy-docs-header p-6">
+    <header class="shoppy-docs-header p-8">
       <div class="container mx-auto">
         <h1 class="text-white text-xl">Frequently Asked Questions</h1>
       </div>
@@ -9,14 +9,15 @@
     <div class="container mx-auto">
       <div class="md:flex md:flex-wrap py-10">
         <div class="md:w-8/12 rounded-lg shadow-lg bg-white p-8">
-          <div v-for="(n, index) in 10" class="mb-8 border-b pb-6 border-middarkgray-6">
-            <span class="text-xl color-darkgrey font-medium">Using custom domains »</span>
-            <div class="text-sm pt-2">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua.
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet
-            </div>
+          <div
+            v-for="answer in answers"
+            :key="answer.route"
+            class="mb-8 border-b pb-6 border-middarkgray-6"
+          >
+            <span class="text-xl color-darkgrey font-medium">
+              <a :href="`/answers/${answer.route}`">{{ answer.title }} »</a>
+            </span>
+            <div class="text-sm pt-2">{{ answer.content }}</div>
           </div>
         </div>
         <div class="md:w-4/12">
@@ -36,5 +37,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 
+export default {
+    computed: {
+        ...mapGetters('content', ['answers'])
+    },
+
+    created() {
+        console.log(this.answers)
+    }
+}
 </script>

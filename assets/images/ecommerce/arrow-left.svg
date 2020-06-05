@@ -1,0 +1,15 @@
+<svg width="174" height="130" viewBox="0 0 174 130" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    Group 59
+  </title>
+  <defs>
+    <linearGradient x1="0%" y1="100%" x2="0%" y2="25.624%" id="a">
+      <stop stop-color="#AD26B4" stop-opacity="0" offset="0%"/>
+      <stop stop-color="#AD26B4" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g stroke-width="2" fill="none" fill-rule="evenodd">
+    <path stroke="#AD26B4" stroke-linecap="round" stroke-linejoin="round" d="M14 102L1 115.636 14 129"/>
+    <path d="M1 116V72C1 32.235 33.235 0 73 0h99" stroke="url(#a)" transform="rotate(180 87 58)"/>
+  </g>
+</svg>

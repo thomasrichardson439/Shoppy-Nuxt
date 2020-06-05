@@ -1,0 +1,15 @@
+<svg width="174" height="114" viewBox="0 0 174 114" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    Group 61
+  </title>
+  <defs>
+    <linearGradient x1="0%" y1="100%" x2="0%" y2="25.624%" id="a">
+      <stop stop-color="#AD26B4" stop-opacity="0" offset="0%"/>
+      <stop stop-color="#AD26B4" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g stroke-width="2" fill="none" fill-rule="evenodd">
+    <path d="M0 113V85c0-39.765 32.235-72 72-72h99" stroke="url(#a)" transform="translate(1 1)"/>
+    <path stroke="#AD26B4" stroke-linecap="round" stroke-linejoin="round" d="M160 28l13-13.636L160 1"/>
+  </g>
+</svg>

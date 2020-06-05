@@ -1,5 +1,8 @@
+let dotenv = require('dotenv')
+dotenv.config();
+
 export default {
-    mode: 'universal',
+    mode: 'spa',
     /*
      ** Headers of the page
      */
@@ -23,11 +26,17 @@ export default {
     /*
      ** Global CSS
      */
-    css: [],
+    css: [
+        '@assets/css/landing.scss'
+    ],
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [],
+    plugins: [
+        '~/plugins/dropdown',
+        '~/plugins/validation',
+        '~/plugins/modal'
+    ],
     /*
      ** Nuxt.js dev-modules
      */
@@ -43,8 +52,20 @@ export default {
      */
     modules: [
         // Doc: https://axios.nuxtjs.org/usage
-        '@nuxtjs/axios'
+        '@nuxtjs/axios',
+        '@nuxtjs/toast',
+        '@nuxtjs/recaptcha'
     ],
+    recaptcha: {
+        siteKey: process.env.RECAPTCHA_KEY,
+        version: 2,
+        size: 'invisible',
+        hideBadge: false
+    },
+    toast: {
+        position: 'top-center',
+        duration: 1000
+    },
     /*
      ** Axios module configuration
      ** See https://axios.nuxtjs.org/options
