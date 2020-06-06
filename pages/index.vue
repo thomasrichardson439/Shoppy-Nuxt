@@ -46,7 +46,7 @@
             <div class="px-4 py-20 md:py-4">
                 <div class="container mx-auto shoppy-hero--inner">
                     <div class="md:flex md:flex-wrap">
-                        <div class="text-center md:pt-16 md:pb-16 w-full">
+                        <div class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto">
                             <h2 class="text-green uppercase font-bold text-sm mb-4">meet shoppy</h2>
                             <h1
                                 class="font-bold text-4xl leading-tight mb-4">
@@ -62,13 +62,13 @@
             </div>
         </div>
       </div>
-      <div class="bg-ligth_blue_bg rectangle rectangle_white">
+      <div class="bg-ligth_blue_bg rectangle rectangle_white relative">
         <div class="container mx-auto">
             <div class="md:overflow-hidden">
                 <div class="px-4 py-20 md:py-4">
                     <div class="container mx-auto shoppy-hero--inner">
                         <div class="md:flex md:flex-wrap pb-16">
-                            <div class="text-center md:pt-16 md:pb-16 w-full">
+                            <div class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto">
                                 <h2 class="text-ligth_blue uppercase font-bold text-sm mb-4">title here</h2>
                                 <h1
                                     class="font-bold text-4xl leading-tight mb-4">
@@ -119,7 +119,7 @@
             <div class="px-4 py-20 md:py-4">
                 <div class="container mx-auto shoppy-hero--inner">
                     <div class="md:flex md:flex-wrap pb-16">
-                        <div class="text-center md:pt-16 md:pb-16 w-full">
+                        <div class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto">
                             <h2 class="text-purple uppercase font-bold text-sm mb-4">title here</h2>
                             <h1
                                 class="font-bold text-4xl leading-tight mb-4">
@@ -170,7 +170,7 @@
                 <div class="px-4 py-20 md:py-4">
                     <div class="container mx-auto shoppy-hero--inner">
                         <div class="md:flex md:flex-wrap pb-16">
-                            <div class="text-center md:pt-16 md:pb-16 w-full">
+                            <div class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto">
                                 <h2 class="text-green uppercase font-bold text-sm mb-4">title here</h2>
                                 <h1
                                     class="font-bold text-4xl leading-tight mb-4">
@@ -209,7 +209,7 @@
                                     Learn more
                                 </a>
                             </div>
-                            <div class="text-center md:pt-16 md:pb-16 w-full">
+                            <div class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto">
                                 <h2 class="text-green uppercase font-bold text-sm mb-4">title here</h2>
                                 <h1
                                     class="font-bold text-4xl leading-tight mb-4">
@@ -241,7 +241,7 @@
             <div class="px-4 py-20 md:py-4">
                 <div class="container mx-auto shoppy-hero--inner">
                     <div class="md:flex md:flex-wrap">
-                        <div class="text-center md:pt-16 md:pb-6 w-full">
+                        <div class="text-center md:pt-16 md:pb-6 md:w-2/3 mx-auto">
                             <h2 class="text-green uppercase font-bold text-sm mb-4">testimonials</h2>
                             <h1
                                 class="font-bold text-4xl leading-tight mb-4">
