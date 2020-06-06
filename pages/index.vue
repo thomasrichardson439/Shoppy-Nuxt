@@ -62,7 +62,7 @@
             </div>
         </div>
       </div>
-      <div class="bg-ligth_blue_bg">
+      <div class="bg-ligth_blue_bg rectangle rectangle_white">
         <div class="container mx-auto">
             <div class="md:overflow-hidden">
                 <div class="px-4 py-20 md:py-4">
@@ -114,7 +114,7 @@
             </div>
         </div>
       </div>
-      <div class="container mx-auto">
+      <div class="container mx-auto rectangle rectangle_blue relative">
         <div class="md:overflow-hidden">
             <div class="px-4 py-20 md:py-4">
                 <div class="container mx-auto shoppy-hero--inner">
@@ -164,7 +164,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-ligth_blue_bg">
+    <div class="bg-ligth_blue_bg rectangle rectangle_white relative">
         <div class="container mx-auto">
             <div class="md:overflow-hidden">
                 <div class="px-4 py-20 md:py-4">
@@ -227,13 +227,13 @@
             </div>
         </div>
     </div>
-    <div class="shoppy-home-pay-box_wrap">
+    <div class="shoppy-home-pay-box_wrap relative">
         <div class="container mx-auto flex flex-wrap justify-center">
-            <img src="~assets/images/home/bitcoin.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
-            <img src="~assets/images/home/paypal.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
-            <img src="~assets/images/home/litecoin.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
-            <img src="~assets/images/home/stripe.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
-            <img src="~assets/images/home/etherium.png" alt="" class="shoppy-home-pay-box mx-8 shadow-lg">
+            <img src="~assets/images/home/bitcoin.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
+            <img src="~assets/images/home/paypal.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
+            <img src="~assets/images/home/litecoin.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
+            <img src="~assets/images/home/stripe.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
+            <img src="~assets/images/home/etherium.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
         </div>
     </div>
     <div class="container mx-auto">
@@ -261,7 +261,7 @@
     <div class="container mx-auto">
         <div class="md:flex md:flex-wrap pb-16 justify-center">
             <div class="md:w-2/5 text-center md:text-left md:pt-3 md:mr-4">
-                <div class="max-w-sm w-full lg:max-w-full lg:flex">
+                <div class="max-w-sm w-full lg:max-w-full lg:flex mx-auto mb-4">
                     <div class="shadow-lg bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div class="mb-8">
                         <p class="text-sm text-gray-600 flex items-center">
@@ -280,7 +280,7 @@
                 </div>
             </div>
             <div class="md:w-2/5 text-center md:text-left md:pt-3 md:ml-4">
-                <div class="max-w-sm w-full lg:max-w-full lg:flex">
+                <div class="max-w-sm w-full lg:max-w-full lg:flex mx-auto mb-4">
                     <div class="shadow-lg bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div class="mb-8">
                         <p class="text-sm text-gray-600 flex items-center">
@@ -297,6 +297,21 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto -mb-32 relative">
+        <div class="rounded-lg shadow-lg bg-white py-10 px-20 flex flex-wrap justify-between leading-normal items-center">
+            <div class="md:w-2/3">
+                <h2 class="text-4xl font-bold mb-2">Ready to get started?</h2>
+                <p class="text-gray-700 text-base text-xl mb-2">
+                    Create an account and get started
+                </p>
+            </div>
+            <div class="md:w-1/3 flex justify-end mb-2">
+                <a href="#" class="md:mb-0 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold">
+                    Create Shoppy account
+                </a>
             </div>
         </div>
     </div>
