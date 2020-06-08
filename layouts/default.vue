@@ -558,6 +558,17 @@
                 }
                 this.hasHero = this.routeHasHero();
             });
+            
+            let keys = Object.keys(this.dropdowns);
+            for(let key of keys) {
+                this.$watch('dropdowns.' + key, () => {
+                    if(this.dropdowns[key]) {
+                        for(let k of keys.filter(k => k !== key)) {
+                            this.dropdowns[k] = false;
+                        }
+                    }
+                });
+            }
         },
 
         computed: {
