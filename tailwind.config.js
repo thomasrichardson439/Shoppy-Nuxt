@@ -21,6 +21,9 @@ module.exports = {
                 ligth_blue: '#3eb0ef',
                 ligth_blue_bg: '#f7fafc',
                 purple: '#ad26b4'
+            },
+            borderRadius: {
+                extra: '10px'
             }
         }
     },

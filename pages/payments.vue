@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="shoppy-hero shoppy-payments text-white">
+        <div class="shoppy-hero bg-bluely text-white">
             <div class="text-center font-medium text-5xl">
                 Simple payment processing
             </div>

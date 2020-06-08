@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="shoppy-hero shoppy-ecommerce text-white">
+        <div class="shoppy-hero bg-bluely text-white">
             <div class="text-center font-medium text-5xl">
                 Modern ecommerce made simple
             </div>
