@@ -33,6 +33,8 @@ export default {
      ** Plugins to load before mounting the App
      */
     plugins: [
+        '~/plugins/components',
+        
         '~/plugins/dropdown',
         '~/plugins/validation',
         '~/plugins/modal'
@@ -75,6 +77,9 @@ export default {
      ** Build configuration
      */
     build: {
+        extractCSS: true,
+        publicPath: '/assets/',
+        
         /*
          ** You can extend webpack config here
          */

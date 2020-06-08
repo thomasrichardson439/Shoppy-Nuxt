@@ -157,3 +157,16 @@
         }
     }
 }
+
+pre[class*="language-"] {
+    @apply rounded;
+
+    .token {
+        &.string {
+            color: lighten(#a4d037, 15%);
+        }
+        &.number, &.boolean {
+            color: darken(#a4d037, 15%);
+        }
+    }
+}

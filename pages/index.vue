@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-      <div class="md:overflow-hidden shoppy-hero shoppy-home-top-bg">
+      <div class="md:overflow-hidden shoppy-hero backgrounds_home-top">
           <div class="px-4 py-20 md:py-4">
               <div class="container mx-auto shoppy-hero--inner">
                   <div class="md:flex md:flex-wrap">
@@ -209,7 +209,7 @@
                                     Learn more
                                 </a>
                             </div>
-                            <div class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto">
+                            <div class="text-center md:pt-16 md:pb-10 md:w-2/3 mx-auto">
                                 <h2 class="text-green uppercase font-bold text-sm mb-4">title here</h2>
                                 <h1
                                     class="font-bold text-4xl leading-tight mb-4">
@@ -227,13 +227,23 @@
             </div>
         </div>
     </div>
-    <div class="shoppy-home-pay-box_wrap relative">
+    <div class="landing_payments pb-16 relative">
         <div class="container mx-auto flex flex-wrap justify-center">
-            <img src="~assets/images/home/bitcoin.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
-            <img src="~assets/images/home/paypal.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
-            <img src="~assets/images/home/litecoin.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
-            <img src="~assets/images/home/stripe.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
-            <img src="~assets/images/home/etherium.png" alt="" class="shoppy-home-pay-box mx-8 my-2 shadow-lg">
+            <div class='landing_payments-icon-wrapper'>
+                <img src="~assets/images/home/bitcoin.png" alt="" class="w-10 h-10">
+            </div>
+            <div class='landing_payments-icon-wrapper'>
+                <img src="~assets/images/home/paypal.png" alt="" class="w-10 h-10">
+            </div>
+            <div class='landing_payments-icon-wrapper'>
+                <img src="~assets/images/home/litecoin.png" alt="" class="w-10 h-10">
+            </div>
+            <div class='landing_payments-icon-wrapper'>
+                <img src="~assets/images/home/stripe.png" alt="" class="w-16 h-8">
+            </div>
+            <div class='landing_payments-icon-wrapper'>
+                <img src="~assets/images/home/etherium.png" alt="" class="w-8 h-10">
+            </div>
         </div>
     </div>
     <div class="container mx-auto">

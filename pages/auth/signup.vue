@@ -1,6 +1,6 @@
 <template>
     <div
-        class="min-h-screen bg-shoppy flex flex-col pt-8 py-12 sm:px-6 lg:px-8"
+        class="flex flex-1 flex-col"
     >
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
             <img
@@ -22,12 +22,8 @@
                     class="mt-2 text-center text-sm leading-5 text-gray-600 max-w"
                 >
                     Or
-                    <router-link
-                        to='/auth/login'
-                        class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150"
-                    >
-                        sign in if you already have an account
-                    </router-link>
+                    <styled-link to="/auth/login">login</styled-link>
+                    if you already have an account
                 </p>
 
                 <validation-observer tag='form' class="mt-8" @submit.prevent v-slot='vo'>
@@ -98,21 +94,21 @@
                     <div class="flex flex-row">
 				        <label class='text-sm text-center font-medium'>
                             By registering, you agree to our
-                            <router-link class='text-indigo-600 hover:text-indigo-500' to='/terms'>Terms of Service</router-link> and
-                            <router-link class='text-indigo-600 hover:text-indigo-500' to='/privacy'>Privacy Policy</router-link>.
+                            <styled-link to='/terms'>Terms of Service</styled-link> and
+                            <styled-link to='/privacy'>Privacy Policy</styled-link>.
                         </label>
                     </div>
 
                     <div class="mt-6">
                         <span class="block w-full rounded-md shadow-sm">
-                            <button
+                            <styled-button
                                 type="submit"
                                 :disabled='!vo.valid'
                                 @click="register"
-                                class="w-full disabled:opacity-75 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                                class="w-full"
                             >
                                 Sign up
-                            </button>
+                            </styled-button>
                         </span>
                     </div>
                 </validation-observer>
@@ -126,7 +122,7 @@ import Control from '~/components/Control.vue';
 import PasswordStrength from 'vue-password-strength-meter';
 
 export default {
-    layout: 'empty',
+    layout: 'authentication',
     components: {
         Control,
         PasswordStrength

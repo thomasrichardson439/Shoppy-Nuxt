@@ -14,7 +14,7 @@
             <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:text-center">
                     <p
-                        class="text-base leading-6 text-shoppy font-semibold tracking-wide uppercase"
+                        class="text-base leading-6 text-lime font-semibold tracking-wide uppercase"
                     >
                         Payments
                     </p>
@@ -41,7 +41,7 @@
                             <div class="flex">
                                 <div class="flex-shrink-0">
                                     <div
-                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white"
+                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white"
                                     >
                                         <svg
                                             class="h-6 w-6"
@@ -79,7 +79,7 @@
                             <div class="flex">
                                 <div class="flex-shrink-0">
                                     <div
-                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white"
+                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white"
                                     >
                                         <svg
                                             class="h-6 w-6"
@@ -117,7 +117,7 @@
                             <div class="flex">
                                 <div class="flex-shrink-0">
                                     <div
-                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white"
+                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white"
                                     >
                                         <svg
                                             class="h-6 w-6"
@@ -156,7 +156,7 @@
                             <div class="flex">
                                 <div class="flex-shrink-0">
                                     <div
-                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white"
+                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white"
                                     >
                                         <svg
                                             class="h-6 w-6"
@@ -248,7 +248,7 @@
                                 <div class="mt-8">
                                     <div class="flex items-center">
                                         <h4
-                                            class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-shoppy"
+                                            class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-lime"
                                         >
                                             What's included
                                         </h4>
@@ -383,7 +383,7 @@
                                             href="https://shoppy.dev"
                                             target="_blank"
                                             class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                                            >Shoppy API Documentation</a
+                                            >Documentation</a
                                         >
                                     </div>
                                 </div>
@@ -395,10 +395,10 @@
         </div>
 
         <div class="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8 p-8">
-            <div class="p-2 rounded-lg bg-indigo-600 shadow-lg sm:p-3">
+            <div class="p-2 rounded-lg bg-lime shadow-lg sm:p-3">
                 <div class="flex items-center justify-between flex-wrap">
                     <div class="w-0 flex-1 flex items-center">
-                        <span class="flex p-2 rounded-lg bg-indigo-800">
+                        <span class="flex p-2 rounded-lg bg-green">
                             <svg
                                 class="h-6 w-6 text-white"
                                 stroke="currentColor"
