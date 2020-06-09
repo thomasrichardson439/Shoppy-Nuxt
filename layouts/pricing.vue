@@ -598,7 +598,7 @@
 
         <nuxt />
 
-        <div class="shoppy-home-bottom-bg">
+        <div class="backgrounds_home-bottom">
             <div
                 class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
             >
