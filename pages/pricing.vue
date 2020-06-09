@@ -7,7 +7,7 @@
             class="title mt-5 font-bold text-white"
             style="fontSize: 42px;"
           >Simple, transparent pricing</h2>
-          <p class="text-lg mb-5 text-white">Always know what you'll pay.</p>
+          <p class="text-lg mb-12 text-white">Always know what you'll pay.</p>
           <div class="grid grid-cols-2 gap-8">
             <div class="flex flex-col items-center rounded-lg bg-white py-8 px-20">
               <p class="text-lg text-black">Free</p>
