@@ -397,7 +397,7 @@
                   <nuxt-link to="/pricing">
                     <button
                       type="button"
-                      class="group text-white inline-flex items-center space-x-2 text-base leading-6 font-medium focus:outline-none"
+                      class="group text-white inline-flex items-center ml-4 space-x-2 text-base leading-6 font-medium focus:outline-none"
                     >
                       <span>Pricing</span>
                       <svg class="text-white h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
