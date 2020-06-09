@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mx-auto bg-ligth_blue_bg rectangle relative mt-32">
+    <div class="container mx-auto rectangle relative mt-32">
       <div class="grid grid-cols-3">
         <div class="col-span-2 col-start-2 text-center">
           <h2
@@ -367,13 +367,17 @@
         </div>
       </div>
     </div>
+    <get-started />
   </div>
 </template>
 <script>
 import AccordionItem from '~/components/AccordionItem.vue'
+import GetStarted from '~/components/GetStarted'
 export default {
+  layout: 'pricing',
   components: {
-    AccordionItem
+    AccordionItem,
+    GetStarted
   },
   data() {
     return {
