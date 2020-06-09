@@ -22,25 +22,25 @@
               <hr class="w-1/3 h-0.75 my-6" />
               <ul class="list-none">
                 <li class="flex content-center mb-3">
-                  <img class="w-5 h-4 mr-3" src="~/assets/images/pricing/green-check.png" />
+                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
                   <p class="text-gray-500 text-sm">
                     <span class="font-medium text-sm">100k</span> views/month
                   </p>
                 </li>
                 <li class="flex content-center mb-3">
-                  <img class="w-5 h-4 mr-3" src="~/assets/images/pricing/green-check.png" />
+                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
                   <p class="text-gray-500 text-sm">
                     <span class="font-medium text-sm">2</span> staff users
                   </p>
                 </li>
                 <li class="flex content-center mb-3">
-                  <img class="w-5 h-4 mr-3" src="~/assets/images/pricing/green-check.png" />
+                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
                   <p class="text-gray-500 text-sm">
                     <span class="font-medium text-sm">1,000</span> members
                   </p>
                 </li>
                 <li class="flex content-center mb-3">
-                  <img class="w-5 h-4 mr-3" src="~/assets/images/pricing/green-check.png" />
+                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
                   <p class="text-gray-500 text-sm">SSL+CDN included</p>
                 </li>
               </ul>
@@ -63,25 +63,25 @@
               <hr class="w-1/3 h-0.75 my-6" />
               <ul class="list-none">
                 <li class="flex content-center mb-3">
-                  <img class="w-5 h-4 mr-3" src="~/assets/images/pricing/green-check.png" />
+                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
                   <p class="text-gray-500 text-sm">
                     <span class="font-medium text-sm">500k</span> views/month
                   </p>
                 </li>
                 <li class="flex content-center mb-3">
-                  <img class="w-5 h-4 mr-3" src="~/assets/images/pricing/green-check.png" />
+                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
                   <p class="text-gray-500 text-sm">
                     <span class="font-medium text-sm">5</span> staff users
                   </p>
                 </li>
                 <li class="flex content-center mb-3">
-                  <img class="w-5 h-4 mr-3" src="~/assets/images/pricing/green-check.png" />
+                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
                   <p class="text-gray-500 text-sm">
                     <span class="font-medium text-sm">5,000</span> members
                   </p>
                 </li>
                 <li class="flex content-center mb-3">
-                  <img class="w-5 h-4 mr-3" src="~/assets/images/pricing/green-check.png" />
+                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
                   <p class="text-gray-500 text-sm">Priority support</p>
                 </li>
               </ul>
@@ -143,10 +143,10 @@
               <p class="py-3 justify-center text-sm">2</p>
               <p class="py-3 justify-center text-sm">1,000</p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 justify-center text-sm"></p>
             </div>
@@ -156,10 +156,10 @@
               <p class="py-3 justify-center text-sm">15</p>
               <p class="py-3 justify-center text-sm">1M</p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 justify-center text-sm">beta</p>
             </div>
@@ -186,31 +186,31 @@
           <div class="grid grid-cols-2 gap-8">
             <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
             </div>
 
             <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
             </div>
           </div>
@@ -242,13 +242,13 @@
           <div class="grid grid-cols-2 gap-8">
             <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center text-white">.</p>
               <p class="py-3 flex justify-center"></p>
@@ -256,16 +256,16 @@
 
             <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.png" />
+                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
               </p>
               <p class="py-3 flex justify-center">+50$/mo</p>
             </div>
@@ -320,15 +320,15 @@
           <div class="grid grid-cols-2 gap-8">
             <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/heart.png" />
+                <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
               </p>
             </div>
 
             <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
               <p class="py-3 flex justify-center">
-                <img class="w-5 h-5 mx-2" src="~/assets/images/pricing/heart.png" />
-                <img class="w-5 h-5 mx-2" src="~/assets/images/pricing/heart.png" />
-                <img class="w-5 h-5 mx-2" src="~/assets/images/pricing/heart.png" />
+                <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
+                <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
+                <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
               </p>
             </div>
           </div>
@@ -336,22 +336,22 @@
       </div>
 
       <div class="text-center my-32">
-        <p class="font-semi-bold text-4xl text-black">Set up your site, pick a plan later</p>
+        <p class="font-semibold text-4xl text-black">Set up your site, pick a plan later</p>
         <p
           class="text-lg my-8"
         >Try Ghost free for 14 days on our fully managed Ghost(Pro) infrastructure</p>
         <p>
           <a
             href="#"
-            class="font-semi-bold my-4 inline-block py-3 px-8 text-white bg-green hover:bg-green rounded-lg shadow"
+            class="font-semibold my-4 inline-block py-3 px-8 text-white bg-green hover:bg-green rounded-lg shadow"
           >Create Account</a>
         </p>
       </div>
     </div>
 
     <div class="bg-white rectangle rectangle_blue relative py-32">
-      <div class="container mx-auto">
-        <p class="font-semi-bold text-black text-4xl text-center">Frequently asked questions</p>
+      <div class="lg:w-2/3 mx-auto">
+        <p class="font-semibold text-black text-4xl text-center">Frequently asked questions</p>
         <p
           class="text-lg text-center text-gray-500 my-10"
         >Looking for more info? Here are some things we're commonly asked</p>
@@ -360,8 +360,8 @@
           <accordion-item
             v-for="(item, index) in questions"
             :key="index"
-            :title="item.title"
-            :text="item.text"
+            :question="item.question"
+            :answer="item.answer"
           />
           <div></div>
         </div>
@@ -369,7 +369,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import AccordionItem from '~/components/AccordionItem.vue'
 export default {
@@ -379,12 +378,46 @@ export default {
   data() {
     return {
       active: false,
-      questions: [{ title: 'title', text: 'text' }]
+      questions: [
+        {
+          question:
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
+          answer:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
+        },
+        {
+          question:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
+          answer:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
+        },
+        {
+          question: 'Lorem ipsum, dolor sit amet consectetur adipisicing.',
+          answer:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
+        },
+        {
+          question:
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
+          answer:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
+        },
+        {
+          question:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
+          answer:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
+        },
+        {
+          question: 'Lorem ipsum, dolor sit amet consectetur adipisicing.',
+          answer:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
+        }
+      ]
     }
   },
   methods: {
     toggle() {
-      console.log('click')
       this.active = !this.active
     }
   }

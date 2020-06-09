@@ -1,21 +1,21 @@
 <template>
   <div>
-    <div class="flex justify-between">
-      <p class="text-lg font-semi-bold font-black">{{title}}</p>
+    <div class="flex justify-between p-4">
+      <p class="text-lg font-semi-bold font-black">{{question}}</p>
       <img
-        class="w-4 h-3 mx-2 float-right self-center"
-        src="~/assets/images/pricing/arrow-down.png"
+        class="w-6 h-4 mx-2 float-right self-center"
+        src="~/assets/images/pricing/chevron.svg"
         :class="{ 'transform': open, 'rotate-180': open}"
         @click="toggle"
       />
     </div>
-    <p class="accordion-text" v-if="open">{{text}}</p>
+    <p class="accordion-text mb-4 px-4 font-normal text-gray-500" v-if="open">{{answer}}</p>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['title', 'text'],
+  props: ['question', 'answer'],
   data() {
     return {
       open: false
