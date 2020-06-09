@@ -1,6 +1,10 @@
 <template>
-  <div>
-    <div class="container mx-auto rectangle relative mt-8 w-4/5">
+  <div class="wrapper">
+    <div class="absolute w-full">
+      <img class="w-full object-cover" src="~/assets/images/pricing/pricing-bg-c.png" />
+    </div>
+
+    <div class="container mx-auto rectangle relative -mt-20 w-4/5 pt-20">
       <div class="grid grid-cols-8">
         <div class="col-span-6 col-start-3 text-center">
           <h2
@@ -378,11 +382,15 @@
     <get-started />
   </div>
 </template>
+<style scoped>
+.wrapper {
+    font-family: 'Gellix';
+}
+</style>
 <script>
 import AccordionItem from '~/components/AccordionItem.vue'
 import GetStarted from '~/components/GetStarted'
 export default {
-    layout: 'pricing',
     components: {
         AccordionItem,
         GetStarted
