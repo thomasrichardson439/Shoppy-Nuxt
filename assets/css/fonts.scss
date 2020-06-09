@@ -15,3 +15,27 @@
   font-weight: 600;
   src: url(~assets/fonts/camphor-bold.woff2) format("woff2"), url(~assets/fonts/camphor-bold.woff) format("woff");
 }
+
+@font-face {
+  font-family: Gellix;
+  font-weight: 500;
+  src: url(~assets/fonts/Gellix-Medium.woff2) format('woff2'), url(~assets/fonts/Gellix-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: Gellix;
+  font-weight: normal;
+  src: url(~assets/fonts/Gellix-Regular.woff2) format('woff2'), url(~assets/fonts/Gellix-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: Gellix;
+  font-weight: bold;
+  src: url(~assets/fonts/Gellix-Bold.woff2) format('woff2'), url(~assets/fonts/Gellix-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: Gellix;
+  font-weight: 600;
+  src: url(~assets/fonts/Gellix-SemiBold.woff2) format('woff2'), url(~assets/fonts/Gellix-SemiBold.woff) format('woff');
+}
