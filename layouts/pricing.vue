@@ -357,7 +357,7 @@
                                             type="button"
                                             class="group text-white inline-flex items-center space-x-2 text-base leading-6 font-medium focus:outline-none"
                                         >
-                                            <span>Resources</span>
+                                            <span>Pricing</span>
                                             <svg
                                                 class="text-white h-5 w-5"
                                                 fill="currentColor"
