@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mx-auto rectangle relative mt-8">
+    <div class="container mx-auto rectangle relative mt-8 w-4/5">
       <div class="grid grid-cols-8">
         <div class="col-span-6 col-start-3 text-center">
           <h2
