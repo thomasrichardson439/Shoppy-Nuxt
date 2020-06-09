@@ -32,10 +32,6 @@
 }
 
 .shoppy-ecommerce {
-    padding: 8vw 4vw 6vw;
-    height: auto;
-    background: #15212a;
-
     &--cycle-grid {
         display: grid;
         margin: 155px 0 8rem;
@@ -110,39 +106,37 @@
     }
 }
 
-.shoppy-payments {
-    padding: 8vw 4vw 6vw;
-    height: auto;
-    background: #15212a;
-}
-
-.shoppy-home-top-bg {
-    background-image: url(~assets/images/home/home_top_bg.png);
+.backgrounds {
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.shoppy-home-bottom-bg {
-    background-image: url(~assets/images/home/home_bottom_bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 100px;
-}
-
-.shoppy-home-pay-box {
-    width: 110px;
-    height: 110px;
-    background-color: white;
-    border: 30px solid white;
-    border-radius: 10px;
-    &_wrap {
-        margin-top: -55px;
+    &_home {
+        &-top {
+            @extend .backgrounds;
+            background-image: url(~assets/images/home/home_top_bg.png);
+        }
+        &-bottom {
+            @extend .backgrounds;
+            background-image: url(~assets/images/home/home_bottom_bg.png);
+            padding-top: 120px;
+        }
     }
 }
-.relative{
+
+.landing {
+    &_payments {
+        margin-top: -55px;
+        &-icon {
+            &-wrapper {
+                @apply bg-white p-6 rounded-extra mx-8 shadow-lg flex items-center;
+            }
+        }
+    }
+}
+
+.relative {
     position: relative;
 }
-.rectangle{
+.rectangle {
     &:before{
         content: '';
         width: 50px;
@@ -152,14 +146,27 @@
         top: -7px;
         left: 50%;
     }
-    &_white{
+    &_white {
         &:before{
             background-color: white;
         }
     }
-    &_blue{
+    &_blue {
         &:before{
             background-color: #f7fafc;
+        }
+    }
+}
+
+pre[class*="language-"] {
+    @apply rounded;
+
+    .token {
+        &.string {
+            color: lighten(#a4d037, 15%);
+        }
+        &.number, &.boolean {
+            color: darken(#a4d037, 15%);
         }
     }
 }

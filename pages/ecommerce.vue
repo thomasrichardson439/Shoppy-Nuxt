@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="shoppy-hero shoppy-ecommerce text-white">
+        <div class="shoppy-hero bg-bluely text-white">
             <div class="text-center font-medium text-5xl">
                 Modern ecommerce made simple
             </div>
@@ -49,7 +49,7 @@
                                 <div class="flex">
                                     <div class="flex-shrink-0">
                                         <div
-                                            class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white">
+                                            class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white">
                                             <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                       d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
@@ -71,7 +71,7 @@
                                 <div class="flex">
                                     <div class="flex-shrink-0">
                                         <div
-                                            class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white">
+                                            class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white">
                                             <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                       d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
@@ -92,7 +92,7 @@
                                 <div class="flex">
                                     <div class="flex-shrink-0">
                                         <div
-                                            class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white">
+                                            class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white">
                                             <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                       d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -154,7 +154,7 @@
                                     <div class="flex">
                                         <div class="flex-shrink-0">
                                             <div
-                                                class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white">
+                                                class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white">
                                                 <svg class="h-6 w-6" stroke="currentColor" fill="none"
                                                      viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -178,7 +178,7 @@
                                     <div class="flex">
                                         <div class="flex-shrink-0">
                                             <div
-                                                class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white">
+                                                class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white">
                                                 <svg class="h-6 w-6" stroke="currentColor" fill="none"
                                                      viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -313,7 +313,7 @@
             <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
                 <div class="lg:grid lg:grid-cols-3 lg:gap-8">
                     <div>
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white">
                             <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
@@ -329,7 +329,7 @@
                         </div>
                     </div>
                     <div class="mt-10 lg:mt-0">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white">
                             <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
@@ -345,7 +345,7 @@
                         </div>
                     </div>
                     <div class="mt-10 lg:mt-0">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-shoppy text-white">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white">
                             <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -413,13 +413,13 @@
                 <div class="mt-8 flex justify-center">
                     <div class="inline-flex rounded-md shadow">
                         <a href="#"
-                           class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-shoppy hover:bg-shoppy focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                           class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-lime hover:bg-lime focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
                             Get started
                         </a>
                     </div>
                     <div class="ml-3 inline-flex">
                         <a href="#"
-                           class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out">
+                           class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green bg-indigo-100 hover:text-lime hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out">
                             Learn more
                         </a>
                     </div>

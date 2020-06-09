@@ -36,7 +36,7 @@
                     <div class="ml-20 mt-8">
                         <span class="color-darkgrey font-medium">FAQ topics</span>
                         <div class="flex mt-4">
-                            <span class="bg-shoppy text-white p-2 text-white rounded-lg mr-2">All</span>
+                            <span class="bg-lime text-white p-2 text-white rounded-lg mr-2">All</span>
                             <span class="bg-whitegray p-2 text-middarkgray rounded-lg mr-2">Lorem</span>
                             <span class="bg-whitegray p-2 text-middarkgray rounded-lg mr-2">Ipsum</span>
                             <span class="bg-whitegray p-2 text-middarkgray rounded-lg mr-2">Dolor</span>

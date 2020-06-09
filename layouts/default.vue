@@ -44,7 +44,7 @@
                                                         class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                                         <router-link to='/ecommerce'>
                                                             <a class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50">
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-lime"
                                                                     stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         stroke-width="2"
@@ -64,7 +64,7 @@
                                                         <router-link to='/payments'>
                                                             <a
                                                             class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50">
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-lime"
                                                                     stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         stroke-width="2"
@@ -144,7 +144,7 @@
                                                         class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                                         <a href="https://shoppy.dev" target="_blank"
                                                            class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50">
-                                                            <svg class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-lime"
                                                                  stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                                       stroke-width="2"
@@ -222,7 +222,7 @@
                                                         <router-link to='/about'>
                                                             <a
                                                             class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50">
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-lime"
                                                                     stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         stroke-width="2"
@@ -243,7 +243,7 @@
                                                         <router-link to='/answers'>
                                                             <a
                                                             class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50">
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-lime"
                                                                     fill="none" stroke-linecap="round"
                                                                     stroke-linejoin="round" stroke-width="2"
                                                                     stroke="currentColor" viewBox="0 0 24 24">
@@ -264,7 +264,7 @@
                                                         <router-link to='/changelog'>
                                                             <a
                                                             class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50">
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-lime"
                                                                     stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         stroke-width="2"
@@ -303,12 +303,9 @@
                                                             </ul>
                                                         </div>
                                                         <div class="text-sm leading-5">
-                                                            <router-link to='/answers'>
-                                                                <a
-                                                                class="font-medium text-indigo-600 hover:text-indigo-500">
-                                                                    View all posts &rarr;
-                                                                </a>
-                                                            </router-link>
+                                                            <styled-link to='/answers'>
+                                                                View all posts
+                                                            </styled-link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -329,10 +326,9 @@
                             </router-link>
                             <span class="inline-flex rounded-md shadow-sm">
                             <router-link to='/auth/signup'>
-                                <a
-                                class="inline-flex items-center justify-center px-7 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green hover:bg-green focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
+                                <styled-button class='px-7 py-2 border border-transparent text-base'>
                                     Sign up
-                                </a>
+                                </styled-button>
                             </router-link>
                           </span>
                         </div>
@@ -343,7 +339,7 @@
 
         <nuxt/>
 
-        <div class="shoppy-home-bottom-bg">
+        <div class="backgrounds_home-bottom bg-white">
             <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div class="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div class="xl:col-span-1">
@@ -545,6 +541,7 @@
     export default {
         data() {
             return {
+                hasHero: false,
                 dropdowns: {
                     product: false,
                     developers: false,
@@ -554,25 +551,41 @@
         },
 
         mounted() {
+            this.hasHero = this.routeHasHero();
             this.$router.afterEach(() => {
                 for(let key in this.dropdowns) {
                     this.dropdowns[key] = false;
                 }
+                this.hasHero = this.routeHasHero();
             });
+            
+            let keys = Object.keys(this.dropdowns);
+            for(let key of keys) {
+                this.$watch('dropdowns.' + key, () => {
+                    if(this.dropdowns[key]) {
+                        for(let k of keys.filter(k => k !== key)) {
+                            this.dropdowns[k] = false;
+                        }
+                    }
+                });
+            }
         },
 
         computed: {
             ...mapGetters('content', ['posts']),
-            hasHero() {
+            recentPosts() {
+                return [...(this.posts || [])].sort((a, b) => a - b).slice(0, 3);
+            }
+        },
+        
+        methods: {
+            routeHasHero() {
                 return [
                     '/',
                     '/about',
                     '/ecommerce',
                     '/payments'
-                ].includes(this.$route.path)
-            },
-            recentPosts() {
-                return [...(this.posts || [])].sort((a, b) => a - b).slice(0, 3);
+                ].includes(this.$route.path);
             }
         }
     }

@@ -17,10 +17,14 @@ module.exports = {
                 answers: '#d948b0',
                 ecommerce: '#1a1e28',
                 lightpink: '#f750ff',
-                green: '#a4d037',
+                lime: '#a4d037',
+                green: '#85a92c',
                 ligth_blue: '#3eb0ef',
                 ligth_blue_bg: '#f7fafc',
                 purple: '#ad26b4'
+            },
+            borderRadius: {
+                extra: '10px'
             }
         }
     },
