@@ -1,346 +1,65 @@
 <template>
   <div class="wrapper">
-    <div class="absolute w-full">
-      <img class="w-full object-cover" src="~/assets/images/pricing/pricing-bg-c.png" />
+    <div class="absolute w-full h-screen md:h-full">
+      <img class="w-full object-cover h-screen md:h-full" src="~/assets/images/pricing/pricing-bg-c.png" />
     </div>
 
     <div class="container mx-auto rectangle relative -mt-20 w-4/5 pt-20">
-      <div class="grid grid-cols-8">
-        <div class="col-span-6 col-start-3 text-center">
-          <h2
-            class="title mt-5 font-bold text-white"
-            style="fontSize: 42px;"
-          >Simple, transparent pricing</h2>
-          <p class="text-lg mb-12 text-white">Always know what you'll pay.</p>
-          <div class="grid grid-cols-2 gap-8">
-            <div class="flex flex-col items-center rounded-lg bg-white py-8 px-20">
-              <p class="text-lg text-black">Free</p>
-              <p class="flex">
-                <sup class="text-gray-400 text-2xl self-center font-bold">$</sup>
-                <span class="price text-black" style="fontSize: 58px;">0</span>
-              </p>
-              <div class="text-base text-gray-500 font-regular">
-                <p>per month, billed annually</p>
-                <p>$36 billed monthly</p>
-              </div>
-              <hr class="w-1/3 h-0.75 my-6" />
-              <ul class="list-none">
-                <li class="flex content-center mb-3">
-                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
-                  <p class="text-gray-500 text-sm">
-                    <span class="font-medium text-sm">100k</span>
-                    views/month
-                  </p>
-                </li>
-                <li class="flex content-center mb-3">
-                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
-                  <p class="text-gray-500 text-sm">
-                    <span class="font-medium text-sm">2</span>
-                    staff users
-                  </p>
-                </li>
-                <li class="flex content-center mb-3">
-                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
-                  <p class="text-gray-500 text-sm">
-                    <span class="font-medium text-sm">1,000</span>
-                    members
-                  </p>
-                </li>
-                <li class="flex content-center mb-3">
-                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
-                  <p class="text-gray-500 text-sm">SSL+CDN included</p>
-                </li>
-              </ul>
-              <p class="text-gray-500 text-sm mt-5 font-regular">
-                For professional bloggers who are just getting
-                started
-              </p>
-            </div>
-
-            <div class="flex flex-col items-center rounded-lg bg-white py-8 px-20">
-              <p class="text-lg text-black">Enterprise</p>
-              <p class="flex">
-                <sup class="text-gray-400 text-2xl self-center font-bold">$</sup>
-                <span class="price text-black" style="fontSize: 58px;">79</span>
-              </p>
-              <div class="text-base text-gray-500 font-regular">
-                <p>per month, billed annually</p>
-                <p>$99 billed monthly</p>
-              </div>
-              <hr class="w-1/3 h-0.75 my-6" />
-              <ul class="list-none">
-                <li class="flex content-center mb-3">
-                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
-                  <p class="text-gray-500 text-sm">
-                    <span class="font-medium text-sm">500k</span>
-                    views/month
-                  </p>
-                </li>
-                <li class="flex content-center mb-3">
-                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
-                  <p class="text-gray-500 text-sm">
-                    <span class="font-medium text-sm">5</span>
-                    staff users
-                  </p>
-                </li>
-                <li class="flex content-center mb-3">
-                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
-                  <p class="text-gray-500 text-sm">
-                    <span class="font-medium text-sm">5,000</span>
-                    members
-                  </p>
-                </li>
-                <li class="flex content-center mb-3">
-                  <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg" />
-                  <p class="text-gray-500 text-sm">Priority support</p>
-                </li>
-              </ul>
-              <p class="text-gray-500 text-sm mt-5 font-regular">
-                Everything you need to manage a growing
-                publication
-              </p>
-            </div>
+      <div class="flex flex-wrap md:justify-end">
+        <div class="flex flex-wrap text-center md:w-3/4 w-full justify-between">
+          <h2 class="title mt-5 font-bold text-white md:text-5xl text-xl w-full">
+            Simple, transparent pricing
+            </h2>
+          <p class="md:text-lg text-base mb-12 text-white w-full text-center">
+            Always know what you'll pay.
+          </p>
+          <div 
+            v-for="(item, index) in pricingItems"
+            :key="index"
+            class="md:w-1/2 md:mb-0 mb-5 w-full"
+          >
+            <PricingItem
+              :item="item"
+            />
           </div>
         </div>
+        <template v-for="(item, index) in productUsage">
+          <DescribeItem 
+            :key="index"
+            :item="item"
+          />
+        </template>
 
-        <div class="col-span-6 col-start-3 my-10">
-          <p class="text-purple text-center text-sm font-bold">PRODUCT USAGE</p>
-        </div>
-
-        <div class="divide-y divide-gray-300 mr-8 text-sm py-3 col-span-2">
-          <p class="py-3 font-bold flex align-center">
-            Views per month
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-          <p class="py-3 font-bold flex align-center">
-            Staff users
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-          <p class="py-3 font-bold flex align-center">
-            Members (beta)
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-          <p class="py-3 font-bold flex align-center">
-            Custom domain support
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-          <p class="py-3 font-bold flex align-center">
-            Own your data
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-          <p class="py-3 font-bold flex align-center">
-            SSO / OAuth 2.0
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-        </div>
-
-        <div class="col-span-6 text-center">
-          <div class="grid grid-cols-2 gap-8">
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 justify-center text-sm">100k</p>
-              <p class="py-3 justify-center text-sm">2</p>
-              <p class="py-3 justify-center text-sm">1,000</p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 justify-center text-sm"></p>
-            </div>
-
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 justify-center text-sm">1M</p>
-              <p class="py-3 justify-center text-sm">15</p>
-              <p class="py-3 justify-center text-sm">1M</p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 justify-center text-sm">beta</p>
+        <div class="flex flex-wrap w-full justify-between">
+          <div class="w-full">
+            <div class="col-span-6 col-start-3 my-10">
+              <p class="text-ligth_blue text-center text-sm font-bold">OTHER BENEFITS</p>
             </div>
           </div>
-        </div>
 
-        <div class="col-span-6 col-start-3 my-10">
-          <p class="text-ligth_blue text-center text-sm font-bold">AUTOMATION</p>
-        </div>
-
-        <div class="divide-y divide-gray-300 mr-8 text-sm py-3 w-3/4 col-span-2">
-          <p class="py-3 font-bold flex align-center">Managed install & setup</p>
-          <p class="py-3 font-bold flex align-center">Automatic weekly updates</p>
-          <p class="py-3 font-bold flex align-center">Server maintenance & backups</p>
-          <p class="py-3 font-bold flex align-center">
-            Threat & uptime management
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-        </div>
-
-        <div class="col-span-6 text-center">
-          <div class="grid grid-cols-2 gap-8">
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-            </div>
-
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-            </div>
+          <div class="divide-y divide-gray-300 text-sm w-full md:w-1/5 py-3">
+            <p class="py-3 font-bold flex items-center">
+              <span>
+                Contribution to funding non-profit open source software
+              </span>
+              <span
+                class="leading-none border-2 border-gray-300 text-gray-300 rounded-full ml-2 h-5 w-9 flex items-center justify-center"
+              >?</span>
+            </p>
           </div>
-        </div>
 
-        <div class="col-span-6 col-start-3 my-10">
-          <p class="text-green text-center text-sm font-bold">PLATFORM</p>
-        </div>
-
-        <div class="divide-y divide-gray-300 mr-8 text-sm py-3 col-span-2">
-          <p class="py-3 font-bold flex align-center">Worldwide CDN</p>
-          <p class="py-3 font-bold flex align-center">
-            Enterprise-grade security
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-          <p class="py-3 font-bold flex align-center">Automatic SSL certificate</p>
-          <p class="py-3 font-bold flex align-center">Use a custom SSL certificate</p>
-          <p class="py-3 font-bold flex align-center">
-            Managed subdirectory install
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-        </div>
-
-        <div class="col-span-6 text-center">
-          <div class="grid grid-cols-2 gap-8">
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center text-white">.</p>
-              <p class="py-3 flex justify-center"></p>
-            </div>
-
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">
-                <img class="w-5 h-5" src="~/assets/images/pricing/green-check.svg" />
-              </p>
-              <p class="py-3 flex justify-center">+50$/mo</p>
-            </div>
+          <div class="flex items-center justify-center rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center w-full md:w-1/3 mb-4 md:mb-0">
+            <p class="py-3 flex justify-center">
+              <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
+            </p>
           </div>
-        </div>
 
-        <div class="col-span-6 col-start-3 my-10">
-          <p class="text-purple text-center text-sm font-bold">SUPPORT</p>
-        </div>
-
-        <div class="divide-y divide-gray-300 mr-8 text-sm py-3 col-span-2">
-          <p class="py-3 font-bold flex align-center">Product</p>
-          <p class="py-3 font-bold flex align-center">
-            Migration help
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-          <p class="py-3 font-bold flex align-center">Uptime SLA</p>
-        </div>
-
-        <div class="col-span-6 text-center">
-          <div class="grid grid-cols-2 gap-8">
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 justify-center text-sm">Email support</p>
-              <p class="py-3 justify-center text-sm text-white">.</p>
-              <p class="py-3 justify-center text-sm"></p>
-            </div>
-
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 justify-center text-sm">24/7 Priority Support</p>
-              <p class="py-3 justify-center text-sm">From other platforms</p>
-              <p class="py-3 justify-center text-sm">99.9% uptime SLA</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-6 col-start-3 my-10">
-          <p class="text-ligth_blue text-center text-sm font-bold">OTHER BENEFITS</p>
-        </div>
-
-        <div class="divide-y divide-gray-300 mr-8 text-sm py-3 col-span-2">
-          <p class="py-3 font-bold flex align-center">
-            Contribution to funding non-profit open source software
-            <span
-              class="border-2 border-gray-300 text-gray-300 rounded-full ml-2 p-1 h-5 w-5 flex items-center justify-center"
-            >?</span>
-          </p>
-        </div>
-
-        <div class="col-span-6 text-center">
-          <div class="grid grid-cols-2 gap-8">
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 flex justify-center">
-                <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
-              </p>
-            </div>
-
-            <div class="rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center">
-              <p class="py-3 flex justify-center">
-                <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
-                <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
-                <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
-              </p>
-            </div>
+          <div class="flex items-center justify-center rounded-lg bg-white divide-y divide-gray-200 py-3 px-8 text-center w-full md:w-1/3 mb-4 md:mb-0">
+            <p class="py-3 flex justify-center">
+              <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
+              <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
+              <img class="w-6 h-6 mx-2" src="~/assets/images/pricing/heart.svg" />
+            </p>
           </div>
         </div>
       </div>
@@ -382,61 +101,311 @@
     <get-started />
   </div>
 </template>
-<style scoped>
-.wrapper {
-    font-family: 'Gellix';
-}
-</style>
 <script>
 import AccordionItem from '~/components/AccordionItem.vue'
 import GetStarted from '~/components/GetStarted'
+import PricingItem from '~/components/pricing/PricingItem'
+import DescribeItem from '~/components/pricing/DescribeItem'
+
 export default {
     components: {
         AccordionItem,
-        GetStarted
+        GetStarted,
+        PricingItem,
+        DescribeItem
     },
     data() {
-        return {
-            active: false,
-            questions: [
-                {
-                    question:
-                        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
+      return {
+        active: false,
+        questions: [
+            {
+                question:
+                    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
+                answer:
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
+            },
+            {
+                question:
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
+                answer:
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
+            },
+            {
+                question:
+                    'Lorem ipsum, dolor sit amet consectetur adipisicing.',
+                answer:
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
+            },
+            {
+                question:
+                    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
+                answer:
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
+            },
+            {
+                question:
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
+                answer:
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
+            },
+            {
+                question:
+                    'Lorem ipsum, dolor sit amet consectetur adipisicing.',
+                answer:
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
+            }
+        ],
+        pricingItems: [
+          {
+            name: 'Free',
+            price: 0,
+            text1: 'per month, billed annually',
+            text2: '$36 billed monthly',
+            possibilities: [
+              {
+                count: '100k',
+                text: 'views/month'
+              },
+              {
+                count: '2',
+                text: 'staff users'
+              },
+              {
+                count: '1,000',
+                text: 'members'
+              },
+              {
+                text: 'SSL+CDN included'
+              }
+            ],
+            bottomText: 'For professional bloggers who are just getting started'
+          },
+          {
+            name: 'Enterprise',
+            price: 79,
+            text1: 'per month, billed annually',
+            text2: '$99 billed monthly',
+            possibilities: [
+              {
+                count: '500k',
+                text: 'views/month'
+              },
+              {
+                count: '5',
+                text: 'staff users'
+              },
+              {
+                count: '5,000',
+                text: 'members'
+              },
+              {
+                text: 'Priority support'
+              }
+            ],
+            bottomText: 'Everything you need to manage a growing publication'
+          }
+        ],
+        productUsage: [
+          {
+            head: "PRODUCT USAGE",
+            headColor: 'purple',
+            items: [
+              {
+                title: 'Views per month',
+                question: '?',
+                free: {
+                  count: '100k'
                 },
-                {
-                    question:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
-                },
-                {
-                    question:
-                        'Lorem ipsum, dolor sit amet consectetur adipisicing.',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
-                },
-                {
-                    question:
-                        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
-                },
-                {
-                    question:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
-                },
-                {
-                    question:
-                        'Lorem ipsum, dolor sit amet consectetur adipisicing.',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
+                enterprise: {
+                  count: '1M'
                 }
+              },
+              {
+                title: 'Staff users',
+                question: '?',
+                free: {
+                  count: '2'
+                },
+                enterprise: {
+                  count: '15'
+                }
+              },
+              {
+                title: 'Members (beta)',
+                question: '?',
+                free: {
+                  count: '1,000'
+                },
+                enterprise: {
+                  count: '1M'
+                }
+              },
+              {
+                title: 'Custom domain support',
+                question: '?',
+                free: {
+                  check: true
+                },
+                enterprise: {
+                  check: true
+                }
+              },
+              {
+                title: 'Own your data',
+                question: '?',
+                free: {
+                  check: true
+                },
+                enterprise: {
+                  check: true
+                }
+              },
+              {
+                title: 'Own your data',
+                question: '?',
+                free: {
+                  count: ''
+                },
+                enterprise: {
+                  count: 'beta'
+                }
+              }
             ]
-        }
+          },
+          {
+            head: "AUTOMATION",
+            headColor: 'ligth_blue',
+            items: [
+              {
+                title: 'Managed install & setup',
+                question: '',
+                free: {
+                  check: true
+                },
+                enterprise: {
+                  check: true
+                }
+              },
+              {
+                title: 'Automatic weekly updates',
+                question: '',
+                free: {
+                  check: true
+                },
+                enterprise: {
+                  check: true
+                }
+              },
+              {
+                title: 'Server maintenance & backups',
+                question: '',
+                free: {
+                  check: true
+                },
+                enterprise: {
+                  check: true
+                }
+              },
+              {
+                title: 'Threat & uptime management',
+                question: '?',
+                free: {
+                  check: true
+                },
+                enterprise: {
+                  check: true
+                }
+              },
+            ]
+          },
+          {
+            head: "PLATFORM",
+            headColor: 'green',
+            items: [
+              {
+                title: 'Worldwide CDN',
+                question: '',
+                free: {
+                  check: true
+                },
+                enterprise: {
+                  check: true
+                }
+              },
+              {
+                title: 'Enterprise-grade security',
+                question: '?',
+                free: {
+                  check: true
+                },
+                enterprise: {
+                  check: true
+                }
+              },
+              {
+                title: 'Automatic SSL certificate',
+                question: '',
+                free: {
+                  check: true
+                },
+                enterprise: {
+                  check: true
+                }
+              },
+              {
+                title: 'Use a custom SSL certificate',
+                question: '',
+                free: {},
+                enterprise: {
+                  check: true
+                }
+              },
+              {
+                title: 'Managed subdirectory install',
+                question: '?',
+                free: {},
+                enterprise: {
+                  count: '+$50/mo'
+                }
+              },
+            ]
+          },
+          {
+            head: "SUPPORT",
+            headColor: 'purple',
+            items: [
+              {
+                title: 'Product',
+                question: '',
+                free: {
+                  count: 'Email Support'
+                },
+                enterprise: {
+                  count: '24/7 Priority Support'
+                }
+              },
+              {
+                title: 'Migration help',
+                question: '?',
+                free: {
+                },
+                enterprise: {
+                  count: 'From other platforms'
+                }
+              },
+              {
+                title: 'Uptime SLA',
+                question: '',
+                free: {
+                },
+                enterprise: {
+                  count: '99.9% uptime SLA'
+                }
+              }
+            ]
+          }
+        ]
+      }
     },
     methods: {
         toggle() {
@@ -445,3 +414,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+.wrapper {
+    font-family: 'Gellix';
+}
+</style>
