@@ -8,9 +8,9 @@
                 </p>
             </div>
             <div class="md:w-1/3 flex justify-end mb-2">
-                <a v-bind:href="linkTo" class="md:mb-0 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold">
+                <nuxt-link v-bind:to="linkTo" class="md:mb-0 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold">
                     {{ buttonText }}
-                </a>
+                </nuxt-link>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
             },
             linkTo: {
                 type: String,
-                default: () => '#'
+                default: () => '/auth/signup'
             },
         },
     }

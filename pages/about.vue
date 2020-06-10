@@ -224,7 +224,7 @@
                                     >
                                         Rotem -
                                         <span class="text-gray-400"
-                                            >Co-Founder, CEO</span
+                                        >Co-Founder, CEO</span
                                         >
                                     </p>
                                     <p class="text-xs leading-4 text-gray-500">
@@ -248,7 +248,7 @@
                                     >
                                         Finn -
                                         <span class="text-gray-400"
-                                            >Co-Founder, CTO</span
+                                        >Co-Founder, CTO</span
                                         >
                                     </p>
                                     <p class="text-xs leading-4 text-gray-500">
@@ -272,7 +272,7 @@
                                     >
                                         John -
                                         <span class="text-gray-400"
-                                            >Support</span
+                                        >Support</span
                                         >
                                     </p>
                                     <p class="text-xs leading-4 text-gray-500">
@@ -344,7 +344,7 @@
                         >
                             <div>
                                 <label for="full_name" class="sr-only"
-                                    >Full name
+                                >Full name
                                 </label>
                                 <div class="relative rounded-md shadow-sm">
                                     <input
@@ -356,7 +356,7 @@
                             </div>
                             <div>
                                 <label for="email" class="sr-only"
-                                    >Email
+                                >Email
                                 </label>
                                 <div class="relative rounded-md shadow-sm">
                                     <input
@@ -369,7 +369,7 @@
                             </div>
                             <div>
                                 <label for="phone" class="sr-only"
-                                    >Phone
+                                >Phone
                                 </label>
                                 <div class="relative rounded-md shadow-sm">
                                     <input
@@ -381,7 +381,7 @@
                             </div>
                             <div>
                                 <label for="message" class="sr-only"
-                                    >Message
+                                >Message
                                 </label>
                                 <div class="relative rounded-md shadow-sm">
                                     <textarea
