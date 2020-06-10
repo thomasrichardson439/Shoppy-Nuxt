@@ -14,7 +14,7 @@
 
 .shoppy-hero {
     position: relative;
-    padding: 6vw 4vw 15vw 4vw;
+    padding: 14vw 4vw 15vw 4vw;
     margin-top: -75px;
 
     &:before {
@@ -101,7 +101,7 @@
             text-align: center;
             background: #232730;
             border-radius: 15px;
-            box-shadow: 0 2px 35px -10px rgba(0,0,0,.5);
+            box-shadow: 0 2px 35px -10px rgba(0, 0, 0, .5);
         }
     }
 }
@@ -109,11 +109,15 @@
 .backgrounds {
     background-size: cover;
     background-repeat: no-repeat;
+
     &_home {
         &-top {
+            padding-top: 7vw!important;
+
             @extend .backgrounds;
             background-image: url(~assets/images/home/home_top_bg.png);
         }
+
         &-bottom {
             @extend .backgrounds;
             background-image: url(~assets/images/home/home_bottom_bg.png);
@@ -125,6 +129,7 @@
 .landing {
     &_payments {
         margin-top: -55px;
+
         &-icon {
             &-wrapper {
                 @apply bg-white p-6 rounded-extra mx-8 shadow-lg flex items-center;
@@ -136,8 +141,9 @@
 .relative {
     position: relative;
 }
+
 .rectangle {
-    &:before{
+    &:before {
         content: '';
         width: 50px;
         height: 50px;
@@ -146,13 +152,15 @@
         top: -7px;
         left: 50%;
     }
+
     &_white {
-        &:before{
+        &:before {
             background-color: white;
         }
     }
+
     &_blue {
-        &:before{
+        &:before {
             background-color: #f7fafc;
         }
     }
@@ -165,6 +173,7 @@ pre[class*="language-"] {
         &.string {
             color: lighten(#a4d037, 15%);
         }
+
         &.number, &.boolean {
             color: darken(#a4d037, 15%);
         }
