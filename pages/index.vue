@@ -87,83 +87,7 @@
             <div class="container mx-auto">
                 <div class="md:overflow-hidden">
                     <div class="px-4 py-20 md:py-4">
-                        <div class="container mx-auto shoppy-hero--inner">
-                            <div class="md:flex md:flex-wrap pb-16">
-                                <div
-                                    class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
-                                >
-                                    <h2
-                                        class="text-ligth_blue uppercase font-bold text-sm mb-4"
-                                    >
-                                        title here
-                                    </h2>
-                                    <h1
-                                        class="font-bold text-4xl leading-tight mb-4"
-                                    >
-                                        All-In-One Platform
-                                    </h1>
-
-                                    <p class="md:pr-30 text-lg">
-                                        Shoppy provides all aspects of an
-                                        e-commerce solution that you will
-                                        require. Establish your brand online
-                                        with instant access to solutions
-                                        including coupons, customer feedback,
-                                        analytics and more. You finally have a
-                                        gorgeous store of your own that reflects
-                                        the personality of your business.
-                                    </p>
-                                </div>
-                                <div class="md:w-1/2">
-                                    <img
-                                        src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
-                                    />
-                                </div>
-                                <div
-                                    class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16"
-                                >
-                                    <ul class="list-none">
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/blue_check.png"
-                                                alt
-                                                class="mr-3"
-                                            />
-                                            Feature or benefit 1
-                                        </li>
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/blue_check.png"
-                                                alt
-                                                class="mr-3"
-                                            />
-                                            Feature or benefit 1
-                                        </li>
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/blue_check.png"
-                                                alt
-                                                class="mr-3"
-                                            />
-                                            Feature or benefit 1
-                                        </li>
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/blue_check.png"
-                                                alt
-                                                class="mr-3"
-                                            />
-                                            Feature or benefit 1
-                                        </li>
-                                    </ul>
-                                    <a
-                                        href="#"
-                                        class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-2 px-8 text-ligth_blue rounded-lg shadow border-solid border border-ligth_blue font-bold"
-                                        >Learn more</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
+                        <ListRight :item="listRight1"/>
                     </div>
                 </div>
             </div>
@@ -251,99 +175,7 @@
             <div class="container mx-auto">
                 <div class="md:overflow-hidden">
                     <div class="px-4 py-20 md:py-4">
-                        <div class="container mx-auto shoppy-hero--inner">
-                            <div class="md:flex md:flex-wrap pb-16">
-                                <div
-                                    class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
-                                >
-                                    <h2
-                                        class="text-green uppercase font-bold text-sm mb-4"
-                                    >
-                                        title here
-                                    </h2>
-                                    <h1
-                                        class="font-bold text-4xl leading-tight mb-4"
-                                    >
-                                        Support your Customers
-                                    </h1>
-
-                                    <p class="md:pr-30 text-lg">
-                                        Communicate and assist your customers in
-                                        real time with our support integrations.
-                                    </p>
-                                </div>
-                                <div class="md:w-1/2">
-                                    <img
-                                        src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
-                                    />
-                                </div>
-                                <div
-                                    class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16"
-                                >
-                                    <ul class="list-none">
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/green_check.png"
-                                                alt=""
-                                                class="mr-3"
-                                            />
-                                            Feature or benefit 1
-                                        </li>
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/green_check.png"
-                                                alt=""
-                                                class="mr-3"
-                                            />
-                                            Feature or benefit 1
-                                        </li>
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/green_check.png"
-                                                alt=""
-                                                class="mr-3"
-                                            />
-                                            Feature or benefit 1
-                                        </li>
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/green_check.png"
-                                                alt=""
-                                                class="mr-3"
-                                            />
-                                            Feature or benefit 1
-                                        </li>
-                                    </ul>
-                                    <a
-                                        href="#"
-                                        class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold"
-                                    >
-                                        Learn more
-                                    </a>
-                                </div>
-                                <div
-                                    class="text-center md:pt-16 md:pb-10 md:w-2/3 mx-auto"
-                                >
-                                    <h2
-                                        class="text-green uppercase font-bold text-sm mb-4"
-                                    >
-                                        title here
-                                    </h2>
-                                    <h1
-                                        class="font-bold text-4xl leading-tight mb-4"
-                                    >
-                                        Many Gateways and Currencies
-                                    </h1>
-
-                                    <p class="md:pr-30 text-lg">
-                                        Support a wide range of payment methods
-                                        including crypto currencies in many
-                                        different currencies as well as other
-                                        known brands.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                      <ListRight :item="listRight2"/>
                     </div>
                 </div>
             </div>
@@ -516,10 +348,51 @@
 <script lang="ts">
 import Vue from 'vue'
 import GetStarted from '~/components/GetStarted.vue'
+import ListRight from '~/components/home/ListRight.vue'
 
 export default Vue.extend({
-    components: {
-        GetStarted
+  components: {
+    GetStarted,
+    ListRight
+  },
+  data(){
+    return {
+      listRight1: {
+        title: 'title here',
+        titleColor: 'ligth_blue',
+        head: 'All-In-One Platform',
+        text: `Shoppy provides all aspects of an
+          e-commerce solution that you will
+          require. Establish your brand online
+          with instant access to solutions
+          including coupons, customer feedback,
+          analytics and more. You finally have a
+          gorgeous store of your own that reflects
+          the personality of your business.`,
+        image: 'https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png',
+        features: [
+          'Feature or benefit 1',
+          'Feature or benefit 1',
+          'Feature or benefit 1',
+          'Feature or benefit 1'
+        ],
+        btnText: 'Learn more'
+      },
+      listRight2: {
+        title: 'title here',
+        titleColor: 'green',
+        head: 'Support your Customers',
+        text: `Communicate and assist your customers in real time with our support integrations.`,
+        image: 'https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png',
+        features: [
+          'Feature or benefit 1',
+          'Feature or benefit 1',
+          'Feature or benefit 1',
+          'Feature or benefit 1'
+        ],
+        btnText: 'Learn more'
+      }
     }
+  }
 })
 </script>
