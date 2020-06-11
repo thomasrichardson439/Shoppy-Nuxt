@@ -1196,6 +1196,11 @@
     consola "^2.5.6"
     http-proxy-middleware "^0.19.1"
 
+"@nuxtjs/recaptcha@^0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/recaptcha/-/recaptcha-0.6.2.tgz#c004ab919dfcf321dc52f6b92315aabe0f4108f8"
+  integrity sha512-XtezYXzOeR3lWtKMs19btT+ib4DjwpBJgx3nvi8PNoArLVOU0+q5xU7L//KcddbTpi2mjcYKYcLouNBn25/L1Q==
+
 "@nuxtjs/stylelint-module@^3.1.0":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/stylelint-module/-/stylelint-module-3.2.2.tgz#9ba177339c49e97e0df4bb36764bc98352697f9e"
@@ -1213,6 +1218,13 @@
     fs-extra "^9.0.0"
     nuxt-purgecss "^0.2.1"
     tailwindcss "^1.3.4"
+
+"@nuxtjs/toast@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/toast/-/toast-3.3.0.tgz#fe762dc8a19d81b2a9b5b9e6daac61e5d31821b7"
+  integrity sha512-HZAhWMQqgQ8m2XtQS4CpvoJtiZw2kmdqFg0GJv8upNEXoP7/nATW2CPIFemMtiparevLZwpCAAcMIVqcSW9l1g==
+  dependencies:
+    vue-toasted "^1.1.27"
 
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
@@ -3731,6 +3743,11 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+
 duplexer@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
@@ -5715,6 +5732,11 @@ js-base64@^2.1.8:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.2.tgz#313b6274dda718f714d00b3330bbae6e38e90209"
   integrity sha512-Vg8czh0Q7sFBSUMWWArX/miJeBWYBPpdU/3M/DKSaekLMqrqVPaedp+5mZhie/r0lgrcaYBfwXatEew6gwgiQQ==
+
+js-cookie@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
+  integrity sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -8624,6 +8646,11 @@ reserved-words@^0.1.2:
   resolved "https://registry.yarnpkg.com/reserved-words/-/reserved-words-0.1.2.tgz#00a0940f98cd501aeaaac316411d9adc52b31ab1"
   integrity sha1-AKCUD5jNUBrqqsMWQR2a3FKzGrE=
 
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
+
 resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
@@ -10183,6 +10210,11 @@ vary@^1.1.2, vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
+vee-validate@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-3.3.2.tgz#2eba99ea0bc6d5c76c999dd4f298dbcb32edb17e"
+  integrity sha512-Q/Fo8E34xa4K6oVd8CTPLG8ZXn7JziinN7sJgvAWt78moI67tFGqbot+mY1hUPh9ZMb/pWPoSNOnGxeEc/Vsyw==
+
 vendors@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.4.tgz#e2b800a53e7a29b93506c3cf41100d16c4c4ad8e"
@@ -10262,6 +10294,13 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
+vue-js-modal@^2.0.0-rc.3:
+  version "2.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/vue-js-modal/-/vue-js-modal-2.0.0-rc.3.tgz#c34b33305af10b4ccecdbb381dd58efbb19e2862"
+  integrity sha512-Q9L9FsIUMuzCKSuB41D8LxV+Yc2q+zWHzzUdWaQ2KeHPS+78+X6AAnBztVoophbjt8UXHO7rQSRgER1MMw5qsw==
+  dependencies:
+    resize-observer-polyfill "^1.5.1"
+
 vue-loader@^15.9.1:
   version "15.9.2"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-15.9.2.tgz#ae01f5f4c9c6a04bff4483912e72ef91a402c1ae"
@@ -10284,6 +10323,11 @@ vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
+
+vue-password-strength-meter@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/vue-password-strength-meter/-/vue-password-strength-meter-1.7.2.tgz#ddaae2246fb8a53fd8cdc5b1084b1d16cc401505"
+  integrity sha512-S17DsEbXciTcI0fKq1PXia7i3COM/AJOT7os8AVyGxglc5ho1EBssE+ogDa5cFh6Rn8pPgqfVCt/KBcNpgPBiA==
 
 vue-router@^3.1.6:
   version "3.3.2"
@@ -10324,6 +10368,11 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
+
+vue-toasted@^1.1.27:
+  version "1.1.28"
+  resolved "https://registry.yarnpkg.com/vue-toasted/-/vue-toasted-1.1.28.tgz#dbabb83acc89f7a9e8765815e491d79f0dc65c26"
+  integrity sha512-UUzr5LX51UbbiROSGZ49GOgSzFxaMHK6L00JV8fir/CYNJCpIIvNZ5YmS4Qc8Y2+Z/4VVYRpeQL2UO0G800Raw==
 
 vue@^2.5.16, vue@^2.6.10, vue@^2.6.11:
   version "2.6.11"
@@ -10709,3 +10758,8 @@ yargs@^15.3.1:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^18.1.1"
+
+zxcvbn@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/zxcvbn/-/zxcvbn-4.4.2.tgz#28ec17cf09743edcab056ddd8b1b06262cc73c30"
+  integrity sha1-KOwXzwl0PtyrBW3dixsGJizHPDA=
