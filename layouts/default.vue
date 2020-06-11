@@ -664,8 +664,5 @@
 </script>
 
 <style lang="scss" scoped>
-    .shoppy-nav {
-        position: relative;
-        z-index: 1000;
-    }
+
 </style>

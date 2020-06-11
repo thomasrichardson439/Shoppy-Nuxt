@@ -1,10 +1,8 @@
 <template>
     <div class="wrapper">
-        <div class="absolute w-full h-screen md:h-full">
-            <img class="w-full object-cover h-screen md:h-full" src="~/assets/images/pricing/pricing-bg-c.png"/>
-        </div>
+        <div class="absolute w-full h-screen md:h-full pricing_bg"></div>
 
-        <div class="container mx-auto rectangle relative -mt-20 w-4/5 pt-20">
+        <div class="container mx-auto rectangle relative w-4/5 pt-20">
             <div class="flex flex-wrap md:justify-end">
                 <div class="flex flex-wrap text-center md:w-3/4 w-full justify-between">
                     <h2 class="title mt-15 font-bold text-white md:text-5xl text-xl w-full">
@@ -415,3 +413,11 @@
     }
 </script>
 
+<style scoped>
+.pricing_bg{
+    background-image: url(~assets/images/pricing/pricing-bg-c.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+</style>

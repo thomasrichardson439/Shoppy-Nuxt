@@ -29,11 +29,11 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .shoppy-hero {
         background: linear-gradient(60deg, #fa3973, #fee140);
         padding: 8vw 4vw;
         display: flex;
-        margin-top: -80px;
+        // margin-top: -80px;
     }
 </style>

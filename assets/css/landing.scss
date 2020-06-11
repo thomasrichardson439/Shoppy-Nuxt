@@ -3,6 +3,10 @@
 }
 
 .shoppy-nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     &.no-hero {
         background: #fff;
 
@@ -15,7 +19,7 @@
 .shoppy-hero {
     position: relative;
     padding: 14vw 4vw 15vw 4vw;
-    margin-top: -75px;
+    // margin-top: -75px;
 
     &:before {
         display: block;
