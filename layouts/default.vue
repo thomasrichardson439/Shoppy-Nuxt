@@ -627,7 +627,9 @@
                     '/pricing',
                     '/legal/privacy',
                     '/legal/cookies',
-                    '/legal/terms'
+                    '/legal/terms',
+                    '/design',
+                    '/design/'
                 ].includes(this.$route.path)
             }
         },
