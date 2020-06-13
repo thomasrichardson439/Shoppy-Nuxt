@@ -415,13 +415,13 @@
                         <div class="flex items-center space-x-8">
                             <router-link to="/auth/login">
                                 <a
-                                    class="border-solid border-2 border-white inline-flex items-center justify-center px-7 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
+                                    class="border-solid border-2 border-white inline-flex items-center justify-center md:px-2 lg:px-7 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
                                 >Sign in</a>
                             </router-link>
                             <span class="inline-flex rounded-md shadow-sm">
                                 <router-link to="/auth/signup">
                                   <styled-button
-                                      class="px-7 py-2 border border-transparent text-base">Sign up</styled-button>
+                                      class="md:px-2 lg:px-7 py-2 border border-transparent text-base">Sign up</styled-button>
                                 </router-link>
                             </span>
                         </div>

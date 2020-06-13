@@ -4,7 +4,7 @@
             name="2fa"
             classes="p-3 border flex flex-col items-center justify-center rounded"
             :width="350"
-            :pivotY="0.25"
+            :pivot-y="0.25"
             @before-close="user.token = ''"
         >
             <h2
@@ -13,17 +13,17 @@
                 2FA
             </h2>
             <validation-observer
+                v-slot="vo"
                 class="w-3/4 mt-6"
                 tag="form"
                 @submit.prevent
-                v-slot="vo"
             >
                 <control
+                    v-model="user.token"
                     class="mb-6"
                     name="token"
                     type="text"
                     rules="required|min:6"
-                    v-model="user.token"
                 >
                     <template v-slot:title="{ validation }">
                         <div class="flex flex-col mb-2">
@@ -43,8 +43,8 @@
                         <styled-button
                             type="submit"
                             :disabled="!vo.valid"
-                            @click="login"
                             class="w-full"
+                            @click="login"
                         >
                             Authenticate
                         </styled-button>
@@ -78,24 +78,32 @@
                 </p>
 
                 <validation-observer
+                    v-slot="vo"
                     tag="form"
                     class="mt-8"
                     @submit.prevent
-                    v-slot="vo"
                 >
                     <control
+                        v-model="user.username"
                         class="mb-6"
                         name="username"
                         type="text"
                         rules="required|min:3|max:25"
-                        v-model="user.username"
                     >
                         <template v-slot:title="{ validation }">
                             <div class="flex flex-col mb-2">
-                                <label
-                                    class="text-sm font-medium leading-5 text-gray-700 mb-0"
-                                    >Username</label
-                                >
+                                <div class="flex flex-row">
+                                    <label
+                                        class="text-sm font-medium leading-5 text-gray-700 mb-0"
+                                        >Username</label
+                                    >
+                                    <styled-link
+                                        class="ml-auto text-xs"
+                                        to="/auth/resend"
+                                    >
+                                        Resend Confirmation Email
+                                    </styled-link>
+                                </div>
                                 <small class="text-red-400">{{
                                     validation.errors[0]
                                 }}</small>
@@ -104,10 +112,10 @@
                     </control>
 
                     <control
+                        v-model="user.password"
                         name="password"
                         type="password"
                         rules="required|min:6"
-                        v-model="user.password"
                     >
                         <template v-slot:title="{ validation }">
                             <div class="flex flex-col mb-2">
@@ -125,8 +133,8 @@
                     <div class="mt-6 flex items-center justify-between">
                         <div class="flex items-center">
                             <input
-                                v-model="user.remember"
                                 id="remember_me"
+                                v-model="user.remember"
                                 type="checkbox"
                                 class="form-checkbox h-4 w-4 text-green transition duration-150 ease-in-out"
                             />
@@ -139,7 +147,7 @@
                         </div>
 
                         <div class="text-sm leading-5">
-                            <styled-link to='/auth/forgot'>
+                            <styled-link to="/auth/password/new">
                                 Forgot your password?
                             </styled-link>
                         </div>
@@ -152,8 +160,8 @@
                             <styled-button
                                 type="submit"
                                 :disabled="!vo.valid"
-                                @click="login"
                                 class="w-full"
+                                @click="login"
                             >
                                 Sign in
                             </styled-button>
@@ -179,10 +187,6 @@ export default {
 
     data() {
         return {
-            api: this.$axios.create({
-                baseURL: 'http://shoppy.test/api/v1',
-                validateStatus: () => true
-            }),
             user: {
                 username: '',
                 password: '',
@@ -194,20 +198,19 @@ export default {
 
     methods: {
         async login() {
-            let data = Object.assign({}, this.user)
-            let token = await this.$recaptcha.getResponse()
+            const data = Object.assign({}, this.user)
+            const token = await this.$recaptcha.getResponse()
             data.g_recaptcha_response = token
 
             if (data.token) {
                 data.oathotp = data.token
                 delete data.token
             }
-            console.log(data)
 
-            let response = await this.api.$post('/auth/login', data)
+            const response = await this.$axios.$post('/auth/login', data)
             if (response.errors) {
-                for (let key in response.errors) {
-                    for (let error of response.errors[key]) {
+                for (const key in response.errors) {
+                    for (const error of response.errors[key]) {
                         this.$toast.error(error)
                     }
                 }

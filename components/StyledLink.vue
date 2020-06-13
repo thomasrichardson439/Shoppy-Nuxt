@@ -1,6 +1,6 @@
 <template>
     <router-link
-        :to='to'
+        :to="to"
         class="font-medium text-lime hover:text-green focus:outline-none focus:underline transition ease-in-out duration-150"
     >
         <slot></slot>

@@ -22,12 +22,11 @@
                                 <nuxt-link
                                     to="/auth/signup"
                                     class="mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-white bg-green hover:bg-green rounded-lg shadow"
-                                >Create Account
-                                </nuxt-link
-                                >
+                                    >Create Account
+                                </nuxt-link>
                             </p>
                             <a
-                                href="#"
+                                href="https://apps.apple.com/us/app/shoppy-ecommerce/id1486173778?mt=8"
                                 class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-3 px-8 text-white rounded-lg shadow border-solid border border-white"
                             >
                                 <img
@@ -36,7 +35,7 @@
                                 />
                             </a>
                             <a
-                                href="#"
+                                href="https://play.google.com/store/apps/details?id=com.shoppy.app&hl=en"
                                 class="mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-white rounded-lg shadow border-solid border border-white"
                             >
                                 <img
@@ -45,7 +44,7 @@
                                 />
                             </a>
                         </div>
-                        <div class="md:w-1/2">
+                        <div class="md:w-1/2 md:pt-16 lg:pt-12">
                             <img
                                 src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
                             />
@@ -90,47 +89,85 @@
                     <div class="px-4 py-20 md:py-4">
                         <div class="container mx-auto shoppy-hero--inner">
                             <div class="md:flex md:flex-wrap pb-16">
-                                <div class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto">
-                                    <h2 class="text-ligth_blue uppercase font-bold text-sm mb-4">title here</h2>
+                                <div
+                                    class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
+                                >
+                                    <h2
+                                        class="text-ligth_blue uppercase font-bold text-sm mb-4"
+                                    >
+                                        ecommerce
+                                    </h2>
                                     <h1
-                                        class="font-bold text-4xl leading-tight mb-4">
+                                        class="font-bold text-4xl leading-tight mb-4"
+                                    >
                                         All-In-One Platform
                                     </h1>
 
                                     <p class="md:pr-30 text-lg">
-                                        Shoppy provides all aspects of an e-commerce solution that you will require.
-                                        Establish your brand online with instant access to solutions including coupons,
-                                        customer feedback, analytics and more.
-                                        You finally have a gorgeous store of your own that reflects the personality of
-                                        your business.
+                                        Shoppy provides all aspects of an
+                                        e-commerce solution that you will
+                                        require. Establish your brand online
+                                        with instant access to solutions
+                                        including coupons, customer feedback,
+                                        analytics and more. You finally have a
+                                        gorgeous store of your own that reflects
+                                        the personality of your business.
                                     </p>
                                 </div>
                                 <div class="md:w-1/2">
                                     <img
-                                        src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"/>
+                                        src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
+                                    />
                                 </div>
-                                <div class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16">
+                                <div
+                                    class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16"
+                                >
                                     <ul class="list-none">
                                         <li class="flex content-center mb-3">
-                                            <img src="~assets/images/home/blue_check.png" alt="" class="mr-3">
-                                            Feature or benefit 1
+                                            <img
+                                                src="~assets/images/home/blue_check.png"
+                                                alt=""
+                                                class="mr-3"
+                                            />
+                                            Customizable Store Templates
                                         </li>
                                         <li class="flex content-center mb-3">
-                                            <img src="~assets/images/home/blue_check.png" alt="" class="mr-3">
-                                            Feature or benefit 1
+                                            <img
+                                                src="~assets/images/home/blue_check.png"
+                                                alt=""
+                                                class="mr-3"
+                                            />
+                                            Robust Analytics
                                         </li>
                                         <li class="flex content-center mb-3">
-                                            <img src="~assets/images/home/blue_check.png" alt="" class="mr-3">
-                                            Feature or benefit 1
+                                            <img
+                                                src="~assets/images/home/blue_check.png"
+                                                alt=""
+                                                class="mr-3"
+                                            />
+                                            Financial Reports
                                         </li>
                                         <li class="flex content-center mb-3">
-                                            <img src="~assets/images/home/blue_check.png" alt="" class="mr-3">
-                                            Feature or benefit 1
+                                            <img
+                                                src="~assets/images/home/blue_check.png"
+                                                alt=""
+                                                class="mr-3"
+                                            />
+                                            Personalized Coupons
+                                        </li>
+                                        <li class="flex content-center mb-3">
+                                            <img
+                                                src="~assets/images/home/blue_check.png"
+                                                alt=""
+                                                class="mr-3"
+                                            />
+                                            Developer Support
                                         </li>
                                     </ul>
                                     <a
                                         href="#"
-                                        class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-2 px-8 text-ligth_blue rounded-lg shadow border-solid border border-ligth_blue font-bold">
+                                        class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-2 px-8 text-ligth_blue rounded-lg shadow border-solid border border-ligth_blue font-bold"
+                                    >
                                         Learn more
                                     </a>
                                 </div>
@@ -151,7 +188,7 @@
                                 <h2
                                     class="text-purple uppercase font-bold text-sm mb-4"
                                 >
-                                    title here
+                                    delivery
                                 </h2>
                                 <h1
                                     class="font-bold text-4xl leading-tight mb-4"
@@ -167,7 +204,7 @@
                                 </p>
                             </div>
                             <div
-                                class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-80"
+                                class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16 lg:pl-56 xl:pl-80"
                             >
                                 <ul class="list-none">
                                     <li class="flex content-center mb-3">
@@ -176,7 +213,7 @@
                                             alt
                                             class="mr-3"
                                         />
-                                        Feature or benefit 1
+                                        Variety of Product Types
                                     </li>
                                     <li class="flex content-center mb-3">
                                         <img
@@ -184,7 +221,7 @@
                                             alt
                                             class="mr-3"
                                         />
-                                        Feature or benefit 1
+                                        Email Delivery
                                     </li>
                                     <li class="flex content-center mb-3">
                                         <img
@@ -192,7 +229,7 @@
                                             alt
                                             class="mr-3"
                                         />
-                                        Feature or benefit 1
+                                        Custom Email Templates
                                     </li>
                                     <li class="flex content-center mb-3">
                                         <img
@@ -200,13 +237,13 @@
                                             alt
                                             class="mr-3"
                                         />
-                                        Feature or benefit 1
+                                        Replacement System
                                     </li>
                                 </ul>
                                 <a
                                     href="#"
                                     class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-2 px-8 text-purple rounded-lg shadow border-solid border border-purple font-bold"
-                                >Learn more</a
+                                    >Learn more</a
                                 >
                             </div>
                             <div class="md:w-1/2">
@@ -225,239 +262,158 @@
                     <div class="px-4 py-20 md:py-4">
                         <div class="container mx-auto shoppy-hero--inner">
                             <div class="md:flex md:flex-wrap pb-16">
-                                <div class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto">
-                                    <h2 class="text-green uppercase font-bold text-sm mb-4">title here</h2>
+                                <div
+                                    class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
+                                >
+                                    <h2
+                                        class="text-green uppercase font-bold text-sm mb-4"
+                                    >
+                                        currencies
+                                    </h2>
                                     <h1
-                                        class="font-bold text-4xl leading-tight mb-4">
+                                        class="font-bold text-4xl leading-tight mb-4"
+                                    >
+                                        Vast Variety of Gateways
+                                    </h1>
+
+                                    <p class="md:pr-30 text-lg">
+                                        Reach a wider audience by supporting a wide range of payment methods
+                                        including cryptocurrencies as well as other
+                                        known brands and payment processors.
+                                    </p>
+                                </div>
+                                <div class="md:pt-12 md:pb-12 md:w-2/3 mx-auto">
+                                    <div
+                                        class="container mx-auto flex flex-wrap justify-center"
+                                    >
+                                        <div
+                                            class="landing_payments-icon-wrapper"
+                                        >
+                                            <img
+                                                src="~assets/images/home/bitcoin.png"
+                                                alt=""
+                                                class="w-10 h-10"
+                                            />
+                                        </div>
+                                        <div
+                                            class="landing_payments-icon-wrapper"
+                                        >
+                                            <img
+                                                src="~assets/images/home/paypal.png"
+                                                alt=""
+                                                class="w-10 h-10"
+                                            />
+                                        </div>
+                                        <div
+                                            class="landing_payments-icon-wrapper"
+                                        >
+                                            <img
+                                                src="~assets/images/home/litecoin.png"
+                                                alt=""
+                                                class="w-10 h-10"
+                                            />
+                                        </div>
+                                        <div
+                                            class="landing_payments-icon-wrapper"
+                                        >
+                                            <img
+                                                src="~assets/images/home/stripe.png"
+                                                alt=""
+                                                class="w-18 h-8"
+                                            />
+                                        </div>
+                                        <div
+                                            class="landing_payments-icon-wrapper"
+                                        >
+                                            <img
+                                                src="~assets/images/home/etherium.png"
+                                                alt=""
+                                                class="w-8 h-10"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto rectangle rectangle_blue relative">
+            <div class="container mx-auto">
+                <div class="md:overflow-hidden">
+                    <div class="px-4 py-20 md:py-4">
+                        <div class="container mx-auto shoppy-hero--inner">
+                            <div class="md:flex md:flex-wrap pb-16">
+                                <div
+                                    class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
+                                >
+                                    <h2
+                                        class="text-green uppercase font-bold text-sm mb-4"
+                                    >
+                                        support
+                                    </h2>
+                                    <h1
+                                        class="font-bold text-4xl leading-tight mb-4"
+                                    >
                                         Support your Customers
                                     </h1>
 
                                     <p class="md:pr-30 text-lg">
-                                        Communicate and assist your customers in real time with our support
-                                        integrations.
+                                        Communicate and assist your customers in
+                                        real time with our support integrations.
                                     </p>
                                 </div>
                                 <div class="md:w-1/2">
                                     <img
-                                        src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"/>
+                                        src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
+                                    />
                                 </div>
-                                <div class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16">
+                                <div
+                                    class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16"
+                                >
                                     <ul class="list-none">
                                         <li class="flex content-center mb-3">
-                                            <img src="~assets/images/home/green_check.png" alt="" class="mr-3">
-                                            Feature or benefit 1
+                                            <img
+                                                src="~assets/images/home/green_check.png"
+                                                alt=""
+                                                class="mr-3"
+                                            />
+                                            Buyer Queries
                                         </li>
                                         <li class="flex content-center mb-3">
-                                            <img src="~assets/images/home/green_check.png" alt="" class="mr-3">
-                                            Feature or benefit 1
-                                        </li>
-                                        <li class="flex content-center mb-3">
-                                            <img src="~assets/images/home/green_check.png" alt="" class="mr-3">
-                                            Feature or benefit 1
-                                        </li>
-                                        <li class="flex content-center mb-3">
-                                            <img src="~assets/images/home/green_check.png" alt="" class="mr-3">
-                                            Feature or benefit 1
+                                            <img
+                                                src="~assets/images/home/green_check.png"
+                                                alt=""
+                                                class="mr-3"
+                                            />
+                                            Interactive Feedbacks
                                         </li>
                                     </ul>
                                     <a
                                         href="#"
-                                        class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold">
+                                        class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold"
+                                    >
                                         Learn more
                                     </a>
                                 </div>
-                                <div class="text-center md:pt-16 md:pb-10 md:w-2/3 mx-auto">
-                                    <h2 class="text-green uppercase font-bold text-sm mb-4">title here</h2>
-                                    <h1
-                                        class="font-bold text-4xl leading-tight mb-4">
-                                        Many Gateways and Currencies
-                                    </h1>
-
-                                    <p class="md:pr-30 text-lg">
-                                        Support a wide range of payment methods including crypto currencies in many
-                                        different
-                                        currencies as well as other known brands.
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="landing_payments pb-16 relative">
-            <div class="container mx-auto flex flex-wrap justify-center">
-                <div class="landing_payments-icon-wrapper">
-                    <img
-                        src="~assets/images/home/bitcoin.png"
-                        alt=""
-                        class="w-10 h-10"
-                    />
-                </div>
-                <div class="landing_payments-icon-wrapper">
-                    <img
-                        src="~assets/images/home/paypal.png"
-                        alt=""
-                        class="w-10 h-10"
-                    />
-                </div>
-                <div class="landing_payments-icon-wrapper">
-                    <img
-                        src="~assets/images/home/litecoin.png"
-                        alt=""
-                        class="w-10 h-10"
-                    />
-                </div>
-                <div class="landing_payments-icon-wrapper">
-                    <img
-                        src="~assets/images/home/stripe.png"
-                        alt=""
-                        class="w-16 h-8"
-                    />
-                </div>
-                <div class="landing_payments-icon-wrapper">
-                    <img
-                        src="~assets/images/home/etherium.png"
-                        alt=""
-                        class="w-8 h-10"
-                    />
-                </div>
-            </div>
-        </div>
-        <div class="container mx-auto">
-            <div class="md:overflow-hidden">
-                <div class="px-4 py-20 md:py-4">
-                    <div class="container mx-auto shoppy-hero--inner">
-                        <div class="md:flex md:flex-wrap">
-                            <div
-                                class="text-center md:pt-16 md:pb-6 md:w-2/3 mx-auto"
-                            >
-                                <h2
-                                    class="text-green uppercase font-bold text-sm mb-4"
-                                >
-                                    testimonials
-                                </h2>
-                                <h1
-                                    class="font-bold text-4xl leading-tight mb-4"
-                                >
-                                    What our customers say
-                                </h1>
-
-                                <p class="md:pr-30 text-lg">
-                                    In 2019 we ran a survey asking Ghost users
-                                    to share their experiences about what's
-                                    improved since switching to Ghost, this is
-                                    what they said:
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mx-auto">
-            <div class="md:flex md:flex-wrap pb-16 justify-center">
-                <div class="md:w-2/5 text-center md:text-left md:pt-3 md:mr-4">
-                    <div
-                        class="max-w-sm w-full lg:max-w-full lg:flex mx-auto mb-4"
-                    >
-                        <div
-                            class="shadow-lg bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
-                        >
-                            <div class="mb-8">
-                                <p
-                                    class="text-sm text-gray-600 flex items-center"
-                                >
-                                    <img
-                                        src="~assets/images/home/comma.png"
-                                        alt
-                                        class="mb-8"
-                                    />
-                                </p>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Voluptatibus quia, nulla!
-                                    Maiores et perferendis eaque, exercitationem
-                                    praesentium nihil.
-                                </p>
-                            </div>
-                            <div class="flex items-center">
-                                <img
-                                    class="w-10 h-10 rounded-full mr-4"
-                                    src="~assets/images/home/face.png"
-                                    alt="Avatar of Jonathan Reinink"
-                                />
-                                <div class="text-sm">
-                                    <p
-                                        class="text-gray-900 leading-none font-bold"
-                                    >
-                                        Jonathan Reinink
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Founder of bla-bla company
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:w-2/5 text-center md:text-left md:pt-3 md:ml-4">
-                    <div
-                        class="max-w-sm w-full lg:max-w-full lg:flex mx-auto mb-4"
-                    >
-                        <div
-                            class="shadow-lg bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
-                        >
-                            <div class="mb-8">
-                                <p
-                                    class="text-sm text-gray-600 flex items-center"
-                                >
-                                    <img
-                                        src="~assets/images/home/comma.png"
-                                        alt
-                                        class="mb-8"
-                                    />
-                                </p>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Voluptatibus quia, nulla!
-                                    Maiores et perferendis eaque, exercitationem
-                                    praesentium nihil.
-                                </p>
-                            </div>
-                            <div class="flex items-center">
-                                <img
-                                    class="w-10 h-10 rounded-full mr-4"
-                                    src="~assets/images/home/face.png"
-                                    alt="Avatar of Jonathan Reinink"
-                                />
-                                <div class="text-sm">
-                                    <p
-                                        class="text-gray-900 leading-none font-bold"
-                                    >
-                                        Jonathan Reinink
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Founder of bla-bla company
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <get-started/>
+        <get-started />
     </div>
 </template>
 
-<script lang="ts">
-    import Vue from 'vue'
-    import GetStarted from '~/components/GetStarted.vue'
+<script>
+import Vue from 'vue'
+import GetStarted from '~/components/GetStarted.vue'
 
-    export default Vue.extend({
-        components: {
-            GetStarted
-        },
-    });
+export default {
+    components: {
+        GetStarted
+    }
+}
 </script>

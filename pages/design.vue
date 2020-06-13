@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="md:overflow-hidden design-bg mb-20">
-      <h1 class="text-center font-bold text-white text-5xl mb-2">
+      <h1 class="text-center font-bold text-white text-5xl mb-2 sm:pt-10 md:pt-10 lg:pt-4 xl:pt-0">
         Brand style guide
       </h1>
     </div>

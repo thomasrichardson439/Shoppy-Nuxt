@@ -9,7 +9,7 @@
 import { mapGetters } from 'vuex'
 
 import Showdown from 'showdown'
-let renderer = new Showdown.Converter()
+const renderer = new Showdown.Converter()
 
 export default {
     data() {
@@ -27,7 +27,7 @@ export default {
     },
     mounted() {
         if (this.post) {
-            let rendered = renderer.makeHtml(this.post.content)
+            const rendered = renderer.makeHtml(this.post.content)
             this.rendered = rendered || ''
         }
     }

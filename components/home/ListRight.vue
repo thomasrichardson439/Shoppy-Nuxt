@@ -1,18 +1,14 @@
 <template>
     <div class="container mx-auto shoppy-hero--inner">
         <div class="md:flex md:flex-wrap pb-16">
-            <div
-                class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
-            >
+            <div class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto">
                 <h2
                     class="uppercase font-bold text-sm mb-4"
                     :class="`text-${item.titleColor}`"
                 >
                     {{ item.title }}
                 </h2>
-                <h1
-                    class="font-bold text-4xl leading-tight mb-4"
-                >
+                <h1 class="font-bold text-4xl leading-tight mb-4">
                     {{ item.head }}
                 </h1>
 
@@ -21,13 +17,9 @@
                 </p>
             </div>
             <div class="md:w-1/2">
-                <img
-                    :src="item.image"
-                />
+                <img :src="item.image" />
             </div>
-            <div
-                class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16"
-            >
+            <div class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16">
                 <ul class="list-none">
                     <li
                         v-for="(elem, index) in item.features"
@@ -55,11 +47,9 @@
 </template>
 
 <script>
-    export default {
-        props: ['item']
-    }
+export default {
+    props: ['item']
+}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

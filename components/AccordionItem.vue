@@ -10,8 +10,8 @@
             />
         </div>
         <p
-            class="accordion-text mb-4 px-4 font-normal text-gray-500"
             v-if="open"
+            class="accordion-text mb-4 px-4 font-normal text-gray-500"
         >
             {{ answer }}
         </p>

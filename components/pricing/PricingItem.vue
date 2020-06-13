@@ -1,5 +1,7 @@
 <template>
-    <div class="flex flex-col items-center rounded-lg bg-white py-8 md:px-20 md:mx-5">
+    <div
+        class="flex flex-col items-center rounded-lg bg-white py-8 md:px-20 md:mx-5"
+    >
         <p class="text-lg text-black">
             {{ item.name }}
         </p>
@@ -17,16 +19,19 @@
                 {{ item.text2 }}
             </p>
         </div>
-        <hr class="w-1/3 h-0.75 my-6"/>
+        <hr class="w-1/3 h-0.75 my-6" />
         <ul class="list-none">
             <li
                 v-for="(elem, index) in item.possibilities"
                 :key="index"
                 class="flex content-center mb-3"
             >
-                <img class="w-5 h-5 mr-3" src="~/assets/images/pricing/green-check.svg"/>
+                <img
+                    class="w-5 h-5 mr-3"
+                    src="~/assets/images/pricing/green-check.svg"
+                />
                 <p class="text-gray-500 text-sm">
-                    <span class="font-medium text-sm" v-if="elem.count">
+                    <span v-if="elem.count" class="font-medium text-sm">
                         {{ elem.count }}
                     </span>
                     {{ elem.text }}
@@ -40,11 +45,9 @@
 </template>
 
 <script>
-    export default {
-        props: ['item']
-    }
+export default {
+    props: ['item']
+}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -7,6 +7,7 @@
     width: 100%;
     top: 0;
     z-index: 1000;
+
     &.no-hero {
         background: #fff;
 
@@ -18,8 +19,8 @@
 
 .shoppy-hero {
     position: relative;
-    padding: 14vw 4vw 15vw 4vw;
-    // margin-top: -75px;
+    padding: 15vw 4vw 12vw 4vw;
+    margin-top: -75px;
 
     &:before {
         display: block;
@@ -132,11 +133,9 @@
 
 .landing {
     &_payments {
-        margin-top: -55px;
-
         &-icon {
             &-wrapper {
-                @apply bg-white p-6 rounded-extra mx-8 shadow-lg flex items-center;
+                @apply bg-white p-6 rounded-extra mx-8 my-3 shadow-lg flex items-center;
             }
         }
     }
