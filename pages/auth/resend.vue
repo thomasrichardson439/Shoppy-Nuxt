@@ -91,6 +91,12 @@ export default {
         }
     },
 
+    head() {
+        return {
+            title: 'Resend Confirmation Mail'
+        }
+    },
+
     methods: {
         async resend() {
             const data = Object.assign({}, this.user)

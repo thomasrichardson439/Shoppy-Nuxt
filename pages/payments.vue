@@ -304,7 +304,7 @@
                                                 class="ml-3 text-sm leading-5 text-gray-700"
                                             >
                                                 <strong
-                                                    >First class
+                                                >First class
                                                     documentation</strong
                                                 >
                                                 and examples that make building
@@ -383,7 +383,7 @@
                                             href="https://shoppy.dev"
                                             target="_blank"
                                             class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                                            >Documentation</a
+                                        >Documentation</a
                                         >
                                     </div>
                                 </div>
@@ -418,7 +418,7 @@
                                 Big news! We're excited to launch our
                                 <span
                                     class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-gray-100 text-gray-800"
-                                    >/v2/</span
+                                >/v2/</span
                                 >
                                 payment endpoint!
                             </span>
@@ -431,25 +431,27 @@
                 <div class="md:w-6/12">
                     <span
                         class="inline-flex items-center px-2.5 py-0.5 rounded-full font-medium leading-4 bg-gray-100 text-gray-800"
-                        >Payload</span
+                    >Payload</span
                     >
 
                     <client-only>
                         <vue-code-highlight>{{
                             JSON.stringify(code.request, null, 2)
-                        }}</vue-code-highlight>
+                            }}
+                        </vue-code-highlight>
                     </client-only>
                 </div>
                 <div class="md:w-6/12">
                     <div class="ml-10">
                         <span
                             class="inline-flex items-center px-2.5 py-0.5 rounded-full font-medium leading-4 bg-green-100 text-green-800"
-                            >Response</span
+                        >Response</span
                         >
                         <client-only>
                             <vue-code-highlight>{{
                                 JSON.stringify(code.response, null, 2)
-                            }}</vue-code-highlight>
+                                }}
+                            </vue-code-highlight>
                         </client-only>
                     </div>
                 </div>
@@ -459,35 +461,42 @@
 </template>
 
 <script>
-import { component as VueCodeHighlight } from 'vue-code-highlight'
+    import {component as VueCodeHighlight} from 'vue-code-highlight'
 
-export default {
-    components: {
-        VueCodeHighlight
-    },
-    data() {
-        return {
-            code: {
-                request: {
-                    title: 'Example',
-                    value: 10,
-                    white_label: true,
-                    email: 'example@shoppy.dev',
-                    gateway: 'BTC'
-                },
-                response: {
-                    id: 'fd38607f-...',
-                    crypto_address: '3379EMuS...',
-                    crypto_value: 0.0017,
-                    email: 'example@shoppy.dev',
-                    gateway: 'BTC'
+    export default {
+        components: {
+            VueCodeHighlight
+        },
+
+        data() {
+            return {
+                code: {
+                    request: {
+                        title: 'Example',
+                        value: 10,
+                        white_label: true,
+                        email: 'example@shoppy.dev',
+                        gateway: 'BTC'
+                    },
+                    response: {
+                        id: 'fd38607f-...',
+                        crypto_address: '3379EMuS...',
+                        crypto_value: 0.0017,
+                        email: 'example@shoppy.dev',
+                        gateway: 'BTC'
+                    }
                 }
+            }
+        },
+
+        head() {
+            return {
+                title: 'Accepting Payments With Ease'
             }
         }
     }
-}
 </script>
 
 <style>
-@import url('vue-code-highlight/themes/duotone-sea.css');
+    @import url('vue-code-highlight/themes/duotone-sea.css');
 </style>

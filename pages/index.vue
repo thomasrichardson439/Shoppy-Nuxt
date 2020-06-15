@@ -408,12 +408,17 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import GetStarted from '~/components/GetStarted.vue'
 
 export default {
     components: {
         GetStarted
+    },
+
+    head() {
+        return {
+            titleTemplate: 'Shoppy: The #1 Digital Ecommerce Platform'
+        }
     }
 }
 </script>

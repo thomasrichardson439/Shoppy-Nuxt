@@ -55,13 +55,3 @@
         </div>
     </div>
 </template>
-
-<style scoped>
-.terms-bg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(~assets/images/home/home_top_bg.png);
-    padding: 10vw 4vw 5vw 4vw;
-    margin-top: -75px;
-}
-</style>

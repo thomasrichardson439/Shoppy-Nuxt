@@ -461,12 +461,10 @@
                                     Step 1
                                 </div>
                                 <div class="text-white text-2xl font-medium">
-                                    Lorem ipsum
+                                    Create your shop
                                 </div>
                                 <div class="text-sm text-gray-400 mt-3">
-                                    Corporis quisquam nostrum nulla veniam
-                                    recusandae temporibus aperiam officia
-                                    incidunt at distinctio ratione.
+                                    Register, choose your own name and get ready to sell in just a few more steps.
                                 </div>
                             </div>
                         </div>
@@ -487,12 +485,10 @@
                                     Step 2
                                 </div>
                                 <div class="text-white text-2xl font-medium">
-                                    Lorem ipsum
+                                    Configure it
                                 </div>
                                 <div class="text-sm text-gray-400 mt-3">
-                                    Corporis quisquam nostrum nulla veniam
-                                    recusandae temporibus aperiam officia
-                                    incidunt at distinctio ratione.
+                                    Make your account secure, setup your payout methods and fully customize how your store looks.
                                 </div>
                             </div>
                         </div>
@@ -513,12 +509,10 @@
                                     Step 3
                                 </div>
                                 <div class="text-white text-2xl font-medium">
-                                    Lorem ipsum
+                                    Add your products
                                 </div>
                                 <div class="text-sm text-gray-400 mt-3">
-                                    Corporis quisquam nostrum nulla veniam
-                                    recusandae temporibus aperiam officia
-                                    incidunt at distinctio ratione.
+                                    It's time to add your products to your store. You can sort them in categories, set the stock, configure webhooks and more.
                                 </div>
                             </div>
                         </div>
@@ -539,12 +533,10 @@
                                     Step 4
                                 </div>
                                 <div class="text-white text-2xl font-medium">
-                                    Lorem ipsum
+                                    Go live
                                 </div>
                                 <div class="text-sm text-gray-400 mt-3">
-                                    Corporis quisquam nostrum nulla veniam
-                                    recusandae temporibus aperiam officia
-                                    incidunt at distinctio ratione.
+                                    It's time to go live with your unique Shoppy store, get ready to manage your customers and to see your store grow.
                                 </div>
                             </div>
                         </div>
@@ -749,3 +741,13 @@
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        head() {
+            return {
+                title: 'Ecommerce Made Simple',
+            }
+        }
+    }
+</script>

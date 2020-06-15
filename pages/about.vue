@@ -404,3 +404,13 @@
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        head() {
+            return {
+                titleTemplate: 'About Shoppy - The Digital Ecommerce Platform'
+            }
+        }
+    }
+</script>

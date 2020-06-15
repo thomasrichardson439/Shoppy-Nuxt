@@ -1,29 +1,13 @@
 [
     {
-        "title": "Using custom domains",
-        "content": "custom_domains.md",
-        "image": "test.jpg",
+        "title": "Receiving a refund for a purchase",
+        "content": "receive_refund.md",
         "date": 1591309141660,
         "tags": []
     },
     {
         "title": "Using custom domains",
         "content": "custom_domains.md",
-        "image": "test.jpg",
-        "date": 1591309141660,
-        "tags": []
-    },
-    {
-        "title": "Using custom domains",
-        "content": "custom_domains.md",
-        "image": "test.jpg",
-        "date": 1591309141660,
-        "tags": []
-    },
-    {
-        "title": "Using custom domains",
-        "content": "custom_domains.md",
-        "image": "test.jpg",
         "date": 1591309141660,
         "tags": []
     }

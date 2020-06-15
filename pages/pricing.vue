@@ -22,11 +22,11 @@
                         :key="index"
                         class="md:w-1/2 md:mb-0 mb-5 mt-10 w-full"
                     >
-                        <PricingItem :item="item" />
+                        <PricingItem :item="item"/>
                     </div>
                 </div>
                 <template v-for="(item, index) in productUsage">
-                    <DescribeItem :key="index" :item="item" />
+                    <DescribeItem :key="index" :item="item"/>
                 </template>
 
                 <div class="flex flex-wrap w-full justify-between">
@@ -50,7 +50,7 @@
                             </span>
                             <span
                                 class="leading-none border-2 border-gray-300 text-gray-300 rounded-full ml-2 h-5 w-9 flex items-center justify-center"
-                                >?</span
+                            >?</span
                             >
                         </p>
                     </div>
@@ -99,7 +99,7 @@
                     <a
                         href="#"
                         class="font-semibold my-4 inline-block py-3 px-8 text-white bg-green hover:bg-green rounded-lg shadow"
-                        >Create Account</a
+                    >Create Account</a
                     >
                 </p>
             </div>
@@ -126,328 +126,336 @@
                 </div>
             </div>
         </div>
-        <get-started />
+        <get-started/>
     </div>
 </template>
 <script>
-import AccordionItem from '~/components/AccordionItem.vue'
-import GetStarted from '~/components/GetStarted'
-import PricingItem from '~/components/pricing/PricingItem'
-import DescribeItem from '~/components/pricing/DescribeItem'
+    import AccordionItem from '~/components/AccordionItem.vue'
+    import GetStarted from '~/components/GetStarted'
+    import PricingItem from '~/components/pricing/PricingItem'
+    import DescribeItem from '~/components/pricing/DescribeItem'
 
-export default {
-    components: {
-        AccordionItem,
-        GetStarted,
-        PricingItem,
-        DescribeItem
-    },
-    data() {
-        return {
-            active: false,
-            questions: [
-                {
-                    question:
-                        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
-                },
-                {
-                    question:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
-                },
-                {
-                    question:
-                        'Lorem ipsum, dolor sit amet consectetur adipisicing.',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
-                },
-                {
-                    question:
-                        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
-                },
-                {
-                    question:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
-                },
-                {
-                    question:
-                        'Lorem ipsum, dolor sit amet consectetur adipisicing.',
-                    answer:
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
-                }
-            ],
-            pricingItems: [
-                {
-                    name: 'Free',
-                    price: 0,
-                    text1: 'per month, billed annually',
-                    text2: '$36 billed monthly',
-                    possibilities: [
-                        {
-                            count: '100k',
-                            text: 'views/month'
-                        },
-                        {
-                            count: '2',
-                            text: 'staff users'
-                        },
-                        {
-                            count: '1,000',
-                            text: 'members'
-                        },
-                        {
-                            text: 'SSL+CDN included'
-                        }
-                    ],
-                    bottomText:
-                        'For professional bloggers who are just getting started'
-                },
-                {
-                    name: 'Enterprise',
-                    price: 79,
-                    text1: 'per month, billed annually',
-                    text2: '$99 billed monthly',
-                    possibilities: [
-                        {
-                            count: '500k',
-                            text: 'views/month'
-                        },
-                        {
-                            count: '5',
-                            text: 'staff users'
-                        },
-                        {
-                            count: '5,000',
-                            text: 'members'
-                        },
-                        {
-                            text: 'Priority support'
-                        }
-                    ],
-                    bottomText:
-                        'Everything you need to manage a growing publication'
-                }
-            ],
-            productUsage: [
-                {
-                    head: 'PRODUCT USAGE',
-                    headColor: 'purple',
-                    items: [
-                        {
-                            title: 'Views per month',
-                            question: '?',
-                            free: {
-                                count: '100k'
+    export default {
+        components: {
+            AccordionItem,
+            GetStarted,
+            PricingItem,
+            DescribeItem
+        },
+
+        data() {
+            return {
+                active: false,
+                questions: [
+                    {
+                        question:
+                            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
+                        answer:
+                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
+                    },
+                    {
+                        question:
+                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
+                        answer:
+                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
+                    },
+                    {
+                        question:
+                            'Lorem ipsum, dolor sit amet consectetur adipisicing.',
+                        answer:
+                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
+                    },
+                    {
+                        question:
+                            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, accusantium?',
+                        answer:
+                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente, ut deserunt fugiat non voluptate et commodi corrupti deleniti voluptatibus voluptatum consequuntur vero pariatur quos dolor aliquam iusto aperiam est!'
+                    },
+                    {
+                        question:
+                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus necessitatibus, nostrum itaque voluptatibus vero!',
+                        answer:
+                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero voluptas cum et commodi totam, eveniet, sit deserunt, repellat reprehenderit fuga rem quos aut dolorum corporis excepturi repellendus aspernatur consequuntur.'
+                    },
+                    {
+                        question:
+                            'Lorem ipsum, dolor sit amet consectetur adipisicing.',
+                        answer:
+                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis omnis distinctio asperiores voluptatem inventore blanditiis maiores ullam mollitia quas at vitae, qui perspiciatis rerum debitis repudiandae quod pariatur est voluptas velit aperiam molestiae. Est, illo deleniti. Sit, iure repellendus?'
+                    }
+                ],
+                pricingItems: [
+                    {
+                        name: 'Free',
+                        price: 0,
+                        text1: 'per month, billed annually',
+                        text2: '$36 billed monthly',
+                        possibilities: [
+                            {
+                                count: '100k',
+                                text: 'views/month'
                             },
-                            enterprise: {
-                                count: '1M'
-                            }
-                        },
-                        {
-                            title: 'Staff users',
-                            question: '?',
-                            free: {
-                                count: '2'
+                            {
+                                count: '2',
+                                text: 'staff users'
                             },
-                            enterprise: {
-                                count: '15'
-                            }
-                        },
-                        {
-                            title: 'Members (beta)',
-                            question: '?',
-                            free: {
-                                count: '1,000'
+                            {
+                                count: '1,000',
+                                text: 'members'
                             },
-                            enterprise: {
-                                count: '1M'
+                            {
+                                text: 'SSL+CDN included'
                             }
-                        },
-                        {
-                            title: 'Custom domain support',
-                            question: '?',
-                            free: {
-                                check: true
+                        ],
+                        bottomText:
+                            'For professional bloggers who are just getting started'
+                    },
+                    {
+                        name: 'Enterprise',
+                        price: 79,
+                        text1: 'per month, billed annually',
+                        text2: '$99 billed monthly',
+                        possibilities: [
+                            {
+                                count: '500k',
+                                text: 'views/month'
                             },
-                            enterprise: {
-                                check: true
-                            }
-                        },
-                        {
-                            title: 'Own your data',
-                            question: '?',
-                            free: {
-                                check: true
+                            {
+                                count: '5',
+                                text: 'staff users'
                             },
-                            enterprise: {
-                                check: true
-                            }
-                        },
-                        {
-                            title: 'Own your data',
-                            question: '?',
-                            free: {
-                                count: ''
+                            {
+                                count: '5,000',
+                                text: 'members'
                             },
-                            enterprise: {
-                                count: 'beta'
+                            {
+                                text: 'Priority support'
                             }
-                        }
-                    ]
-                },
-                {
-                    head: 'AUTOMATION',
-                    headColor: 'ligth_blue',
-                    items: [
-                        {
-                            title: 'Managed install & setup',
-                            question: '',
-                            free: {
-                                check: true
+                        ],
+                        bottomText:
+                            'Everything you need to manage a growing publication'
+                    }
+                ],
+                productUsage: [
+                    {
+                        head: 'PRODUCT USAGE',
+                        headColor: 'purple',
+                        items: [
+                            {
+                                title: 'Views per month',
+                                question: '?',
+                                free: {
+                                    count: '100k'
+                                },
+                                enterprise: {
+                                    count: '1M'
+                                }
                             },
-                            enterprise: {
-                                check: true
-                            }
-                        },
-                        {
-                            title: 'Automatic weekly updates',
-                            question: '',
-                            free: {
-                                check: true
+                            {
+                                title: 'Staff users',
+                                question: '?',
+                                free: {
+                                    count: '2'
+                                },
+                                enterprise: {
+                                    count: '15'
+                                }
                             },
-                            enterprise: {
-                                check: true
-                            }
-                        },
-                        {
-                            title: 'Server maintenance & backups',
-                            question: '',
-                            free: {
-                                check: true
+                            {
+                                title: 'Members (beta)',
+                                question: '?',
+                                free: {
+                                    count: '1,000'
+                                },
+                                enterprise: {
+                                    count: '1M'
+                                }
                             },
-                            enterprise: {
-                                check: true
-                            }
-                        },
-                        {
-                            title: 'Threat & uptime management',
-                            question: '?',
-                            free: {
-                                check: true
+                            {
+                                title: 'Custom domain support',
+                                question: '?',
+                                free: {
+                                    check: true
+                                },
+                                enterprise: {
+                                    check: true
+                                }
                             },
-                            enterprise: {
-                                check: true
-                            }
-                        }
-                    ]
-                },
-                {
-                    head: 'PLATFORM',
-                    headColor: 'green',
-                    items: [
-                        {
-                            title: 'Worldwide CDN',
-                            question: '',
-                            free: {
-                                check: true
+                            {
+                                title: 'Own your data',
+                                question: '?',
+                                free: {
+                                    check: true
+                                },
+                                enterprise: {
+                                    check: true
+                                }
                             },
-                            enterprise: {
-                                check: true
+                            {
+                                title: 'Own your data',
+                                question: '?',
+                                free: {
+                                    count: ''
+                                },
+                                enterprise: {
+                                    count: 'beta'
+                                }
                             }
-                        },
-                        {
-                            title: 'Enterprise-grade security',
-                            question: '?',
-                            free: {
-                                check: true
+                        ]
+                    },
+                    {
+                        head: 'AUTOMATION',
+                        headColor: 'ligth_blue',
+                        items: [
+                            {
+                                title: 'Managed install & setup',
+                                question: '',
+                                free: {
+                                    check: true
+                                },
+                                enterprise: {
+                                    check: true
+                                }
                             },
-                            enterprise: {
-                                check: true
-                            }
-                        },
-                        {
-                            title: 'Automatic SSL certificate',
-                            question: '',
-                            free: {
-                                check: true
+                            {
+                                title: 'Automatic weekly updates',
+                                question: '',
+                                free: {
+                                    check: true
+                                },
+                                enterprise: {
+                                    check: true
+                                }
                             },
-                            enterprise: {
-                                check: true
-                            }
-                        },
-                        {
-                            title: 'Use a custom SSL certificate',
-                            question: '',
-                            free: {},
-                            enterprise: {
-                                check: true
-                            }
-                        },
-                        {
-                            title: 'Managed subdirectory install',
-                            question: '?',
-                            free: {},
-                            enterprise: {
-                                count: '+$50/mo'
-                            }
-                        }
-                    ]
-                },
-                {
-                    head: 'SUPPORT',
-                    headColor: 'purple',
-                    items: [
-                        {
-                            title: 'Product',
-                            question: '',
-                            free: {
-                                count: 'Email Support'
+                            {
+                                title: 'Server maintenance & backups',
+                                question: '',
+                                free: {
+                                    check: true
+                                },
+                                enterprise: {
+                                    check: true
+                                }
                             },
-                            enterprise: {
-                                count: '24/7 Priority Support'
+                            {
+                                title: 'Threat & uptime management',
+                                question: '?',
+                                free: {
+                                    check: true
+                                },
+                                enterprise: {
+                                    check: true
+                                }
                             }
-                        },
-                        {
-                            title: 'Migration help',
-                            question: '?',
-                            free: {},
-                            enterprise: {
-                                count: 'From other platforms'
+                        ]
+                    },
+                    {
+                        head: 'PLATFORM',
+                        headColor: 'green',
+                        items: [
+                            {
+                                title: 'Worldwide CDN',
+                                question: '',
+                                free: {
+                                    check: true
+                                },
+                                enterprise: {
+                                    check: true
+                                }
+                            },
+                            {
+                                title: 'Enterprise-grade security',
+                                question: '?',
+                                free: {
+                                    check: true
+                                },
+                                enterprise: {
+                                    check: true
+                                }
+                            },
+                            {
+                                title: 'Automatic SSL certificate',
+                                question: '',
+                                free: {
+                                    check: true
+                                },
+                                enterprise: {
+                                    check: true
+                                }
+                            },
+                            {
+                                title: 'Use a custom SSL certificate',
+                                question: '',
+                                free: {},
+                                enterprise: {
+                                    check: true
+                                }
+                            },
+                            {
+                                title: 'Managed subdirectory install',
+                                question: '?',
+                                free: {},
+                                enterprise: {
+                                    count: '+$50/mo'
+                                }
                             }
-                        },
-                        {
-                            title: 'Uptime SLA',
-                            question: '',
-                            free: {},
-                            enterprise: {
-                                count: '99.9% uptime SLA'
+                        ]
+                    },
+                    {
+                        head: 'SUPPORT',
+                        headColor: 'purple',
+                        items: [
+                            {
+                                title: 'Product',
+                                question: '',
+                                free: {
+                                    count: 'Email Support'
+                                },
+                                enterprise: {
+                                    count: '24/7 Priority Support'
+                                }
+                            },
+                            {
+                                title: 'Migration help',
+                                question: '?',
+                                free: {},
+                                enterprise: {
+                                    count: 'From other platforms'
+                                }
+                            },
+                            {
+                                title: 'Uptime SLA',
+                                question: '',
+                                free: {},
+                                enterprise: {
+                                    count: '99.9% uptime SLA'
+                                }
                             }
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    methods: {
-        toggle() {
-            this.active = !this.active
+                        ]
+                    }
+                ]
+            }
+        },
+
+        head() {
+            return {
+                title: 'Pricing',
+            }
+        },
+
+        methods: {
+            toggle() {
+                this.active = !this.active
+            }
         }
     }
-}
 </script>
 
 <style scoped>
-.pricing_bg {
-    background-image: url(~assets/images/pricing/pricing-bg-c.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .pricing_bg {
+        background-image: url(~assets/images/pricing/pricing-bg-c.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 </style>

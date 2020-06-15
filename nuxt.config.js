@@ -1,16 +1,19 @@
-let dotenv = require('dotenv')
-dotenv.config();
+const dotenv = require('dotenv')
+dotenv.config()
 
 export default {
-    mode: 'spa',
+    mode: 'universal',
     /*
      ** Headers of the page
      */
     head: {
-        title: process.env.npm_package_name || '',
+        titleTemplate: '%s - Shoppy',
         meta: [
             { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            {
+                name: 'viewport',
+                content: 'width=device-width, initial-scale=1'
+            },
             {
                 hid: 'description',
                 name: 'description',
@@ -26,18 +29,16 @@ export default {
     /*
      ** Global CSS
      */
-    css: [
-        '@assets/css/landing.scss'
-    ],
+    css: ['@assets/css/_landing.scss'],
     /*
      ** Plugins to load before mounting the App
      */
     plugins: [
         '~/plugins/components',
-        
+
         '~/plugins/dropdown',
-        '~/plugins/validation',
-        '~/plugins/modal'
+        { src: '~/plugins/validation', ssr: false },
+        { src: '~/plugins/modal', ssr: false }
     ],
     /*
      ** Nuxt.js dev-modules
@@ -47,7 +48,9 @@ export default {
         // Doc: https://github.com/nuxt-community/stylelint-module
         '@nuxtjs/stylelint-module',
         // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+        // Doc: https://www.npmjs.com/package/@nuxtjs/moment
+        '@nuxtjs/moment'
     ],
     /*
      ** Nuxt.js modules
@@ -59,7 +62,7 @@ export default {
         '@nuxtjs/recaptcha'
     ],
     recaptcha: {
-        siteKey: process.env.RECAPTCHA_KEY,
+        siteKey: '6LdbxFEUAAAAAO6z5QGFO_Yk1CUpS_a2h2uo74oD',
         version: 2,
         size: 'invisible',
         hideBadge: false
@@ -72,14 +75,22 @@ export default {
      ** Axios module configuration
      ** See https://axios.nuxtjs.org/options
      */
-    axios: {},
+    axios: {
+        headers: {
+            common: {
+                'Accept': 'application/json'
+            },
+        }
+    },
     /*
      ** Build configuration
      */
     build: {
         extractCSS: true,
         publicPath: '/assets/',
-        
+
+        transpile: ['showdown', 'tailwindcss/ui', 'raw-loader', 'vue-code-highlight', 'dotenv', 'vee-validate'],
+
         /*
          ** You can extend webpack config here
          */
@@ -91,7 +102,7 @@ export default {
                         loader: 'raw-loader'
                     }
                 ]
-            });
+            })
         }
     }
 }

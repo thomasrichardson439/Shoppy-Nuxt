@@ -1,3 +1,3 @@
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+Currently it is not possible to setup a custom domain using Shoppy Ecommerce.
 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+This feature will be added with the release of Shoppy Storefront, featuring a fully customizable shop.

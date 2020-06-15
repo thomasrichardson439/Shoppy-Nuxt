@@ -437,6 +437,16 @@
     </div>
 </template>
 
+<script>
+    export default {
+        head() {
+            return {
+                title: 'ToS and AUP'
+            }
+        },
+    }
+</script>
+
 <style lang="scss">
 .green_list_dot {
     &:before {

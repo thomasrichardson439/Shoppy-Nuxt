@@ -170,6 +170,12 @@ export default {
         }
     },
 
+    head() {
+        return {
+            title: 'Sign Up'
+        }
+    },
+
     methods: {
         async register() {
             const data = Object.assign({}, this.user)

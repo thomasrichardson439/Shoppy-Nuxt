@@ -196,6 +196,12 @@ export default {
         }
     },
 
+    head() {
+        return {
+            title: 'Authorize'
+        }
+    },
+
     methods: {
         async login() {
             const data = Object.assign({}, this.user)

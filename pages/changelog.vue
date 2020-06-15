@@ -89,3 +89,13 @@
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        head() {
+            return {
+                title: 'Changelog and Roadmap'
+            }
+        }
+    }
+</script>

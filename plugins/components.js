@@ -1,7 +1,7 @@
-import Vue from 'vue';
+import Vue from 'vue'
 
-import StyledButton from '~/components/StyledButton.vue';
-Vue.component('styled-button', StyledButton);
+import StyledButton from '~/components/StyledButton.vue'
 
-import StyledLink from '~/components/StyledLink.vue';
-Vue.component('styled-link', StyledLink);
+import StyledLink from '~/components/StyledLink.vue'
+Vue.component('styled-button', StyledButton)
+Vue.component('styled-link', StyledLink)

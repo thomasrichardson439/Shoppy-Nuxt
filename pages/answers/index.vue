@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="shoppy-docs-header p-8">
+        <header class="shoppy-docs-header p-8 mt-20">
             <div class="container mx-auto">
                 <h1 class="text-white text-xl">Frequently Asked Questions</h1>
             </div>
@@ -30,19 +30,15 @@
                         <div class="flex mt-4">
                             <span
                                 class="bg-lime text-white p-2 text-white rounded-lg mr-2"
-                                >All</span
+                            >All</span
                             >
                             <span
                                 class="bg-whitegray p-2 text-middarkgray rounded-lg mr-2"
-                                >Lorem</span
+                            >Refund</span
                             >
                             <span
                                 class="bg-whitegray p-2 text-middarkgray rounded-lg mr-2"
-                                >Ipsum</span
-                            >
-                            <span
-                                class="bg-whitegray p-2 text-middarkgray rounded-lg mr-2"
-                                >Dolor</span
+                            >Domains</span
                             >
                         </div>
                     </div>
@@ -62,6 +58,12 @@ export default {
 
     created() {
         console.log(this.answers)
+    },
+
+    head() {
+        return {
+            title: 'FAQ'
+        }
     }
 }
 </script>

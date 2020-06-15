@@ -22,7 +22,7 @@
                             </div>
 
                             <div
-                                class="mt-6 rounded-full w-6 h-6 p-1 items-center text-answers border border-answers"
+                                class="mt-6 rounded-full w-6 h-6 items-center text-answers border border-answers"
                             >
                                 <div class="text-center text-sm">
                                     »
@@ -34,32 +34,7 @@
                                 {{ answer.title }}
                             </h1>
 
-                            <div v-html="rendered"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:w-4/12">
-                    <div class="ml-20 mt-8">
-                        <span class="color-darkgrey font-medium"
-                            >FAQ topics</span
-                        >
-                        <div class="flex mt-4">
-                            <span
-                                class="bg-lime text-white p-2 text-white rounded-lg mr-2"
-                                >All</span
-                            >
-                            <span
-                                class="bg-whitegray p-2 text-middarkgray rounded-lg mr-2"
-                                >Lorem</span
-                            >
-                            <span
-                                class="bg-whitegray p-2 text-middarkgray rounded-lg mr-2"
-                                >Ipsum</span
-                            >
-                            <span
-                                class="bg-whitegray p-2 text-middarkgray rounded-lg mr-2"
-                                >Dolor</span
-                            >
+                            <div v-html="rendered" class="answer"></div>
                         </div>
                     </div>
                 </div>
@@ -67,6 +42,12 @@
         </div>
     </div>
 </template>
+
+<style>
+    .answer p {
+        margin-top: 20px;
+    }
+</style>
 
 <script>
 import { mapGetters } from 'vuex'
@@ -80,6 +61,13 @@ export default {
             rendered: ''
         }
     },
+
+    head() {
+        return {
+            title: this.answer.title
+        }
+    },
+
     computed: {
         ...mapGetters('content', ['answers']),
         answer() {
@@ -88,6 +76,7 @@ export default {
             )
         }
     },
+
     mounted() {
         if (this.answer) {
             const rendered = renderer.makeHtml(this.answer.content)

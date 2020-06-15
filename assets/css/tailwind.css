@@ -4,11 +4,12 @@
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
 
-@import './fonts.scss';
+@import './_fonts.scss';
 
 body {
-  color: #51626a;
-  font-family: Camphor, -apple-system, BlinkMacSystemFont, Proxima Nova, Segoe UI, Roboto, Oxygen, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  background-color: #f8fafc;
+    color: #51626a;
+    font-family: Camphor, -apple-system, BlinkMacSystemFont, Proxima Nova, Segoe UI, Roboto, Oxygen, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f8fafc;
 }
+

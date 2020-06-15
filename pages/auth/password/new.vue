@@ -174,6 +174,12 @@ export default {
         }
     },
 
+    head() {
+        return {
+            title: 'Reset Password'
+        }
+    },
+
     mounted() {
         if (this.$route.query.token) {
             this.mode = 'restore'
