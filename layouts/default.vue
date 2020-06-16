@@ -18,7 +18,7 @@
                                 alt="Shoppy"
                             />
                         </a>
-                        <div class="inline-block cursor-pointer md:hidden">
+                        <div class="inline-block cursor-pointer md:hidden" @click="$store.dispatch('nav/toggleSidebar')">
                             <div
                                 class="bg-white w-8 mb-2"
                                 style="height: 2px;"
@@ -595,6 +595,8 @@
             </div>
         </div>
 
+        <TheSideNav/>
+
         <nuxt />
 
         <div>
@@ -840,6 +842,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import TheSideNav from '~/components/TheSideNav'
 
 export default {
     data() {
@@ -851,6 +854,9 @@ export default {
                 resources: false
             }
         }
+    },
+    components: {
+        TheSideNav,
     },
     methods: {
         routeHasHero() {
@@ -883,7 +889,9 @@ export default {
 
     computed: {
         ...mapGetters('content', ['posts']),
-
+        isSidebar() {
+            return this.$store.getters['nav/toggleSidebar']
+        },
         recentPosts() {
             return [...(this.posts || [])].sort((a, b) => a - b).slice(0, 3)
         },
@@ -916,6 +924,14 @@ export default {
                 }
             })
         }
+    },
+
+    watch: {
+        '$route': function() {
+            if (process.client && this.isSidebar && window.innerWidth < 768) {
+                this.$store.dispatch('nav/toggleSidebar')
+            }
+        },
     }
 }
 </script>
