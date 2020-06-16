@@ -21,19 +21,19 @@
                             <p>
                                 <nuxt-link
                                     to="/auth/signup"
-                                    class="mt-6 mb-6 md:mb-0 md:mt-10 
-                                    inline-block 
-                                    py-3 px-8 
+                                    class="mt-6 mb-6 md:mb-0 md:mt-10
+                                    inline-block
+                                    py-3 px-8
                                     text-white bg-green hover:bg-green rounded-lg shadow"
                                     >Create Account
                                 </nuxt-link>
                             </p>
                             <a
                                 href="https://apps.apple.com/us/app/shoppy-ecommerce/id1486173778?mt=8"
-                                class="mr-0 md:mb-0 md:mt-10 md:mr-5  
-                                inline-block 
+                                class="mr-0 md:mb-0 md:mt-10 md:mr-5
+                                inline-block
                                 home_top_button
-                                py-3 px-9 
+                                py-3 px-9
                                 text-white rounded-lg shadow border-solid border border-white"
                             >
                                 <img
@@ -44,10 +44,10 @@
                             </a>
                             <a
                                 href="https://play.google.com/store/apps/details?id=com.shoppy.app&hl=en"
-                                class="mt-6 md:mb-0 md:mt-10 
-                                inline-block 
+                                class="mt-6 md:mb-0 md:mt-10
+                                inline-block
                                 home_top_button
-                                py-3 px-9 
+                                py-3 px-9
                                 text-white rounded-lg shadow border-solid border border-white"
                             >
                                 <img
@@ -59,7 +59,7 @@
                         </div>
                         <div class="md:w-1/2 md:pt-16 lg:pt-12 mt-12 md:mt-0">
                             <img
-                                src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
+                                src="~assets/images/home/header_image.svg"
                             />
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                                 </div>
                                 <div class="md:w-1/2">
                                     <img
-                                        src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
+                                        src="~assets/images/home/icon_1.svg"
                                     />
                                 </div>
                                 <div
@@ -261,7 +261,7 @@
                             </div>
                             <div class="md:w-1/2">
                                 <img
-                                    src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
+                                    src="~assets/images/home/icon_2.svg"
                                 />
                             </div>
                         </div>
@@ -379,7 +379,7 @@
                                 </div>
                                 <div class="md:w-1/2 pb-5 md:pb-0">
                                     <img
-                                        src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
+                                        src="~assets/images/home/icon_3.svg"
                                     />
                                 </div>
                                 <div
@@ -441,5 +441,5 @@ export default {
        &_img{
        max-width: 96px;
     }
-   } 
+   }
 </style>
