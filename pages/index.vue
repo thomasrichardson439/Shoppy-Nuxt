@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white">
         <div class="md:overflow-hidden shoppy-hero backgrounds_home-top">
-            <div class="px-4 py-20 md:py-4">
+            <div class="px-4 py-20 pb-0 md:py-4 md:pb-4">
                 <div class="container mx-auto shoppy-hero--inner">
                     <div class="md:flex md:flex-wrap">
                         <div class="md:w-1/2 text-center md:text-left md:pt-16">
@@ -21,13 +21,19 @@
                             <p>
                                 <nuxt-link
                                     to="/auth/signup"
-                                    class="mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-white bg-green hover:bg-green rounded-lg shadow"
+                                    class="mt-6 mb-6 md:mb-0 md:mt-10 
+                                    inline-block 
+                                    py-3 px-8 
+                                    text-white bg-green hover:bg-green rounded-lg shadow"
                                     >Create Account
                                 </nuxt-link>
                             </p>
                             <a
                                 href="https://apps.apple.com/us/app/shoppy-ecommerce/id1486173778?mt=8"
-                                class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-3 px-8 text-white rounded-lg shadow border-solid border border-white"
+                                class="mt-0 mb-0 mr-0 md:mb-0 md:mt-10 md:mr-5  
+                                inline-block 
+                                py-3 px-8 
+                                text-white rounded-lg shadow border-solid border border-white"
                             >
                                 <img
                                     src="~assets/images/home/applestore.png"
@@ -55,7 +61,7 @@
         </div>
         <div class="container mx-auto">
             <div class="md:overflow-hidden">
-                <div class="px-4 py-20 md:py-4">
+                <div class="px-4 py-20 pt-0 md:py-4 md:pt-4">
                     <div class="container mx-auto shoppy-hero--inner">
                         <div class="md:flex md:flex-wrap">
                             <div
@@ -86,9 +92,9 @@
         <div class="bg-ligth_blue_bg rectangle rectangle_white relative">
             <div class="container mx-auto">
                 <div class="md:overflow-hidden">
-                    <div class="px-4 py-20 md:py-4">
+                    <div class="px-4 py-20 pb-0 md:py-4 md:pb-4 md:pt-4">
                         <div class="container mx-auto shoppy-hero--inner">
-                            <div class="md:flex md:flex-wrap pb-16">
+                            <div class="md:flex md:flex-wrap pb-0 md:pb-16">
                                 <div
                                     class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
                                 >
@@ -103,7 +109,7 @@
                                         All-In-One Platform
                                     </h1>
 
-                                    <p class="md:pr-30 text-lg">
+                                    <p class="pt-5 pb-10 md:pt-0 md:pb-0 md:pr-30 text-lg">
                                         Shoppy provides all aspects of an
                                         e-commerce solution that you will
                                         require. Establish your brand online
@@ -120,7 +126,7 @@
                                     />
                                 </div>
                                 <div
-                                    class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16"
+                                    class="md:w-1/2 text-center md:text-left pt-5 pb-5 md:pb-0 md:pt-16 md:pl-16"
                                 >
                                     <ul class="list-none">
                                         <li class="flex content-center mb-3">
@@ -179,9 +185,9 @@
         </div>
         <div class="container mx-auto rectangle rectangle_blue relative">
             <div class="md:overflow-hidden">
-                <div class="px-4 py-20 md:py-4">
+                <div class="px-4 py-20 pb-0 md:py-4 md:pb-4 md:pt-4">
                     <div class="container mx-auto shoppy-hero--inner">
-                        <div class="md:flex md:flex-wrap pb-16">
+                        <div class="md:flex md:flex-wrap pb-10 md:pb-16">
                             <div
                                 class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
                             >
@@ -196,7 +202,7 @@
                                     Automated Delivery
                                 </h1>
 
-                                <p class="md:pr-30 text-lg">
+                                <p class="pt-5 pb-10 md:pt-0 md:pb-0 md:pr-30 text-lg">
                                     Whether it's a file, serial number, service
                                     or even dynamically generated via an API, we
                                     provide instant automated delivery of goods
@@ -259,9 +265,9 @@
         <div class="bg-ligth_blue_bg rectangle rectangle_white relative">
             <div class="container mx-auto">
                 <div class="md:overflow-hidden">
-                    <div class="px-4 py-20 md:py-4">
+                    <div class="px-4 py-20 pb-0 md:py-4 md:pb-4 md:pt-4">
                         <div class="container mx-auto shoppy-hero--inner">
-                            <div class="md:flex md:flex-wrap pb-16">
+                            <div class="md:flex md:flex-wrap pb-10 md:pb-16">
                                 <div
                                     class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
                                 >
@@ -276,7 +282,7 @@
                                         Vast Variety of Gateways
                                     </h1>
 
-                                    <p class="md:pr-30 text-lg">
+                                    <p class="pt-5 pb-10 md:pt-0 md:pb-0 md:pr-30 text-lg">
                                         Reach a wider audience by supporting a wide range of payment methods
                                         including cryptocurrencies as well as other
                                         known brands and payment processors.
@@ -342,9 +348,9 @@
         <div class="container mx-auto rectangle rectangle_blue relative">
             <div class="container mx-auto">
                 <div class="md:overflow-hidden">
-                    <div class="px-4 py-20 md:py-4">
+                    <div class="px-4 py-20 pb-0 md:py-4 md:pb-4 md:pt-4">
                         <div class="container mx-auto shoppy-hero--inner">
-                            <div class="md:flex md:flex-wrap pb-16">
+                            <div class="md:flex md:flex-wrap pb-0 md:pb-16">
                                 <div
                                     class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
                                 >
@@ -359,12 +365,12 @@
                                         Support your Customers
                                     </h1>
 
-                                    <p class="md:pr-30 text-lg">
+                                    <p class="pt-5 pb-10 md:pt-0 md:pb-0 md:pr-30 text-lg">
                                         Communicate and assist your customers in
                                         real time with our support integrations.
                                     </p>
                                 </div>
-                                <div class="md:w-1/2">
+                                <div class="md:w-1/2 pb-5 md:pb-0">
                                     <img
                                         src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
                                     />

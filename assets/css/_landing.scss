@@ -27,6 +27,9 @@
     position: relative;
     padding: 15vw 4vw 12vw 4vw;
     margin-top: -75px;
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
 
     &:before {
         display: block;
@@ -133,6 +136,10 @@
             @extend .backgrounds;
             background-image: url(~assets/images/home/home_bottom_bg.png);
             padding-top: 120px;
+            @media (max-width: 767px) {
+                background-image: none;
+                background-color: #15212a;
+            }
         }
     }
 }
@@ -142,6 +149,11 @@
         &-icon {
             &-wrapper {
                 @apply bg-white p-6 rounded-extra mx-8 my-3 shadow-lg flex items-center;
+                @media (max-width: 767px) {
+                    margin-right: .5rem;
+                    margin-left: .5rem;
+                    padding: 1rem;
+                }
             }
         }
     }

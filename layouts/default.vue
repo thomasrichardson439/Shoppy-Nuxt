@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="shoppy-nav" :class="{ 'no-hero': !hasHero }">
-            <div class="container mx-auto pt-4 pb-4">
+            <div class="container mx-auto pt-4 pb-4 px-4 md:px-0">
                 <div class="md:flex md:items-center">
                     <div class="flex justify-between items-center">
                         <a
@@ -20,15 +20,15 @@
                         </a>
                         <div class="inline-block cursor-pointer md:hidden">
                             <div
-                                class="bg-gray-400 w-8 mb-2"
+                                class="bg-white w-8 mb-2"
                                 style="height: 2px;"
                             ></div>
                             <div
-                                class="bg-gray-400 w-8 mb-2"
+                                class="bg-white w-8 mb-2"
                                 style="height: 2px;"
                             ></div>
                             <div
-                                class="bg-gray-400 w-8"
+                                class="bg-white w-8"
                                 style="height: 2px;"
                             ></div>
                         </div>
@@ -748,7 +748,7 @@
                                 </div>
                             </div>
                             <div class="md:grid md:grid-cols-2 md:gap-8">
-                                <div class="mt-12 md:mt-0">
+                                <div>
                                     <h4
                                         class="text-sm leading-5 font-semibold tracking-wider text-white uppercase"
                                     >
@@ -772,7 +772,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div>
+                                <div class="mt-12 md:mt-0">
                                     <h4
                                         class="text-sm leading-5 font-semibold tracking-wider text-white uppercase"
                                     >
@@ -810,8 +810,8 @@
                                 >Shoppy made for professional sellers</span
                             >
                         </div>
-                        <div class="flex mt-4 md:m-0">
-                            <div class="-mx-4">
+                        <div class="flex mt-0 md:mt-4 md:m-0">
+                            <div>
                                 <nuxt-link
                                     to="/legal/terms"
                                     class="px-2 text-sm"
@@ -827,9 +827,8 @@
                                     class="px-2 text-sm"
                                     >Cookies</nuxt-link
                                 >
-                                <span class="px-2 text-sm"
-                                    >Shoppy Ecommerce Ltd. &copy; 2020</span
-                                >
+                                <span class="px-2 text-sm block md:inline"
+                                    >Shoppy Ecommerce Ltd. &copy; 2020</span>
                             </div>
                         </div>
                     </div>

@@ -1,11 +1,13 @@
 <template>
     <div class="container mx-auto -mb-32 relative">
         <div
-            class="rounded-lg shadow-lg bg-white py-10 px-20 flex flex-wrap justify-between leading-normal items-center"
+            class="rounded-lg shadow-lg bg-white 
+            py-10 px-4 md:px-20 
+            flex flex-wrap justify-between leading-normal items-center"
         >
             <div class="md:w-2/3">
-                <h2 class="text-4xl font-bold mb-2">{{ title }}</h2>
-                <p class="text-gray-700 text-base text-xl mb-2">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">{{ title }}</h2>
+                <p class="text-gray-700 text-base text-base md:text-xl md:mb-2 mb-4">
                     {{ text }}
                 </p>
             </div>
