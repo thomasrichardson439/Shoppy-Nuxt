@@ -30,27 +30,34 @@
                             </p>
                             <a
                                 href="https://apps.apple.com/us/app/shoppy-ecommerce/id1486173778?mt=8"
-                                class="mt-0 mb-0 mr-0 md:mb-0 md:mt-10 md:mr-5  
+                                class="mr-0 md:mb-0 md:mt-10 md:mr-5  
                                 inline-block 
-                                py-3 px-8 
+                                home_top_button
+                                py-3 px-9 
                                 text-white rounded-lg shadow border-solid border border-white"
                             >
                                 <img
                                     src="~assets/images/home/applestore.png"
+                                    class="home_top_button_img"
                                     alt
                                 />
                             </a>
                             <a
                                 href="https://play.google.com/store/apps/details?id=com.shoppy.app&hl=en"
-                                class="mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-white rounded-lg shadow border-solid border border-white"
+                                class="mt-6 md:mb-0 md:mt-10 
+                                inline-block 
+                                home_top_button
+                                py-3 px-9 
+                                text-white rounded-lg shadow border-solid border border-white"
                             >
                                 <img
                                     src="~assets/images/home/googleplay.png"
+                                    class="home_top_button_img"
                                     alt
                                 />
                             </a>
                         </div>
-                        <div class="md:w-1/2 md:pt-16 lg:pt-12">
+                        <div class="md:w-1/2 md:pt-16 lg:pt-12 mt-12 md:mt-0">
                             <img
                                 src="https://ghost.org/static/ghost-admin-home-header-0c20f780aac8e98af7a56076ae8228b8.png"
                             />
@@ -61,7 +68,7 @@
         </div>
         <div class="container mx-auto">
             <div class="md:overflow-hidden">
-                <div class="px-4 py-20 pt-0 md:py-4 md:pt-4">
+                <div class="px-4 py-20 pt-15 md:py-4 md:pt-4">
                     <div class="container mx-auto shoppy-hero--inner">
                         <div class="md:flex md:flex-wrap">
                             <div
@@ -428,3 +435,11 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+   .home_top_button{
+       height: 50px;
+       &_img{
+       max-width: 96px;
+    }
+   } 
+</style>

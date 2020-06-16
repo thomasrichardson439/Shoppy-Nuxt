@@ -130,6 +130,9 @@
 
             @extend .backgrounds;
             background-image: url(~assets/images/home/home_top_bg.png);
+            @media (max-width: 767px) {
+                background-size: 150% 150%;
+            }
         }
 
         &-bottom {
