@@ -2,7 +2,7 @@
     <div>
         <div class="md:overflow-hidden design-bg mb-20">
             <h1 class="text-center font-bold text-white mt-10 md:mt-0 text-3xl md:text-5xl sm:pt-10 md:pt-10 lg:pt-4 xl:pt-0">
-                Brand style guide
+                Accept Crypto Payments Now
             </h1>
             <h2 class="text-center text-white text-base md:text-xl">
                 All your favourite apps and tools, integrated with Shoppy
