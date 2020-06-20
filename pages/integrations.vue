@@ -1,14 +1,14 @@
 <template>
     <div>
         <div class="md:overflow-hidden design-bg mb-20">
-            <h1 class="text-center font-bold text-white text-5xl sm:pt-10 md:pt-10 lg:pt-4 xl:pt-0">
+            <h1 class="text-center font-bold text-white mt-10 md:mt-0 text-3xl md:text-5xl sm:pt-10 md:pt-10 lg:pt-4 xl:pt-0">
                 Brand style guide
             </h1>
-            <h2 class="text-center text-white text-xl">
+            <h2 class="text-center text-white text-base md:text-xl">
                 All your favourite apps and tools, integrated with Shoppy
             </h2>
             <div class="relative mt-5 md:w-2/6 w-full mx-auto">
-                <input class="bg-purple-white shadow rounded border-0 p-3 w-full" placeholder="Search by name...">
+                <input class="bg-purple-white shadow rounded border-0 p-3 w-full" placeholder="Search integrations">
                 <div class="absolute pin-r pin-t mt-4 mr-4 text-purple-lighter top-0 right-0">
                     <svg version="1.1" class="h-4 text-dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve">
@@ -122,7 +122,11 @@
             integrationItem,
             GetStarted
         },
-
+        head() {
+            return {
+                title: 'Integrations'
+            }
+        },
         data() {
             return {
                 active: 'all',
@@ -219,7 +223,11 @@
         background-repeat: no-repeat;
         background-image: url(~assets/images/home/home_top_bg.png);
         padding: 12vw 4vw 5vw 4vw;
-        margin-top: -75px;
+        @media (max-width: 767px) {
+            background-image: none;
+            background-color: #15212a;
+            padding-bottom: 50px;
+        }
     }
 
     .custom_grey {
