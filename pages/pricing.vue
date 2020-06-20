@@ -1,8 +1,12 @@
 <template>
     <div class="wrapper">
+        <img 
+            src="~/assets/images/pricing/rocket.svg" 
+            class="absolute w-full h-screen md:h-full pricing_rocket z-10 max-w-xs" 
+        />
         <div class="absolute w-full h-screen md:h-full pricing_bg"></div>
 
-        <div class="container mx-auto rectangle relative w-4/5 pt-20">
+        <div class="container mx-auto rectangle relative w-4/5 pt-20 pricing_top_block">
             <div class="flex flex-wrap md:justify-end">
                 <div
                     class="flex flex-wrap text-center md:w-3/4 w-full justify-between"
@@ -107,11 +111,28 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .pricing_bg {
-        background-image: url(~assets/images/pricing/pricing-bg-c.png);
+        background-image: url(~assets/images/pricing/pricing-bg-c.svg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+    .pricing_rocket{
+        max-width: 120px;
+        max-height: 285px;
+        bottom: 20%;
+        left: 8%;
+        @media (max-width: 767px) {
+            z-index: 1;
+            bottom: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .pricing_top_block{
+        @media (max-width: 767px) {
+            z-index: 2;
+        }
     }
 </style>
