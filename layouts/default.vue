@@ -899,7 +899,8 @@ export default {
                 '/legal/cookies',
                 '/legal/terms',
                 '/design',
-                '/blog'
+                '/blog',
+                '/integrations'
             ].filter((elem) => {
                 return this.$route.path.includes(elem)
             })
