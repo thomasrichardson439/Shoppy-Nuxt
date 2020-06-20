@@ -213,34 +213,44 @@ export default {
                 delete data.token
             }
 
-            const response = await this.$axios.$post('/auth/login', data)
-            if (response.errors) {
-                for (const key in response.errors) {
-                    for (const error of response.errors[key]) {
-                        this.$toast.error(error)
+            try {
+                const response = await this.$axios.$post('/auth/login', data)
+                if (response.errors) {
+                    for (const key in response.errors) {
+                        for (const error of response.errors[key]) {
+                            this.$toast.error(error)
+                        }
                     }
+                    this.$modal.hide('2fa')
+                    this.$recaptcha.reset()
+                    return
                 }
-                this.$modal.hide('2fa')
-                this.$recaptcha.reset()
-                return
-            }
 
-            if (response.status && response.token) {
-                this.$toast.success(response.message)
-                Cookies.set('token', response.token, {
-                    expires: data.remember ? 365 : null
-                })
-                this.$router.push('/dashboard')
-            } else {
-                if (response.twofa_enabled) {
-                    if (this.user.token.length === 0) {
-                        this.$modal.show('2fa')
-                    }
+                if (response.status && response.token) {
+                    this.$toast.success(response.message)
+                    this.$cookies.set('token', response.token, {
+                        maxAge: 60 * 60 * 24 * (data.remember ? 31 : 3)
+                    })
+                    window.location = window.location.host + '/home';
                 } else {
-                    this.$toast.error(response.message)
+                    if (response.twofa_enabled) {
+                        if (this.user.token.length === 0) {
+                            this.$modal.show('2fa')
+                        }
+                    } else {
+                        if (response && response.message) {
+                            this.$toast.error(response.message)
+                        } else {
+                            this.$toast.error(
+                                'There was an error processing your request'
+                            )
+                        }
+                    }
+                    this.$recaptcha.reset()
+                    this.user.token = ''
                 }
-                this.$recaptcha.reset()
-                this.user.token = ''
+            } catch (e) {
+                this.$toast.error('There was an error processing your request')
             }
         }
     }

@@ -79,21 +79,31 @@ export default {
         list-style: none;
         padding: 0;
         margin: 0;
+        padding-top: 30px;
     }
 
     .nav-item {
         margin: 0 10px;
     }
 
+    .nav-item span:hover {
+        text-decoration: underline;
+    }
+
     .nav-item a {
         text-decoration: none;
-        color: #51626a;
+        color: white;
         font-weight: bold;
     }
 
     .nav-item a:hover,
     .nav-item a:active{
-        color: #51626a;
+        text-decoration: underline;
+        color: white;
+    }
+
+    .nav-item li {
+        padding-top: 10px;
     }
 
     @media (max-width: 767px) {
@@ -103,7 +113,7 @@ export default {
         .nav-list ul {
             padding-left: 30px;
         }
-        .nav-item{
+        .nav-item {
             margin-top: 16px;
             margin-bottom: 16px;
         }

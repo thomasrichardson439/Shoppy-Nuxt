@@ -1,0 +1,133 @@
+[
+    {
+        "head": "PRODUCT USAGE",
+        "headColor": "purple",
+        "items": [
+            {
+                "title": "Views per month",
+                "question": "?",
+                "free": {
+                    "count": "Unlimited"
+                },
+                "enterprise": {
+                    "count": "Unlimited"
+                }
+            },
+            {
+                "title": "Products",
+                "question": "?",
+                "free": {
+                    "count": "Unlimited"
+                },
+                "enterprise": {
+                    "count": "Unlimited"
+                }
+            },
+            {
+                "title": "Fee",
+                "question": "?",
+                "free": {
+                    "count": "4% crypto, 0% PayPal"
+                },
+                "enterprise": {
+                    "count": "0% on all orders"
+                }
+            },
+            {
+                "title": "Fraud Prevention",
+                "question": "?",
+                "free": {
+                    "check": false
+                },
+                "enterprise": {
+                    "check": true
+                }
+            }
+        ]
+    },
+    {
+        "head": "AUTOMATION",
+        "headColor": "ligth_blue",
+        "items": [
+            {
+                "title": "Custom domain support",
+                "question": "",
+                "free": {
+                    "check": false
+                },
+                "enterprise": {
+                    "check": true
+                }
+            }
+        ]
+    },
+    {
+        "head": "PLATFORM",
+        "headColor": "green",
+        "items": [
+            {
+                "title": "Enterprise-grade security",
+                "question": "?",
+                "free": {
+                    "check": true
+                },
+                "enterprise": {
+                    "check": true
+                }
+            },
+            {
+                "title": "Automatic SSL certificate",
+                "question": "",
+                "free": {
+                    "check": false
+                },
+                "enterprise": {
+                    "check": true
+                }
+            },
+            {
+                "title": "Use a custom SSL certificate",
+                "question": "",
+                "free": {
+                },
+                "enterprise": {
+                    "check": true
+                }
+            }
+        ]
+    },
+    {
+        "head": "SUPPORT",
+        "headColor": "purple",
+        "items": [
+            {
+                "title": "Product",
+                "question": "",
+                "free": {
+                    "count": "Email Support"
+                },
+                "enterprise": {
+                    "count": "24/7 Priority Support"
+                }
+            },
+            {
+                "title": "Migration help",
+                "question": "?",
+                "free": {
+                },
+                "enterprise": {
+                    "count": "From other platforms"
+                }
+            },
+            {
+                "title": "Uptime SLA",
+                "question": "",
+                "free": {
+                },
+                "enterprise": {
+                    "count": "99.9% uptime SLA"
+                }
+            }
+        ]
+    }
+]

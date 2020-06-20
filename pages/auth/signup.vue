@@ -182,20 +182,32 @@ export default {
             const token = await this.$recaptcha.getResponse()
             data.g_recaptcha_response = token
 
-            const response = await this.$axios.$post('/auth/signup', data)
-            if (response.errors) {
-                for (const key in response.errors) {
-                    for (const error of response.errors[key]) {
-                        this.$toast.error(error)
+            try {
+                const response = await this.$axios.$post('/auth/signup', data)
+                if (response.errors) {
+                    for (const key in response.errors) {
+                        for (const error of response.errors[key]) {
+                            this.$toast.error(error)
+                        }
+                    }
+                    await this.$recaptcha.reset()
+                    return
+                }
+
+                if (response && response.status) {
+                    this.$toast.success(response.message)
+                    this.$router.push('/auth/login')
+                } else {
+                    if (response.message) {
+                        this.$toast.error(response.message)
+                    } else {
+                        this.$toast.error(
+                            'There was an error processing your request'
+                        )
                     }
                 }
-                await this.$recaptcha.reset()
-                return
-            }
-
-            if (response.status) {
-                this.$toast.success(response.message)
-                this.$router.push('/auth/login')
+            } catch (e) {
+                this.$toast.error('There was an error processing your request')
             }
         }
     }

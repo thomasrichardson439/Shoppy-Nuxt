@@ -4,7 +4,7 @@
             <div class="text-center font-medium text-5xl">
                 Modern ecommerce made simple
             </div>
-            <div class="text-center text-gray-200 text-2xl">
+            <div class="text-center text-gray-200 text-xl">
                 Shoppy is a powerful platform for creating your own online store
             </div>
         </div>
@@ -50,14 +50,12 @@
                     <h3
                         class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
                     >
-                        A better way to send money
+                        A better way to deliver products
                     </h3>
                     <p
                         class="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500"
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Possimus magnam voluptatum cupiditate veritatis in,
-                        accusamus quisquam.
+                        Shoppy makes it easier to deliver your products to your customer in an automated and quickly way. Once setup you will only need to look at your shop grow.
                     </p>
                 </div>
 
@@ -68,14 +66,10 @@
                         <h4
                             class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9"
                         >
-                            Transfer funds world-wide
+                            Easy worldwide business
                         </h4>
                         <p class="mt-3 text-lg leading-7 text-gray-500">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Pariatur minima sequi recusandae, porro
-                            maiores officia assumenda aliquam laborum ab aliquid
-                            veritatis impedit odit adipisci optio iste
-                            blanditiis facere. Totam, velit.
+                             We welcome every business regarding of your sales volume. No KYC, no paperwork. Sign up within minutes and start selling.
                         </p>
 
                         <ul class="mt-10">
@@ -104,16 +98,12 @@
                                         <h5
                                             class="text-lg leading-6 font-medium text-gray-900"
                                         >
-                                            Competitive exchange rates
+                                            Accept all kind of payments
                                         </h5>
                                         <p
                                             class="mt-2 text-base leading-6 text-gray-500"
                                         >
-                                            Lorem ipsum, dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Maiores impedit perferendis suscipit
-                                            eaque, iste dolor cupiditate
-                                            blanditiis ratione.
+                                            Other than being able to accept PayPal and Stripe payments, Shoppy offers the possibility to accept Cryptocurrencies, which know no borders. Businesses and customers from all countries are accepted.
                                         </p>
                                     </div>
                                 </div>
@@ -148,11 +138,7 @@
                                         <p
                                             class="mt-2 text-base leading-6 text-gray-500"
                                         >
-                                            Lorem ipsum, dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Maiores impedit perferendis suscipit
-                                            eaque, iste dolor cupiditate
-                                            blanditiis ratione.
+                                            Our fees are clear and simple, no extra hidden ones, we want you to enjoy your hard earned sales.
                                         </p>
                                     </div>
                                 </div>
@@ -182,16 +168,12 @@
                                         <h5
                                             class="text-lg leading-6 font-medium text-gray-900"
                                         >
-                                            Transfers are instant
+                                            Fast transactions
                                         </h5>
                                         <p
                                             class="mt-2 text-base leading-6 text-gray-500"
                                         >
-                                            Lorem ipsum, dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Maiores impedit perferendis suscipit
-                                            eaque, iste dolor cupiditate
-                                            blanditiis ratione.
+                                            Your customers will flawlessly enjoy our checkout experience, you won't need to do anything other than looking at your orders being automatically processed by our system.
                                         </p>
                                     </div>
                                 </div>
@@ -282,13 +264,10 @@
                             <h4
                                 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9"
                             >
-                                Always in the loop
+                                Professional tools to improve your workflow
                             </h4>
                             <p class="mt-3 text-lg leading-7 text-gray-500">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Impedit ex obcaecati natus
-                                eligendi delectus, cum deleniti sunt in labore
-                                nihil quod quibusdam expedita nemo.
+                                Shoppy provides you with all of the tools you need to manage your shop.
                             </p>
 
                             <ul class="mt-10">
@@ -317,16 +296,12 @@
                                             <h5
                                                 class="text-lg leading-6 font-medium text-gray-900"
                                             >
-                                                Mobile notifications
+                                                Detailed Statistics
                                             </h5>
                                             <p
                                                 class="mt-2 text-base leading-6 text-gray-500"
                                             >
-                                                Lorem ipsum, dolor sit amet
-                                                consectetur adipisicing elit.
-                                                Maiores impedit perferendis
-                                                suscipit eaque, iste dolor
-                                                cupiditate blanditiis ratione.
+                                                 Break down every aspect of your analytics. Create PDF reports. Integrate Google Analytics as well as other analytic engines. 
                                             </p>
                                         </div>
                                     </div>
@@ -356,16 +331,82 @@
                                             <h5
                                                 class="text-lg leading-6 font-medium text-gray-900"
                                             >
-                                                Reminder emails
+                                                Automated replacements
                                             </h5>
                                             <p
                                                 class="mt-2 text-base leading-6 text-gray-500"
                                             >
-                                                Lorem ipsum, dolor sit amet
-                                                consectetur adipisicing elit.
-                                                Maiores impedit perferendis
-                                                suscipit eaque, iste dolor
-                                                cupiditate blanditiis ratione.
+                                                 Issue replacements and refunds for an order with a simple click on a button. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-10">
+                                    <div class="flex">
+                                        <div class="flex-shrink-0">
+                                            <div
+                                                class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white"
+                                            >
+                                                <svg
+                                                    class="h-6 w-6"
+                                                    stroke="currentColor"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5
+                                                class="text-lg leading-6 font-medium text-gray-900"
+                                            >
+                                                Help Desk
+                                            </h5>
+                                            <p
+                                                class="mt-2 text-base leading-6 text-gray-500"
+                                            >
+                                                 We have a built in help-desk straight into your store. Customers can easily contact you, and you can conversate regarding any of their concerns. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-10">
+                                    <div class="flex">
+                                        <div class="flex-shrink-0">
+                                            <div
+                                                class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white"
+                                            >
+                                                <svg
+                                                    class="h-6 w-6"
+                                                    stroke="currentColor"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5
+                                                class="text-lg leading-6 font-medium text-gray-900"
+                                            >
+                                                Webhooks & Notifications
+                                            </h5>
+                                            <p
+                                                class="mt-2 text-base leading-6 text-gray-500"
+                                            >
+                                                 Integrate your Shoppy store to your external application using webhooks and get notifications in Discord and per email whenever you receive an order or its status updates.
                                             </p>
                                         </div>
                                     </div>
@@ -451,7 +492,7 @@
                                 class="shoppy-ecommerce--cycle-grid-grid-image relative mx-auto"
                             >
                                 <img
-                                    src="https://ghost.org/images/members/members-step-1.png"
+                                    src="~assets/images/ecommerce/step-1.svg"
                                 />
                             </div>
                             <div class="text-center">
@@ -464,7 +505,8 @@
                                     Create your shop
                                 </div>
                                 <div class="text-sm text-gray-400 mt-3">
-                                    Register, choose your own name and get ready to sell in just a few more steps.
+                                    Register, choose your own name and get ready
+                                    to sell in just a few more steps.
                                 </div>
                             </div>
                         </div>
@@ -475,7 +517,7 @@
                                 class="shoppy-ecommerce--cycle-grid-grid-image relative mx-auto"
                             >
                                 <img
-                                    src="https://ghost.org/images/members/members-step-1.png"
+                                    src="~assets/images/ecommerce/step-2.svg"
                                 />
                             </div>
                             <div class="text-center">
@@ -488,7 +530,9 @@
                                     Configure it
                                 </div>
                                 <div class="text-sm text-gray-400 mt-3">
-                                    Make your account secure, setup your payout methods and fully customize how your store looks.
+                                    Make your account secure, setup your payout
+                                    methods and fully customize how your store
+                                    looks.
                                 </div>
                             </div>
                         </div>
@@ -499,7 +543,7 @@
                                 class="shoppy-ecommerce--cycle-grid-grid-image relative mx-auto"
                             >
                                 <img
-                                    src="https://ghost.org/images/members/members-step-1.png"
+                                    src="~assets/images/ecommerce/step-3.svg"
                                 />
                             </div>
                             <div class="text-center">
@@ -512,7 +556,9 @@
                                     Add your products
                                 </div>
                                 <div class="text-sm text-gray-400 mt-3">
-                                    It's time to add your products to your store. You can sort them in categories, set the stock, configure webhooks and more.
+                                    It's time to add your products to your
+                                    store. You can sort them in categories, set
+                                    the stock, configure webhooks and more.
                                 </div>
                             </div>
                         </div>
@@ -523,7 +569,7 @@
                                 class="shoppy-ecommerce--cycle-grid-grid-image relative mx-auto"
                             >
                                 <img
-                                    src="https://ghost.org/images/members/members-step-1.png"
+                                    src="~assets/images/ecommerce/step-4.svg"
                                 />
                             </div>
                             <div class="text-center">
@@ -536,114 +582,11 @@
                                     Go live
                                 </div>
                                 <div class="text-sm text-gray-400 mt-3">
-                                    It's time to go live with your unique Shoppy store, get ready to manage your customers and to see your store grow.
+                                    It's time to go live with your unique Shoppy
+                                    store, get ready to manage your customers
+                                    and to see your store grow.
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="py-12 bg-white">
-            <div
-                class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8"
-            >
-                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-                    <div>
-                        <div
-                            class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white"
-                        >
-                            <svg
-                                class="h-6 w-6"
-                                stroke="currentColor"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                                />
-                            </svg>
-                        </div>
-                        <div class="mt-5">
-                            <h5
-                                class="text-lg leading-6 font-medium text-gray-900"
-                            >
-                                Competitive exchange rates
-                            </h5>
-                            <p class="mt-2 text-base leading-6 text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="mt-10 lg:mt-0">
-                        <div
-                            class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white"
-                        >
-                            <svg
-                                class="h-6 w-6"
-                                stroke="currentColor"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
-                                />
-                            </svg>
-                        </div>
-                        <div class="mt-5">
-                            <h5
-                                class="text-lg leading-6 font-medium text-gray-900"
-                            >
-                                No hidden fees
-                            </h5>
-                            <p class="mt-2 text-base leading-6 text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="mt-10 lg:mt-0">
-                        <div
-                            class="flex items-center justify-center h-12 w-12 rounded-md bg-lime text-white"
-                        >
-                            <svg
-                                class="h-6 w-6"
-                                stroke="currentColor"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                                />
-                            </svg>
-                        </div>
-                        <div class="mt-5">
-                            <h5
-                                class="text-lg leading-6 font-medium text-gray-900"
-                            >
-                                Transfers are instant
-                            </h5>
-                            <p class="mt-2 text-base leading-6 text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -658,11 +601,10 @@
                     <h2
                         class="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10"
                     >
-                        Trusted by developers from over 80 planets
+                        Trusted by sellers from all around the world
                     </h2>
                     <p class="mt-3 text-xl leading-7 text-indigo-200 sm:mt-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Repellendus repellat laudantium.
+                        Join Shoppy and start selling your products on your own personal store
                     </p>
                 </div>
                 <dl
@@ -677,14 +619,14 @@
                         <dd
                             class="order-1 text-5xl leading-none font-extrabold text-white"
                         >
-                            100%
+                            99.96% Uptime
                         </dd>
                     </div>
                     <div class="flex flex-col mt-10 sm:mt-0">
                         <dt
                             class="order-2 mt-2 text-lg leading-6 font-medium text-indigo-200"
                         >
-                            Delivery
+                            Operational
                         </dt>
                         <dd
                             class="order-1 text-5xl leading-none font-extrabold text-white"
@@ -696,12 +638,12 @@
                         <dt
                             class="order-2 mt-2 text-lg leading-6 font-medium text-indigo-200"
                         >
-                            Calories
+                            Processed orders
                         </dt>
                         <dd
                             class="order-1 text-5xl leading-none font-extrabold text-white"
                         >
-                            100k+
+                            7 millions+
                         </dd>
                     </div>
                 </dl>
@@ -717,23 +659,15 @@
                 >
                     Ready to dive in?
                     <br />
-                    Start your free trial today.
+                    Create your free account today.
                 </h2>
                 <div class="mt-8 flex justify-center">
                     <div class="inline-flex rounded-md shadow">
                         <a
-                            href="#"
+                            href="/auth/signup"
                             class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-lime hover:bg-lime focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                         >
                             Get started
-                        </a>
-                    </div>
-                    <div class="ml-3 inline-flex">
-                        <a
-                            href="#"
-                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green bg-indigo-100 hover:text-lime hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out"
-                        >
-                            Learn more
                         </a>
                     </div>
                 </div>
@@ -743,11 +677,11 @@
 </template>
 
 <script>
-    export default {
-        head() {
-            return {
-                title: 'Ecommerce Made Simple',
-            }
+export default {
+    head() {
+        return {
+            title: 'Ecommerce Made Simple'
         }
     }
+}
 </script>

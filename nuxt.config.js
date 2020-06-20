@@ -35,6 +35,7 @@ export default {
      */
     plugins: [
         '~/plugins/components',
+        '~/plugins/axios',
 
         '~/plugins/dropdown',
         { src: '~/plugins/validation', ssr: false },
@@ -59,7 +60,8 @@ export default {
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
         '@nuxtjs/toast',
-        '@nuxtjs/recaptcha'
+        '@nuxtjs/recaptcha',
+        'cookie-universal-nuxt'
     ],
     recaptcha: {
         siteKey: '6LdbxFEUAAAAAO6z5QGFO_Yk1CUpS_a2h2uo74oD',
@@ -78,8 +80,8 @@ export default {
     axios: {
         headers: {
             common: {
-                'Accept': 'application/json'
-            },
+                Accept: 'application/json'
+            }
         }
     },
     /*
@@ -89,7 +91,14 @@ export default {
         extractCSS: true,
         publicPath: '/assets/',
 
-        transpile: ['showdown', 'tailwindcss/ui', 'raw-loader', 'vue-code-highlight', 'dotenv', 'vee-validate'],
+        transpile: [
+            'showdown',
+            'tailwindcss/ui',
+            'raw-loader',
+            'vue-code-highlight',
+            'dotenv',
+            'vee-validate'
+        ],
 
         /*
          ** You can extend webpack config here

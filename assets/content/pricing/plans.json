@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Free",
+        "price": 0,
+        "description": "free, forever",
+        "possibilities": [
+            {
+                "text": "No setup, hidden or monthly fees"
+            },
+            {
+                "text": "Real time order reporting"
+            },
+            {
+                "text": "Unlimited orders and products"
+            },
+            {
+                "text": "4% fee on crypto, PayPal free"
+            }
+        ],
+        "bottomText": "For ecommersers who are just getting started"
+    },
+    {
+        "name": "Business",
+        "price": 29,
+        "description": "per month, billed annually",
+        "possibilities": [
+            {
+                "text": "Setup custom domains"
+            },
+            {
+                "text": "Theme your own shop"
+            },
+            {
+                "text": "HTML, CSS and JS support"
+            },
+            {
+                "text": "No processing fees"
+            },
+            {
+                "text": "Account manager"
+            },
+            {
+                "text": "Priority support"
+            },
+            {
+                "text": "SLA uptime (99%)"
+            }
+        ],
+        "bottomText": "Everything you need to manage a growing ecommerce business"
+    }
+]

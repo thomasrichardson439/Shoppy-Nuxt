@@ -4,7 +4,7 @@
             <div class="text-center font-medium text-5xl">
                 Simple payment processing
             </div>
-            <div class="text-center text-gray-200 text-1xl">
+            <div class="text-center text-gray-200 text-xl">
                 Accepting a wide range of payment gateways, including
                 cryptocurrencies, made easy
             </div>
@@ -62,15 +62,12 @@
                                     <h4
                                         class="text-lg leading-6 font-medium text-gray-900"
                                     >
-                                        Competitive exchange rates
+                                        Accept all kind of payments
                                     </h4>
                                     <p
                                         class="mt-2 text-base leading-6 text-gray-500"
                                     >
-                                        Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Maiores impedit
-                                        perferendis suscipit eaque, iste dolor
-                                        cupiditate blanditiis ratione.
+                                         Other than being able to accept PayPal and Stripe payments, Shoppy offers the possibility to accept Cryptocurrencies, which know no borders. Businesses and customers from all countries are accepted. 
                                     </p>
                                 </div>
                             </div>
@@ -105,10 +102,7 @@
                                     <p
                                         class="mt-2 text-base leading-6 text-gray-500"
                                     >
-                                        Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Maiores impedit
-                                        perferendis suscipit eaque, iste dolor
-                                        cupiditate blanditiis ratione.
+                                         Our fees are clear and simple, no extra hidden ones, we want you to enjoy your hard earned sales. 
                                     </p>
                                 </div>
                             </div>
@@ -143,7 +137,7 @@
                                     <p
                                         class="mt-2 text-base leading-6 text-gray-500"
                                     >
-                                        ntegrate the latest technologies with an
+                                        Integrate the latest technologies with an
                                         innovative platform that’s always
                                         getting better and launching new
                                         features weekly. We fit your needs as
@@ -240,10 +234,7 @@
                                 <p
                                     class="mt-6 text-base leading-6 text-gray-500"
                                 >
-                                    Lorem ipsum dolor sit amet consect etur
-                                    adipisicing elit. Itaque amet indis
-                                    perferendis blanditiis repellendus etur
-                                    quidem assumenda.
+                                    Our API will help you build amazing applications with flawless checkout experiences thanks to the help of our complete system and documentation.
                                 </p>
                                 <div class="mt-8">
                                     <div class="flex items-center">
@@ -498,5 +489,7 @@
 </script>
 
 <style>
+    /* purgecss start ignore */
     @import url('vue-code-highlight/themes/duotone-sea.css');
+    /* purgecss end ignore */
 </style>

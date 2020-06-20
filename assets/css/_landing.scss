@@ -97,7 +97,7 @@
         }
 
         &-grid-image {
-            max-width: 260px;
+            max-width: 290px;
             height: 75px;
 
             img {
@@ -186,20 +186,6 @@
     &_blue {
         &:before {
             background-color: #f7fafc;
-        }
-    }
-}
-
-pre[class*="language-"] {
-    @apply rounded;
-
-    .token {
-        &.string {
-            color: lighten(#a4d037, 15%);
-        }
-
-        &.number, &.boolean {
-            color: darken(#a4d037, 15%);
         }
     }
 }

@@ -13,10 +13,7 @@
         </p>
         <div class="text-base text-gray-500 font-regular">
             <p>
-                {{ item.text1 }}
-            </p>
-            <p>
-                {{ item.text2 }}
+                {{ item.description }}
             </p>
         </div>
         <hr class="w-1/3 h-0.75 my-6" />

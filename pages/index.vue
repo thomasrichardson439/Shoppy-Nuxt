@@ -4,7 +4,7 @@
             <div class="px-4 py-20 pb-0 md:py-4 md:pb-4">
                 <div class="container mx-auto shoppy-hero--inner">
                     <div class="md:flex md:flex-wrap">
-                        <div class="md:w-1/2 text-center md:text-left md:pt-16">
+                        <div class="md:w-1/2 text-center md:text-left md:pt-16 md:pr-20">
                             <h1
                                 class="font-bold text-white text-4xl md:text-3xl leading-tight mb-4"
                             >
@@ -269,7 +269,71 @@
                 </div>
             </div>
         </div>
-        <div class="bg-ligth_blue_bg rectangle rectangle_white relative">
+        <div class="container mx-auto rectangle rectangle_white relative">
+            <div class="container mx-auto">
+                <div class="md:overflow-hidden">
+                    <div class="px-4 py-20 pb-0 md:py-4 md:pb-4 md:pt-4">
+                        <div class="container mx-auto shoppy-hero--inner">
+                            <div class="md:flex md:flex-wrap pb-0 md:pb-16">
+                                <div
+                                    class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
+                                >
+                                    <h2
+                                        class="text-green uppercase font-bold text-sm mb-4"
+                                    >
+                                        support
+                                    </h2>
+                                    <h1
+                                        class="font-bold text-4xl leading-tight mb-4"
+                                    >
+                                        Support your Customers
+                                    </h1>
+
+                                    <p class="pt-5 pb-10 md:pt-0 md:pb-0 md:pr-30 text-lg">
+                                        Communicate and assist your customers in
+                                        real time with our support integrations.
+                                    </p>
+                                </div>
+                                <div class="md:w-1/2">
+                                    <img
+                                        src="~assets/images/home/icon_3.svg"
+                                    />
+                                </div>
+                                <div
+                                    class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16"
+                                >
+                                    <ul class="list-none">
+                                        <li class="flex content-center mb-3">
+                                            <img
+                                                src="~assets/images/home/green_check.png"
+                                                alt=""
+                                                class="mr-3"
+                                            />
+                                            Buyer Queries
+                                        </li>
+                                        <li class="flex content-center mb-3">
+                                            <img
+                                                src="~assets/images/home/green_check.png"
+                                                alt=""
+                                                class="mr-3"
+                                            />
+                                            Interactive Feedbacks
+                                        </li>
+                                    </ul>
+                                    <a
+                                        href="#"
+                                        class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold"
+                                    >
+                                        Learn more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-ligth_blue_bg rectangle rectangle_blue relative">
             <div class="container mx-auto">
                 <div class="md:overflow-hidden">
                     <div class="px-4 py-20 pb-0 md:py-4 md:pb-4 md:pt-4">
@@ -352,70 +416,6 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto rectangle rectangle_blue relative">
-            <div class="container mx-auto">
-                <div class="md:overflow-hidden">
-                    <div class="px-4 py-20 pb-0 md:py-4 md:pb-4 md:pt-4">
-                        <div class="container mx-auto shoppy-hero--inner">
-                            <div class="md:flex md:flex-wrap pb-0 md:pb-16">
-                                <div
-                                    class="text-center md:pt-16 md:pb-16 md:w-2/3 mx-auto"
-                                >
-                                    <h2
-                                        class="text-green uppercase font-bold text-sm mb-4"
-                                    >
-                                        support
-                                    </h2>
-                                    <h1
-                                        class="font-bold text-4xl leading-tight mb-4"
-                                    >
-                                        Support your Customers
-                                    </h1>
-
-                                    <p class="pt-5 pb-10 md:pt-0 md:pb-0 md:pr-30 text-lg">
-                                        Communicate and assist your customers in
-                                        real time with our support integrations.
-                                    </p>
-                                </div>
-                                <div class="md:w-1/2 pb-5 md:pb-0">
-                                    <img
-                                        src="~assets/images/home/icon_3.svg"
-                                    />
-                                </div>
-                                <div
-                                    class="md:w-1/2 text-center md:text-left md:pt-16 md:pl-16"
-                                >
-                                    <ul class="list-none">
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/green_check.png"
-                                                alt=""
-                                                class="mr-3"
-                                            />
-                                            Buyer Queries
-                                        </li>
-                                        <li class="flex content-center mb-3">
-                                            <img
-                                                src="~assets/images/home/green_check.png"
-                                                alt=""
-                                                class="mr-3"
-                                            />
-                                            Interactive Feedbacks
-                                        </li>
-                                    </ul>
-                                    <a
-                                        href="#"
-                                        class="mt-6 mb-12 md:mb-0 md:mt-10 mr-5 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold"
-                                    >
-                                        Learn more
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <get-started />
     </div>
 </template>
@@ -436,10 +436,11 @@ export default {
 }
 </script>
 <style lang="scss">
-   .home_top_button{
-       height: 50px;
-       &_img{
-       max-width: 96px;
+   .home_top_button {
+        height: 50px;
+        &_img{
+            max-width: 96px;
+        }
     }
-   }
+
 </style>

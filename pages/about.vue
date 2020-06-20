@@ -208,7 +208,7 @@
                         future of ecommerce.
                     </div>
 
-                    <div class="mt-14 flex justify-center">
+                    <div class="mt-14 flex justify-center" v-if="false">
                         <div class="mr-10">
                             <div>
                                 <div>
@@ -301,9 +301,7 @@
                             Get in touch
                         </h2>
                         <p class="mt-3 text-lg leading-6 text-gray-500">
-                            Nullam risus blandit ac aliquam justo ipsum. Quam
-                            mauris volutpat massa dictumst amet. Sapien tortor
-                            lacus arcu.
+                            Whether you just want to say hi, receive support or report content that breaches our ToS, we like every email you send us.
                         </p>
                         <dl class="mt-8 text-base leading-6 text-gray-500">
                             <div class="mt-3">
@@ -334,8 +332,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
-                >
+                    class="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                     <div class="max-w-lg mx-auto lg:max-w-none">
                         <form
                             action="#"
@@ -343,8 +340,7 @@
                             class="grid grid-cols-1 row-gap-6"
                         >
                             <div>
-                                <label for="full_name" class="sr-only"
-                                    >Full name
+                                <label for="full_name" class="sr-only">Full name
                                 </label>
                                 <div class="relative rounded-md shadow-sm">
                                     <input
@@ -355,8 +351,7 @@
                                 </div>
                             </div>
                             <div>
-                                <label for="email" class="sr-only"
-                                    >Email
+                                <label for="email" class="sr-only">Email
                                 </label>
                                 <div class="relative rounded-md shadow-sm">
                                     <input
@@ -368,8 +363,7 @@
                                 </div>
                             </div>
                             <div>
-                                <label for="phone" class="sr-only"
-                                    >Phone
+                                <label for="phone" class="sr-only">Phone
                                 </label>
                                 <div class="relative rounded-md shadow-sm">
                                     <input
@@ -380,8 +374,7 @@
                                 </div>
                             </div>
                             <div>
-                                <label for="message" class="sr-only"
-                                    >Message
+                                <label for="message" class="sr-only">Message
                                 </label>
                                 <div class="relative rounded-md shadow-sm">
                                     <textarea
@@ -394,7 +387,7 @@
                             </div>
                             <div class="flex justify-end">
                                 <styled-button type="submit" class="px-6 py-2">
-                                    Submit
+                                    Contact
                                 </styled-button>
                             </div>
                         </form>

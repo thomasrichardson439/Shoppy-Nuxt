@@ -18,7 +18,10 @@
                                 alt="Shoppy"
                             />
                         </a>
-                        <div class="inline-block cursor-pointer md:hidden" @click="$store.dispatch('nav/toggleSidebar')">
+                        <div
+                            class="inline-block cursor-pointer md:hidden"
+                            @click="$store.dispatch('nav/toggleSidebar')"
+                        >
                             <div
                                 class="bg-white w-8 mb-2"
                                 style="height: 2px;"
@@ -574,28 +577,42 @@
                         </div>
                     </div>
                     <div class="hidden md:block ml-auto">
-                        <div class="flex items-center space-x-8">
+                        <div
+                            class="flex items-center space-x-8"
+                            v-if="!isLoggedIn"
+                        >
                             <router-link to="/auth/login">
                                 <a
-                                    class="border-solid border-2 border-white inline-flex items-center justify-center md:px-2 lg:px-7 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
-                                    >Sign in</a
+                                    class="border-solid border-2 border-white hover:border-lime hover:bg-lime inline-flex items-center justify-center md:px-2 lg:px-7 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
+                                    >Sign In</a
                                 >
                             </router-link>
                             <span class="inline-flex rounded-md shadow-sm">
                                 <router-link to="/auth/signup">
                                     <styled-button
                                         class="md:px-2 lg:px-7 py-2 border border-transparent text-base"
-                                        >Sign up</styled-button
+                                        >Sign Up</styled-button
                                     >
                                 </router-link>
                             </span>
+                        </div>
+                        <div class="flex items-center pt-1" v-else>
+                            <a
+                                href="/home"
+                                class="flex items-center space-x-3"
+                            >
+                                <user-avatar :source="authenticated.avatar" />
+                                <span class="text-white">{{
+                                    authenticated.username
+                                }}</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <TheSideNav/>
+        <TheSideNav />
 
         <nuxt />
 
@@ -789,10 +806,10 @@
                                             >
                                         </li>
                                         <li class="mt-4">
-                                            <a
-                                                href="#"
+                                            <nuxt-link
+                                                to="/blog"
                                                 class="text-base leading-6 text-gray-400 hover:text-gray-500"
-                                                >Blog</a
+                                                >Blog</nuxt-link
                                             >
                                         </li>
                                     </ul>
@@ -812,7 +829,7 @@
                                 >Shoppy made for professional sellers</span
                             >
                         </div>
-                        <div class="flex mt-0 md:mt-4 md:m-0">
+                        <div class="flex mt-0 md:m-0">
                             <div>
                                 <nuxt-link
                                     to="/legal/terms"
@@ -830,7 +847,8 @@
                                     >Cookies</nuxt-link
                                 >
                                 <span class="px-2 text-sm block md:inline"
-                                    >Shoppy Ecommerce Ltd. &copy; 2020</span>
+                                    >Shoppy Ecommerce Ltd. &copy; 2020</span
+                                >
                             </div>
                         </div>
                     </div>
@@ -843,8 +861,10 @@
 <script>
 import { mapGetters } from 'vuex'
 import TheSideNav from '~/components/TheSideNav'
+import UserAvatar from '~/components/user/UserAvatar'
 
 export default {
+    middleware: ['authentication'],
     data() {
         return {
             hasHero: false,
@@ -857,6 +877,7 @@ export default {
     },
     components: {
         TheSideNav,
+        UserAvatar
     },
     methods: {
         routeHasHero() {
@@ -865,7 +886,7 @@ export default {
             }
 
             // 404 page
-            if(this.$route.matched.length === 0) {
+            if (this.$route.matched.length === 0) {
                 return true
             }
 
@@ -889,6 +910,7 @@ export default {
 
     computed: {
         ...mapGetters('content', ['posts']),
+        ...mapGetters('user', ['isLoggedIn', 'authenticated']),
         isSidebar() {
             return this.$store.getters['nav/toggleSidebar']
         },
@@ -896,10 +918,23 @@ export default {
             return [...(this.posts || [])].sort((a, b) => a - b).slice(0, 3)
         },
 
-        footerClassObject: function () {
+        footerClassObject: function() {
             return {
-                'backgrounds_home-bottom bg-white': this.$route.matched.length > 0,
+                'backgrounds_home-bottom bg-white':
+                    this.$route.matched.length > 0,
                 'bg-bluely': this.$route.matched.length === 0
+            }
+        }
+    },
+
+    async created() {
+        let token = this.$cookies.get('token');
+        if (token) {
+            let response = await this.$axios.$get('/user');
+            console.log(response);
+
+            if (response.status && response.user) {
+                await this.$store.dispatch('user/login', response.user);
             }
         }
     },
@@ -927,11 +962,11 @@ export default {
     },
 
     watch: {
-        '$route': function() {
+        $route: function() {
             if (process.client && this.isSidebar && window.innerWidth < 768) {
                 this.$store.dispatch('nav/toggleSidebar')
             }
-        },
+        }
     }
 }
 </script>
