@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "color": "#000",
+        "code": "all",
+        "title": "Roadmap"
+    },
+    {
+        "id": 1,
+        "color": "#37af59",
+        "code": "new",
+        "title": "New"
+    },
+    {
+        "id": 2,
+        "color": "#0cb4e4",
+        "code": "feature",
+        "title": "Feature"
+    },
+    {
+        "id": 3,
+        "color": "#6d61b0",
+        "code": "update",
+        "title": "Improvements"
+    },
+    {
+        "id": 4,
+        "color": "#ff8161",
+        "code": "fix",
+        "title": "Fixes"
+    },
+    {
+        "id": 5,
+        "color": "#ffbc45",
+        "code": "beta",
+        "title": "Beta"
+    }
+]

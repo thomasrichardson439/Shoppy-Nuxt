@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "title": "Updated Pardot Integration",
+        "type": "update",
+        "date": "10 hours ago",
+        "description": "Shoppy has released a new version of our Pardot integration. We’ve worked hard on making sure this new integration is the best way to extract data from Pardot to your Shoppy destination. The new integration, based on the Singer standard, includes many new features such as:"
+    },
+    {
+        "id": 1,
+        "title": "Two-Factor Authentication",
+        "type": "beta",
+        "date": "2 months ago",
+        "description": "We take security seriously and keep improving it by applying the best practices and security standarts. And Two-Factor Authentication (2FA) is the one of these security improvements."
+    },
+    {
+        "id": 2,
+        "title": "Member impersonation",
+        "type": "new",
+        "date": "03.15.2020",
+        "description": "Provide better support for your members or see how member only content looks when logged in with member impersonation."
+    },
+    {
+        "id": 3,
+        "title": "Segment subscribers with member labels",
+        "type": "feature",
+        "date": "03.15.2020",
+        "description": "You can now segment your members list in Ghost using member labels which can be applied from the member dashboard."
+    },
+    {
+        "id": 4,
+        "title": "Mention labels inside the post",
+        "type": "fix",
+        "date": "03.15.2020",
+        "description": "Sometimes all we have an announcement about a few issues in one single post. Some bug fixes, newly released features, and enhancements, etc. We can post them separately, but it doesn't look good always since it just can be only a few words about one minor bug fix."
+    }
+]

@@ -1,101 +1,188 @@
 <template>
-    <div class="container mx-auto">
-        <div class="md:flex md:flex-wrap py-10">
-            <div class="md:w-8/12 border-b border-middarkgrey-6 bg-white p-8">
-                <div v-for="(n, index) in 4" class="mb-8">
-                    <div class="mb-6 tracking-wide">
-                        <div class="px-4 py-2 mt-2">
-                            <div class="md:flex md:flex-wrap">
-                                <div class="md:w-2/12 mt-2">
-                                    <span
-                                        class="bg-green-400 rounded-lg text-white p-2 text-sm"
-                                        >NEW</span
+    <div>
+        <div class="shoppy-hero bg-bluely text-white header">
+            <div class="text-center font-medium text-5xl">
+                Changelog
+            </div>
+            <div class="text-center text-gray-200 text-xl">
+                Product updates from the team at Stitch.
+            </div>
+            <div class="text-center text-gray-200 text-xl mt-10">
+                <control
+                    class="mb-6 subscribe"
+                    name="email"
+                    type="text"
+                    placeholder="Subscribe for updates by email..."
+                    rules="required"
+                    value=""
+                >
+                </control>
+            </div>
+        </div>
+        <div class="py-16 wrapper overflow-hidden lg:py-24">
+            <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
+                <div class="flex mb-4">
+                    <div class="lg:w-1/3 sm:w-full">
+                        <h4
+                            class="text-2xl leading-8 font-semibold text-gray-900 tracking-tight sm:text-2xl sm:leading-9 filter-title"
+                        >
+                            Filter
+                        </h4>
+                        <ul>
+                            <li
+                                :class="{'menu-item': true, 'active': current === filter.code}"
+                                v-for="filter in filters"
+                                @click="current=filter.code"
+                            >
+                                {{filter.title}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-2/3 sm:w-full right-column">
+                        <div class="line-bg"></div>
+                        <div v-for="record in filtered" class="pb-4 pl-12 record">
+                            <div class="indicator">
+                                <svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                                    <g id="Ellipse_2" data-name="Ellipse 2" fill="none" :stroke="typeColor(record.type)" stroke-width="2">
+                                        <circle cx="9.5" cy="9.5" r="9.5" stroke="none"/>
+                                        <circle cx="9.5" cy="9.5" r="8.5" fill="none"/>
+                                    </g>
+                                    <circle id="Ellipse_2_copy" data-name="Ellipse 2 copy" cx="4.5" cy="4.5" r="4.5" transform="translate(5 5)" :fill="typeColor(record.type)"/>
+                                </svg>
+                            </div>
+                            <div class="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
+                                <div class="bg-white px-3 py-3 lg:flex-shrink-1 lg:p-8">
+                                    <h4
+                                        class="text-2xl leading-8 font-semibold text-gray-900 tracking-tight sm:text-2xl sm:leading-9"
                                     >
-                                </div>
-                                <div
-                                    class="md:w-10/12 border-b pb-6 border-middarkgray-6"
-                                >
-                                    <div class="md:flex-shrink-0">
-                                        <img
-                                            src="https://ik.imagekit.io/q5edmtudmz/post1_fOFO9VDzENE.jpg"
-                                            alt="mountains"
-                                            class="w-full h-64 mb-4"
-                                        />
+                                        {{record.title}}
+                                    </h4>
+                                    <div class="py-3 flex">
+                                        <filter-label :type="record.type" :filters="filters"></filter-label> <div class="ml-3 record-date">{{record.date}}</div>
                                     </div>
-
-                                    <h2
-                                        class="font-bold text-2xl mt-6 mb-3 text-gray-800 tracking-normal"
-                                    >
-                                        My Amazing Journey to the Mountains
-                                    </h2>
-                                    <p class="text-sm text-gray-700 mr-1">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Tempora reiciendis ad
-                                        architecto at aut placeat quia, minus
-                                        dolor praesentium officia maxime
-                                        deserunt porro amet ab debitis deleniti
-                                        modi soluta similique...
-                                    </p>
-                                    <div
-                                        class="flex items-center justify-between mt-2 mx-6"
-                                    >
-                                        <a
-                                            href="#"
-                                            class="text-blue-500 text-xs -ml-3 "
-                                            >Show More</a
-                                        >
-                                        <a href="#" class="flex text-gray-700">
-                                            <svg
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                class="w-6 h-6 text-blue-500"
-                                                stroke="currentColor"
-                                            >
-                                                <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-                                                />
-                                            </svg>
-                                            5
-                                        </a>
-                                    </div>
-                                    <div
-                                        class="author flex items-center -ml-3 my-3"
-                                    >
-                                        <div class="user-logo">
-                                            <img
-                                                class="w-12 h-12 object-cover rounded-full mx-4  shadow"
-                                                src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
-                                                alt="avatar"
-                                            />
-                                        </div>
-                                        <h2
-                                            class="text-sm tracking-tighter text-gray-900"
-                                        >
-                                            <a href="#">By Rotem Bar</a>
-                                            <span class="text-gray-600"
-                                                >02 JUNE 2020</span
-                                            >
-                                        </h2>
-                                    </div>
+                                    <div class="record-description">{{record.description}}</div>
+                                    <a href="#" class="record-more-link">See full details &rarr;</a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="mt-15 text-center">
+                            <nuxt-link
+                                to="/"
+                                class="md:mb-0 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold"
+                            >
+                                 Load More
+                            </nuxt-link>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <get-started/>
     </div>
 </template>
 
 <script>
+    import GetStarted from '~/components/GetStarted'
+    import FilterLabel from '~/components/changelog/FilterLabel'
+    import Control from '~/components/Control.vue'
+
     export default {
+        components: {
+            GetStarted,
+            FilterLabel,
+            Control,
+        },
         head() {
             return {
                 title: 'Changelog and Roadmap'
             }
+        },
+        data: () => {
+            return {
+                current: null,
+                filters: require('~/assets/content/changelog/filters.json'),
+                records: require('~/assets/content/changelog/records.json'),
+            }
+        },
+        computed: {
+          filtered() {
+            return this.records.filter(item => item.type === this.current || this.current === 'all' )
+          }
+        },
+        created() {
+            this.current = this.filters[0].code;
+        },
+        methods: {
+            typeColor(code) {
+                return this.filters.find(item => item.code === code)?.color
+            }
         }
     }
 </script>
+
+<style>
+    .header {
+        padding-bottom: 80px;
+        background-image: url('../assets/images/changelog/header-bg.svg');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+    .wrapper {
+        background: #f7fafc;
+    }
+    .record, .right-column {
+        position: relative;
+    }
+    .record-description {
+        padding: 10px 0 20px;
+        line-height: 1.7rem;
+        font-size: 1rem
+    }
+    a.record-more-link, a:hover.record-more-link {
+        color: #a4d037;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        font-weight: 600;
+    }
+    .indicator {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 19px;
+        height: 19px;
+    }
+    .filter-title {
+        margin-bottom: 35px;
+    }
+    .record-date {
+        color: #b2b3bb;
+        font-size: 1rem;
+    }
+    .subscribe {
+        width: 450px;
+        margin: auto;
+    }
+    .menu-item {
+        width: 200px;
+        margin-top: 15px;
+        font-size: 1rem;
+        line-height: 36px;
+        height: 36px;
+        cursor: pointer;
+    }
+    .active {
+        color: #a4d037;
+        border-right: 4px solid #a4d037;
+    }
+    .line-bg {
+        position: absolute;
+        left: 0;
+        top: 45px;
+        bottom: 100px;
+        height: calc(100% - 100px);
+        width: 11px;
+        background-image: url('../assets/images/changelog/line-bg.png');
+        background-repeat: repeat-y;
+        background-position: 0 40px;
+    }
+</style>
