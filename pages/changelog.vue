@@ -1,25 +1,21 @@
 <template>
     <div>
-        <div class="shoppy-hero bg-bluely text-white header">
-            <div class="text-center font-medium text-5xl">
+        <div class="md:overflow-hidden design-bg mb-20">
+        <!-- <div class="shoppy-hero bg-bluely text-white header"> -->
+            <h1 class="text-center font-bold text-white mt-10 md:mt-0 text-3xl md:text-5xl sm:pt-10 md:pt-10 lg:pt-4 xl:pt-0">
                 Changelog
-            </div>
-            <div class="text-center text-gray-200 text-xl">
+            </h1>
+            <h2 class="text-center text-white text-base md:text-xl">
                 Product updates from the team at Stitch.
-            </div>
-            <div class="text-center text-gray-200 text-xl mt-10">
-                <control
-                    class="mb-6 subscribe"
-                    name="email"
-                    type="text"
-                    placeholder="Subscribe for updates by email..."
-                    rules="required"
-                    value=""
-                >
-                </control>
+            </h2>
+            <div class="relative mt-5 md:w-2/6 w-full mx-auto">
+                <input class="bg-purple-white shadow rounded border-0 p-3 w-full" placeholder="Subscribe for updates by email...">
+                <div class="absolute pin-r pin-t mt-1 mr-1 text-purple-lighter top-0 right-0">
+                    <img class="h-10" src="~/assets/images/changelog/subscribe-icon.svg" alt="" />
+                </div>
             </div>
         </div>
-        <div class="py-16 wrapper overflow-hidden lg:py-24">
+        <div class="container mx-auto px-5 md:px-0">
             <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
                 <div class="flex mb-4">
                     <div class="lg:w-1/3 sm:w-full">
@@ -31,7 +27,7 @@
                         <ul>
                             <li
                                 :class="{'menu-item': true, 'active': current === filter.code}"
-                                v-for="filter in filters"
+                                v-for="filter in filters" :key="filter"
                                 @click="current=filter.code"
                             >
                                 {{filter.title}}
@@ -40,7 +36,7 @@
                     </div>
                     <div class="lg:w-2/3 sm:w-full right-column">
                         <div class="line-bg"></div>
-                        <div v-for="record in filtered" class="pb-4 pl-12 record">
+                        <div v-for="record in filtered" :key="record" class="pb-4 pl-12 record">
                             <div class="indicator">
                                 <svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
                                     <g id="Ellipse_2" data-name="Ellipse 2" fill="none" :stroke="typeColor(record.type)" stroke-width="2">
@@ -61,13 +57,13 @@
                                         <filter-label :type="record.type" :filters="filters"></filter-label> <div class="ml-3 record-date">{{record.date}}</div>
                                     </div>
                                     <div class="record-description">{{record.description}}</div>
-                                    <a href="#" class="record-more-link flex">See full details <img src="../assets/images/changelog/arrow-icon.svg" alt="" class="ml-3" /></a>
+                                    <a href="#" class="record-more-link flex">See full details <img src="~/assets/images/changelog/arrow-icon.svg" alt="" class="ml-3" /></a>
                                 </div>
                             </div>
                         </div>
                         <div class="mt-15 text-center">
                             <nuxt-link
-                                to="/"
+                                to="#"
                                 class="md:mb-0 inline-block py-2 px-8 text-green rounded-lg shadow border-solid border border-green font-bold"
                             >
                                  Load More
@@ -120,30 +116,37 @@
     }
 </script>
 
-<style>
-    .header {
-        padding-bottom: 80px;
-        background-image: url('../assets/images/changelog/header-bg.svg');
+<style lang="scss" scoped>
+    .design-bg {
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: left bottom;
+        background-image: url(~assets/images/home/home_top_bg.png);
+        padding: 12vw 4vw 5vw 4vw;
+        
+        @media (max-width: 767px) {
+            background-image: none;
+            background-color: #15212a;
+            padding-bottom: 50px;
+        }
     }
-    .wrapper {
-        background: #f7fafc;
-    }
+
     .record, .right-column {
         position: relative;
     }
+
     .record-description {
         padding: 10px 0 20px;
         line-height: 1.7rem;
         font-size: 1rem
     }
+
     a.record-more-link, a:hover.record-more-link {
         color: #a4d037;
         font-size: 1rem;
         line-height: 1.6rem;
         font-weight: 600;
     }
+
     .indicator {
         position: absolute;
         left: 0;
@@ -151,17 +154,16 @@
         width: 19px;
         height: 19px;
     }
+
     .filter-title {
         margin-bottom: 35px;
     }
+
     .record-date {
         color: #b2b3bb;
         font-size: 1rem;
     }
-    .subscribe {
-        width: 450px;
-        margin: auto;
-    }
+
     .menu-item {
         width: 200px;
         margin-top: 15px;
@@ -170,10 +172,12 @@
         height: 36px;
         cursor: pointer;
     }
+
     .active {
         color: #a4d037;
         border-right: 4px solid #a4d037;
     }
+
     .line-bg {
         position: absolute;
         left: 0;
@@ -181,7 +185,7 @@
         bottom: 100px;
         height: calc(100% - 100px);
         width: 11px;
-        background-image: url('../assets/images/changelog/line-bg.png');
+        background-image: url(~assets/images/changelog/line-bg.png);
         background-repeat: repeat-y;
         background-position: 0 40px;
     }
