@@ -61,7 +61,7 @@
                                         <filter-label :type="record.type" :filters="filters"></filter-label> <div class="ml-3 record-date">{{record.date}}</div>
                                     </div>
                                     <div class="record-description">{{record.description}}</div>
-                                    <a href="#" class="record-more-link">See full details &rarr;</a>
+                                    <a href="#" class="record-more-link flex">See full details <img src="../assets/images/changelog/arrow-icon.svg" alt="" class="ml-3" /></a>
                                 </div>
                             </div>
                         </div>
