@@ -51,7 +51,8 @@ export default {
         // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
         '@nuxtjs/tailwindcss',
         // Doc: https://www.npmjs.com/package/@nuxtjs/moment
-        '@nuxtjs/moment'
+        '@nuxtjs/moment',
+        ['@nuxtjs/pwa', { workbox: false, meta: false, manifest: false, oneSignal: false }]
     ],
     /*
      ** Nuxt.js modules
