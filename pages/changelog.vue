@@ -15,28 +15,28 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto px-5 md:px-0">
+        <div class="container mx-auto md:px-0">
             <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-                <div class="flex mb-4">
-                    <div class="lg:w-1/3 sm:w-full">
+                <div class="flex flex-wrap mb-4">
+                    <div class="lg:w-1/3 sm:w-full w-full">
                         <h4
                             class="text-2xl leading-8 font-semibold text-gray-900 tracking-tight sm:text-2xl sm:leading-9 filter-title"
                         >
                             Filter
                         </h4>
-                        <ul>
+                        <ul class="menu-item-wrap">
                             <li
                                 :class="{'menu-item': true, 'active': current === filter.code}"
-                                v-for="filter in filters" :key="filter"
+                                v-for="filter in filters" :key="filter.id"
                                 @click="current=filter.code"
                             >
                                 {{filter.title}}
                             </li>
                         </ul>
                     </div>
-                    <div class="lg:w-2/3 sm:w-full right-column">
+                    <div class="lg:w-2/3 sm:w-full w-full right-column mt-5 lg:mt-0">
                         <div class="line-bg"></div>
-                        <div v-for="record in filtered" :key="record" class="pb-4 pl-12 record">
+                        <div v-for="record in filtered" :key="record.id" class="pb-4 pl-12 record">
                             <div class="indicator">
                                 <svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
                                     <g id="Ellipse_2" data-name="Ellipse 2" fill="none" :stroke="typeColor(record.type)" stroke-width="2">
@@ -157,6 +157,9 @@
 
     .filter-title {
         margin-bottom: 35px;
+        @media (max-width: 1023px) {
+            margin-bottom: 15px;
+        }
     }
 
     .record-date {
@@ -171,6 +174,17 @@
         line-height: 36px;
         height: 36px;
         cursor: pointer;
+        @media (max-width: 1023px) {
+            width: auto;
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+        &-wrap{
+            @media (max-width: 1023px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
     }
 
     .active {
