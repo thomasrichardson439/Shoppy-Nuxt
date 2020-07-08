@@ -31,5 +31,8 @@ module.exports = {
     variants: {
         opacity: ['disabled']
     },
+    purge: {
+        enabled: false
+    },
     plugins: [require('@tailwindcss/ui')]
 }

@@ -6,7 +6,7 @@
             ></div>
         </div>
 
-        <div class="container w-6/12 mx-auto pb-40 post">
+        <div class="container md:w-6/12 w-11/12 mx-auto pb-40 post">
             <div class="text-center">
                 <h1 class="text-4xl">{{ post.title }}</h1>
                 <div class="text-gray mb-4 text-xs uppercase">
@@ -14,14 +14,21 @@
                 </div>
             </div>
 
-            <div v-html="rendered" class="mt-10"></div>
+            <div v-html="rendered" class="markdown-enabled mt-10"></div>
         </div>
     </div>
 </template>
 
 <style lang="scss">
+    @import '~/assets/css/markdown.scss';
+
     .blog-header {
         height: 20vw;
+
+        @media (max-width: 767px) {
+            padding-bottom: 40px;
+            padding-top: 120px;
+        }
 
         &--inner {
             position: absolute;

@@ -217,7 +217,7 @@
                         <img
                             class="relative mx-auto"
                             width="490"
-                            src="~assets/images/payments.png"
+                            src="~assets/images/ecommerce/world_map.svg"
                             alt=""
                         />
                     </div>
@@ -301,7 +301,7 @@
                                             <p
                                                 class="mt-2 text-base leading-6 text-gray-500"
                                             >
-                                                 Break down every aspect of your analytics. Create PDF reports. Integrate Google Analytics as well as other analytic engines. 
+                                                 Break down every aspect of your analytics. Create PDF reports. Integrate Google Analytics as well as other analytic engines.
                                             </p>
                                         </div>
                                     </div>
@@ -336,7 +336,7 @@
                                             <p
                                                 class="mt-2 text-base leading-6 text-gray-500"
                                             >
-                                                 Issue replacements and refunds for an order with a simple click on a button. 
+                                                 Issue replacements and refunds for an order with a simple click on a button.
                                             </p>
                                         </div>
                                     </div>
@@ -371,7 +371,7 @@
                                             <p
                                                 class="mt-2 text-base leading-6 text-gray-500"
                                             >
-                                                 We have a built in help-desk straight into your store. Customers can easily contact you, and you can conversate regarding any of their concerns. 
+                                                 We have a built in help-desk straight into your store. Customers can easily contact you, and you can conversate regarding any of their concerns.
                                             </p>
                                         </div>
                                     </div>
@@ -452,7 +452,7 @@
                             <img
                                 class="relative mx-auto"
                                 width="490"
-                                src="~assets/images/payments.png"
+                                src="~assets/images/ecommerce/section_2.svg"
                                 alt=""
                             />
                         </div>
@@ -497,7 +497,7 @@
                             </div>
                             <div class="text-center">
                                 <div
-                                    class="uppercase text-sm text-lightpink mt-4"
+                                    class="uppercase text-sm text-lightpink mt-5"
                                 >
                                     Step 1
                                 </div>
@@ -522,7 +522,7 @@
                             </div>
                             <div class="text-center">
                                 <div
-                                    class="uppercase text-sm text-lightpink mt-4"
+                                    class="uppercase text-sm text-lightpink mt-5"
                                 >
                                     Step 2
                                 </div>
@@ -548,7 +548,7 @@
                             </div>
                             <div class="text-center">
                                 <div
-                                    class="uppercase text-sm text-lightpink mt-4"
+                                    class="uppercase text-sm text-lightpink mt-5"
                                 >
                                     Step 3
                                 </div>
@@ -574,7 +574,7 @@
                             </div>
                             <div class="text-center">
                                 <div
-                                    class="uppercase text-sm text-lightpink mt-4"
+                                    class="uppercase text-sm text-lightpink mt-5"
                                 >
                                     Step 4
                                 </div>
@@ -614,19 +614,19 @@
                         <dt
                             class="order-2 mt-2 text-lg leading-6 font-medium text-indigo-200"
                         >
-                            Pepperoni
+                            uptime
                         </dt>
                         <dd
                             class="order-1 text-5xl leading-none font-extrabold text-white"
                         >
-                            99.96% Uptime
+                            99.96%
                         </dd>
                     </div>
                     <div class="flex flex-col mt-10 sm:mt-0">
                         <dt
                             class="order-2 mt-2 text-lg leading-6 font-medium text-indigo-200"
                         >
-                            Operational
+                            operational
                         </dt>
                         <dd
                             class="order-1 text-5xl leading-none font-extrabold text-white"
@@ -638,12 +638,12 @@
                         <dt
                             class="order-2 mt-2 text-lg leading-6 font-medium text-indigo-200"
                         >
-                            Processed orders
+                            processed orders
                         </dt>
                         <dd
                             class="order-1 text-5xl leading-none font-extrabold text-white"
                         >
-                            7 millions+
+                            7m+
                         </dd>
                     </div>
                 </dl>

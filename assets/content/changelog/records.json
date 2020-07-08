@@ -1,37 +1,37 @@
 [
     {
         "id": 0,
-        "title": "Updated Pardot Integration",
+        "title": "Invoice creation emails",
         "type": "update",
         "date": "10 hours ago",
-        "description": "Shoppy has released a new version of our Pardot integration. We’ve worked hard on making sure this new integration is the best way to extract data from Pardot to your Shoppy destination. The new integration, based on the Singer standard, includes many new features such as:"
+        "description": "Shoppy does now send the initial emails, when an invoice is created again and the email provided is valid and the mx server responds accordingly."
     },
     {
         "id": 1,
-        "title": "Two-Factor Authentication",
+        "title": "Custom domains",
         "type": "beta",
-        "date": "2 months ago",
-        "description": "We take security seriously and keep improving it by applying the best practices and security standarts. And Two-Factor Authentication (2FA) is the one of these security improvements."
+        "date": "22.06.2020",
+        "description": "You may now make your Shop accessible under your own domain. SSL certificates are issued and managed by us, there is no further work for you required. In the future, you will also be able to register domains straight and have them managed by us."
     },
     {
         "id": 2,
-        "title": "Member impersonation",
+        "title": "Shoppy v2",
         "type": "new",
-        "date": "03.15.2020",
-        "description": "Provide better support for your members or see how member only content looks when logged in with member impersonation."
+        "date": "22.06.2020",
+        "description": "We are proud to launch Shoppy v2 with an updated landing page, including Shoppy Storefront, your own customizable and white-labeled shop."
     },
     {
         "id": 3,
-        "title": "Segment subscribers with member labels",
+        "title": "Analytics",
         "type": "feature",
-        "date": "03.15.2020",
-        "description": "You can now segment your members list in Ghost using member labels which can be applied from the member dashboard."
+        "date": "05.04.2020",
+        "description": "You can now view your revenue and other metrics for a selected period straight from the dashboard."
     },
     {
         "id": 4,
-        "title": "Mention labels inside the post",
-        "type": "fix",
-        "date": "03.15.2020",
-        "description": "Sometimes all we have an announcement about a few issues in one single post. Some bug fixes, newly released features, and enhancements, etc. We can post them separately, but it doesn't look good always since it just can be only a few words about one minor bug fix."
+        "title": "Physical Items",
+        "type": "upcoming",
+        "date": "22.06.2020",
+        "description": "For Q3 we plan to add support for physical items and shipping integrity for Shoppy."
     }
 ]

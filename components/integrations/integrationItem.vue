@@ -17,9 +17,9 @@
                     {{ item.date }}
                 </span>
             </template>
-            
+
         </div>
-        <img class="mx-auto" :src="require(`~/assets/images/integrations/${item.name}_big.png`)" alt="WooCommerce">
+        <img class="mx-auto" :src="require(`~/assets/images/integrations/${item.name}_big.png`)" :alt="item.title">
         <div class="px-6 py-4">
             <h2 class="font-bold text-xl mb-2 text-center mt-3">
                 {{ item.title }}
@@ -29,19 +29,21 @@
             </p>
         </div>
         <div class="px-3">
-            <hr />
-        </div>                                
+            <hr/>
+        </div>
 
         <div class="flex items-center justify-center py-4 px-4">
             <template v-if="item.underline_link_text">
                 <div class="mr-3 ml-3">
-                    <img class="mx-auto" src="~/assets/images/integrations/arrow.png">
+                    <a :href="item.download">
+                        <img class="mx-auto" src="~/assets/images/integrations/arrow.png">
+                    </a>
                 </div>
                 <div class="flex flex-wrap">
                     <p class="text-sm leading-none system_text">
                         {{ item.underline_text }}
                     </p>
-                    <a href="#" class="text-sm leading-none underline_link font-bold">
+                    <a :href="item.link" class="text-sm leading-none underline_link font-bold">
                         {{ item.underline_link_text }}
                     </a>
                 </div>
@@ -62,26 +64,30 @@
 
 <script>
     export default {
-       props: ['item'] 
+        props: ['item']
     }
 </script>
 
 <style lang="scss" scoped>
-    .label_wrap{
-        .text-green{
+    .label_wrap {
+        .text-green {
             color: #37af59;
         }
-        .bg-green{
+
+        .bg-green {
             background-color: #37af59;
         }
-        .bg-orange{
+
+        .bg-orange {
             background-color: #ffbc45;
         }
     }
-    .system_text{
+
+    .system_text {
         margin-bottom: 2px;
     }
-    .underline_link{
+
+    .underline_link {
         color: #3eb0ef;
         text-decoration: underline;
     }

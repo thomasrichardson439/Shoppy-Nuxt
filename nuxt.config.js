@@ -17,7 +17,27 @@ export default {
             {
                 hid: 'description',
                 name: 'description',
-                content: process.env.npm_package_description || ''
+                content: 'Shoppy is an all-in-one payment processing and e-commerce solution. Accept payments, sell digital products from your own and more, do it all with a single platform.'
+            },
+            {
+                hid: 'ogtitle',
+                property: 'og:title',
+                content: 'Shoppy, Ecommerce Made Simple'
+            },
+            {
+                hid: 'ogurl',
+                property: 'og:url',
+                content: 'https://shoppy.gg/'
+            },
+            {
+                hid: 'ogimage',
+                property: 'og:image',
+                content: 'https://shoppy.gg/images/apple-touch-icon-180x180.png'
+            },
+            {
+                hid: 'ogdescription',
+                property: 'og:description',
+                content: 'Shoppy is an all-in-one payment processing and e-commerce solution. Accept payments, sell digital products from your own and more, do it all with a single platform.'
             }
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -100,6 +120,15 @@ export default {
             'dotenv',
             'vee-validate'
         ],
+
+        postcss: {
+            preset: {
+                features: {
+                    // Fixes: https://github.com/tailwindcss/tailwindcss/issues/1190#issuecomment-546621554
+                    "focus-within-pseudo-class": false
+                }
+            }
+        },
 
         /*
          ** You can extend webpack config here

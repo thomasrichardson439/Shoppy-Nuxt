@@ -405,7 +405,7 @@
                             </svg>
                         </span>
                         <p class="ml-3 font-medium text-white truncate">
-                            <span class="hidden md:inline">
+                            <span>
                                 Big news! We're excited to launch our
                                 <span
                                     class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-gray-100 text-gray-800"

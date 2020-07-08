@@ -1,13 +1,31 @@
 [
     {
         "title": "Receiving a refund for a purchase",
-        "content": "receive_refund.md",
+        "content": "receive-refund.md",
         "date": 1591309141660,
         "tags": []
     },
     {
         "title": "Using custom domains",
-        "content": "custom_domains.md",
+        "content": "custom-domains.md",
+        "date": 1591309141660,
+        "tags": []
+    },
+    {
+        "title": "Supported currencies",
+        "content": "supported-currencies.md",
+        "date": 1591309141660,
+        "tags": []
+    },
+    {
+        "title": "Supported gateways",
+        "content": "supported-gateways.md",
+        "date": 1591309141660,
+        "tags": []
+    },
+    {
+        "title": "Account termination",
+        "content": "account-terminated.md",
         "date": 1591309141660,
         "tags": []
     }

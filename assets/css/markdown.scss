@@ -1,0 +1,43 @@
+.markdown-enabled {
+    ul {
+        @apply pl-3 mb-12;
+        list-style-type: disc;
+    }
+
+    h1 {
+        @apply mb-3;
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    h2 {
+        @apply mb-3;
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    h3 {
+        @apply mb-3;
+        font-weight: 600;
+        font-size: 28px;
+    }
+
+    code {
+        font-size: 12px;
+        @at-root pre {
+            @apply bg-gray-100 rounded border p-1 ml-3 mb-6 pl-3;
+        }
+    }
+
+    p > code {
+        @apply bg-gray-100 rounded border p-1 mx-1;
+    }
+
+    p > img {
+        @apply mb-12;
+    }
+
+    p a {
+        @apply text-lime;
+    }
+}

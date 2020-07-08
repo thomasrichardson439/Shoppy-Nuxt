@@ -2,13 +2,13 @@
     {
         "image": "welcome.png",
         "title": "Welcome to the Shoppy Blog",
-        "content": "test.md",
-        "date": 1591309141660
+        "content": "welcome.md",
+        "date": 1592854940096
     },
     {
         "image": "welcome.png",
-        "title": "Another blog post",
-        "content": "test.md",
-        "date": 1591309141660
+        "title": "Introducing Managed Domains",
+        "content": "introducing-managed-domains.md",
+        "date": 1593016722783
     }
 ]

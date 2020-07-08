@@ -231,7 +231,7 @@ export default {
                     this.$cookies.set('token', response.token, {
                         maxAge: 60 * 60 * 24 * (data.remember ? 31 : 3)
                     })
-                    window.location = window.location.host + '/home';
+                    window.location = window.location.protocol + '//' + window.location.host + '/home'
                 } else {
                     if (response.twofa_enabled) {
                         if (this.user.token.length === 0) {

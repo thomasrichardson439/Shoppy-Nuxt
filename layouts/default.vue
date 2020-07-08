@@ -253,9 +253,8 @@
                                                     <div
                                                         class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
                                                     >
-                                                        <a
-                                                            href="https://shoppy.dev"
-                                                            target="_blank"
+                                                        <nuxt-link
+                                                            to="/integrations"
                                                             class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50"
                                                         >
                                                             <svg
@@ -289,7 +288,7 @@
                                                                     tools
                                                                 </p>
                                                             </div>
-                                                        </a>
+                                                        </nuxt-link>
                                                     </div>
                                                     <div
                                                         class="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8"
@@ -583,7 +582,7 @@
                         >
                             <router-link to="/auth/login">
                                 <a
-                                    class="border-solid border-2 border-white hover:border-lime hover:bg-lime inline-flex items-center justify-center md:px-2 lg:px-7 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
+                                    class="border-solid border-2 border-white hover:border-lime hover:bg-grey inline-flex items-center justify-center md:px-2 lg:px-7 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white focus:outline-none focus:shadow-outline-indigo"
                                     >Sign In</a
                                 >
                             </router-link>
@@ -788,6 +787,14 @@
                                             >
                                                 Integrations
                                             </nuxt-link>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a
+                                                href="mailto:support@shoppy.gg"
+                                                class="text-base leading-6 text-gray-400 hover:text-gray-500"
+                                            >
+                                                Report Abuse
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>

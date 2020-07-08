@@ -34,7 +34,7 @@
                                 {{ answer.title }}
                             </h1>
 
-                            <div v-html="rendered" class="answer"></div>
+                            <div v-html="rendered" class="markdown-enabled answer"></div>
                         </div>
                     </div>
                 </div>
@@ -43,8 +43,14 @@
     </div>
 </template>
 
-<style>
+<style lang='scss'>
+    @import url(~/assets/css/markdown.scss);
+
     .answer p {
+        margin-top: 20px;
+    }
+
+    ul {
         margin-top: 20px;
     }
 </style>
