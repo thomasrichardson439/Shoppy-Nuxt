@@ -20,18 +20,39 @@
         <div class="behave flex items-center mt-4">
           <img src="~assets/images/dashboard/increase.svg" alt="" class="mr-3">
           <span class="manrope_font text-gray-500 font-medium text-xs behave_text">
-            44,29% increase
+            44.29% Increase
           </span>
         </div>
       </div>
-      <div class="metric px-4 py-4">
-
+      <div class="metric p-6">
       </div>
-      <div class="metric px-4 py-4">
-
+      <div class="metric p-6">
+        <div class="title flex items-center justify-between">
+          <p class="text-base font-medium">Orders</p>
+          <div class="relative">
+            <select class="block text-xs appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-8 leading-tight focus:outline-none" id="grid-state">
+              <option>Last 30 days</option>
+              <option>Last 20 days</option>
+              <option>Last 10 days</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            </div>
+          </div>
+        </div>
+        <p class="price manrope_font font-bold text-black mt-4">930</p>
+        <div class="behave flex items-center mt-4">
+          <img src="~assets/images/dashboard/descrease.svg" alt="" class="mr-3">
+          <span class="manrope_font text-gray-500 font-medium text-xs behave_text">
+            17.5% Descrease
+          </span>
+        </div>
       </div>
-      <div class="metric px-4 py-4">
-
+      <div class="metric p-6">
+        <div class="title flex items-center justify-between">
+          <p class="text-base font-medium">Total orders</p>
+        </div>
+        <p class="price manrope_font font-bold text-black mt-4">27.81k</p>
       </div>
     </div>
   </div>
