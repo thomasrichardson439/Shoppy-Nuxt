@@ -60,7 +60,12 @@
 
 <script>
   export default {
-    layout: 'dashboard'
+      head() {
+          return {
+              title: 'Dashboard'
+          }
+      },
+      layout: 'dashboard'
   }
 </script>
 

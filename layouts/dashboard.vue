@@ -40,7 +40,7 @@
           </svg>
 
           <input 
-            class="appearance-none block w-full bg-transparent 
+            class="appearance-none block w-4/6 bg-transparent 
             text-white text-sm rounded 
             py-2 px-3 leading-tight focus:outline-none 
             focus:bg-gray-500 mr-4" 
@@ -180,12 +180,12 @@
                 </svg>
               </nuxt-link>
               <template v-if="item.children">
-                <ul v-if="item.show" class="pl-12 mt-2">
+                <ul v-if="item.show" class="pl-12">
                   <li 
                     v-for="child in item.children"
                     :key="child.name"
                   >
-                    <nuxt-link :to="child.url" class="flex items-center nav_link">
+                    <nuxt-link :to="child.url" class="flex items-center nav_link pt-3">
                       {{ child.name }}
                     </nuxt-link>
                   </li>
