@@ -1,34 +1,41 @@
 [
     {
-        "id": 0,
+        "title": "Verified badge",
+        "type": "new",
+        "date": "02.07.2020",
+        "description": "Verified sellers are now marked so with a verified badge. You may request manual verification of your account by sending a ticket to our support."
+    },
+    {
+        "title": "Buy managed domains",
+        "type": "new",
+        "date": "30.06.2020",
+        "description": "You may now buy managed domains straight from Shoppy. We manage the NS integrity and certs and host your shop on your domains."
+    },
+    {
         "title": "Invoice creation emails",
         "type": "update",
-        "date": "10 hours ago",
+        "date": "25.06.2020",
         "description": "Shoppy does now send the initial emails, when an invoice is created again and the email provided is valid and the mx server responds accordingly."
     },
     {
-        "id": 1,
         "title": "Custom domains",
         "type": "beta",
         "date": "22.06.2020",
         "description": "You may now make your Shop accessible under your own domain. SSL certificates are issued and managed by us, there is no further work for you required. In the future, you will also be able to register domains straight and have them managed by us."
     },
     {
-        "id": 2,
         "title": "Shoppy v2",
         "type": "new",
         "date": "22.06.2020",
         "description": "We are proud to launch Shoppy v2 with an updated landing page, including Shoppy Storefront, your own customizable and white-labeled shop."
     },
     {
-        "id": 3,
         "title": "Analytics",
         "type": "feature",
         "date": "05.04.2020",
         "description": "You can now view your revenue and other metrics for a selected period straight from the dashboard."
     },
     {
-        "id": 4,
         "title": "Physical Items",
         "type": "upcoming",
         "date": "22.06.2020",

@@ -4,7 +4,7 @@
             <div class="px-4 py-20 pb-0 md:py-4 md:pb-4">
                 <div class="container mx-auto shoppy-hero--inner">
                     <div class="md:flex md:flex-wrap">
-                        <div class="md:w-1/2 text-center md:text-left md:pt-16 md:pr-20">
+                        <div class="md:w-2/5 text-center md:text-left md:pt-16 md:pr-20">
                             <h1
                                 class="font-bold text-white text-4xl md:text-3xl leading-tight mb-4"
                             >
@@ -57,9 +57,9 @@
                                 />
                             </a>
                         </div>
-                        <div class="md:w-1/2 md:pt-16 lg:pt-12 mt-12 md:mt-0">
+                        <div class="md:w-3/5 md:pt-16 lg:pt-12 mt-12 md:mt-0">
                             <img
-                                src="~assets/images/home/header_image.svg"
+                                src="~assets/images/home/header_image.svg" class="w-100"
                             />
                         </div>
                     </div>

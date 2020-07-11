@@ -72,17 +72,3 @@
         }
     }
 </script>
-
-<style lang="scss" scoped>
-    .terms-bg {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(~assets/images/home/home_top_bg.png);
-        padding: 9vw 4vw 6vw 4vw;
-        @media (max-width: 767px) {
-            background-image: none;
-            background-color: #15212a;
-            padding-bottom: 50px;
-        }
-    }
-</style>

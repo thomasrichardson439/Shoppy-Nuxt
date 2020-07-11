@@ -6,7 +6,7 @@
                 Changelog
             </h1>
             <h2 class="text-center text-white text-base md:text-xl">
-                Product updates from the team at Stitch.
+                Product updates from the team at Shoppy.
             </h2>
             <div class="relative mt-5 md:w-2/6 w-full mx-auto">
                 <input class="bg-purple-white shadow rounded border-0 p-3 w-full" placeholder="Subscribe for updates by email...">

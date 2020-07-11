@@ -1,4 +1,4 @@
-Currently, Shoppy only allows to setup custom domains for your `Storefront` powerede shop.
+Currently, Shoppy only allows to setup custom domains for your `Storefront` powered shop.
 
 To configure the DNS entries at your DNS provider, you may view our documentation [here](https://theme.shoppy.gg/#/add-domain).
 
