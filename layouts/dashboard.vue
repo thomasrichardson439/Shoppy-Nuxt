@@ -1,21 +1,26 @@
 <template>
   <div>
     <nav class="flex items-center justify-between flex-wrap dash_nav_wrap p-4">
-      <div class="block sm:hidden">
-        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+      <div class="block md:hidden">
+        <button 
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+          @click="toggleSidebar"
+        >
           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button>
       </div>
-      <div class="flex items-center flex-shrink-0 text-white sm:w-1/6">
-        <img
-          class="inline-block text-white text-xl font-bold"
-          src="~/assets/images/logo.svg"
-          width="110"
-          alt="Shoppy"
-        />
-      </div>
-      <div class="flex-wrap block sm:flex-grow flex items-center sm:w-5/6">
-        <div class="text-sm items-center flex-grow hidden sm:flex">
+      
+        <div class="flex items-center flex-shrink-0 text-white sm:w-1/6">
+          <img
+            class="inline-block text-white text-xl font-bold"
+            src="~/assets/images/logo.svg"
+            width="110"
+            alt="Shoppy"
+          />
+        </div>
+      
+      <div class="flex-wrap block md:flex-grow flex items-center md:w-5/6">
+        <div class="text-sm items-center flex-grow hidden md:flex">
           <svg xmlns="http://www.w3.org/2000/svg" 
             xmlns:xlink="http://www.w3.org/1999/xlink" 
             preserveAspectRatio="xMidYMid" 
@@ -45,7 +50,7 @@
           >
         </div>
         <div class="flex flex-wrap">
-          <div class="nav_icons items-center hidden sm:flex">
+          <div class="nav_icons items-center hidden md:flex">
             <div class="mr-7 relative">
               <svg xmlns="http://www.w3.org/2000/svg" 
                 xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -108,7 +113,7 @@
           </div>
           <div class="flex items-center">
             <img class="rounded-full mr-2" src="~/assets/images/dashboard/avatar.png" alt="Avatar of Jonathan Reinink">
-            <div class="text-sm hidden sm:block">
+            <div class="text-sm hidden md:block">
               <p class="text-white text-base manrope_font leading-none">Welcome, Jonathan</p>
             </div>
           </div>
@@ -116,79 +121,104 @@
       </div>
     </nav>
     <div class="flex items-between">
-      <div class="w-1/6 bg-white shadow-md nav_items_wrap items-stretch flex flex-wrap">
-        <ul class="px-10 pt-6">
-          <li 
-            class="py-3 dashboard_nav_item"
-            v-for="(item, index) in dashList"
-            :key="index"
-            @click="showChildren(index)"
-          >
-            <nuxt-link 
-              :to="item.name.toLowerCase() == 'dashboard' ? 
-              `/${item.name.toLowerCase()}` : 
-              `/dashboard/${item.name.toLowerCase()}`" 
-              class="flex items-center nav_link"
+      <transition name="slide-side-dashboard">
+        <div
+          ref="sidebar"
+          v-show="isShow"
+          class="sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/6 w-full bg-white shadow-md nav_items_wrap items-stretch sm:flex flex-wrap absolute sm:relative"
+        >
+          <ul class="px-10 py-6 w-full">
+            <li 
+              class="py-3 dashboard_nav_item relative"
+              v-for="(item, index) in dashList"
+              :key="index"
+              @click="showChildren(index)"
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                xmlns:xlink="http://www.w3.org/1999/xlink" 
-                preserveAspectRatio="xMidYMid" 
-                width="22" height="21" 
-                viewBox="0 0 22 21"
-                class="mr-7"
+              <nuxt-link 
+                :to="item.name.toLowerCase() == 'dashboard' ? 
+                `/${item.name.toLowerCase()}` : 
+                `/dashboard/${item.name.toLowerCase()}`" 
+                class="flex items-center nav_link"
               >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #6d61b0;
-                      fill-rule: evenodd;
-                    }
-                  </style>
-                </defs>
-                <path :d="item.path" />
-              </svg>
-              {{ item.name }}
-            </nuxt-link>
-            <template v-if="item.children">
-              <ul v-if="item.show" class="pl-12 mt-2">
-                <li 
-                  v-for="child in item.children"
-                  :key="child.name"
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  xmlns:xlink="http://www.w3.org/1999/xlink" 
+                  preserveAspectRatio="xMidYMid" 
+                  width="22" height="21" 
+                  viewBox="0 0 22 21"
+                  class="mr-7"
                 >
-                  <nuxt-link :to="child.url" class="flex items-center nav_link">
-                    {{ child.name }}
-                  </nuxt-link>
-                </li>
-              </ul>
-            </template>
-            
-          </li>
-        </ul>
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #6d61b0;
+                        fill-rule: evenodd;
+                      }
+                    </style>
+                  </defs>
+                  <path :d="item.path" />
+                </svg>
+                {{ item.name }}
+                <svg 
+                  v-if="item.children"
+                  class="absolute right-0"
+                  xmlns="http://www.w3.org/2000/svg" 
+                  xmlns:xlink="http://www.w3.org/1999/xlink" 
+                  preserveAspectRatio="xMidYMid" 
+                  width="11.031" height="6" 
+                  viewBox="0 0 11.031 6"
+                >
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #93979a;
+                        fill-rule: evenodd;
+                      }
+                    </style>
+                  </defs>
+                  <path d="M10.854,0.501 L10.493,0.166 C10.380,0.061 10.228,0.004 10.067,0.004 C9.905,0.004 9.754,0.061 9.640,0.166 L5.521,3.962 L1.396,0.162 C1.283,0.057 1.132,-0.000 0.970,-0.000 C0.809,-0.000 0.657,0.057 0.544,0.162 L0.182,0.495 C-0.053,0.711 -0.053,1.064 0.182,1.281 L5.093,5.821 C5.206,5.926 5.358,5.999 5.520,5.999 L5.522,5.999 C5.684,5.999 5.835,5.926 5.948,5.821 L10.854,1.293 C10.968,1.188 11.030,1.045 11.030,0.896 C11.030,0.747 10.968,0.605 10.854,0.501 Z" class="cls-1"/>
+                </svg>
+              </nuxt-link>
+              <template v-if="item.children">
+                <ul v-if="item.show" class="pl-12 mt-2">
+                  <li 
+                    v-for="child in item.children"
+                    :key="child.name"
+                  >
+                    <nuxt-link :to="child.url" class="flex items-center nav_link">
+                      {{ child.name }}
+                    </nuxt-link>
+                  </li>
+                </ul>
+              </template>
+              
+            </li>
+          </ul>
 
-        <nuxt-link to="/settings" class="flex items-center nav_link px-10 self-end pb-7">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            xmlns:xlink="http://www.w3.org/1999/xlink" 
-            preserveAspectRatio="xMidYMid" 
-            width="22" height="21" 
-            viewBox="0 0 22 21"
-            class="mr-7"
-          >
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: #6d61b0;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path d="M19.975,13.716 L19.508,13.716 C19.356,14.190 19.164,14.652 18.935,15.095 L19.266,15.426 C20.068,16.227 20.046,17.511 19.266,18.290 L18.290,19.266 C17.510,20.048 16.226,20.067 15.425,19.266 L15.095,18.935 C14.652,19.164 14.190,19.356 13.716,19.508 L13.716,19.975 C13.716,21.091 12.807,22.000 11.690,22.000 L10.310,22.000 C9.193,22.000 8.284,21.091 8.284,19.975 L8.284,19.508 C7.810,19.356 7.348,19.164 6.905,18.935 L6.574,19.266 C5.772,20.069 4.488,20.045 3.710,19.266 L2.734,18.290 C1.954,17.511 1.931,16.227 2.734,15.426 L3.065,15.095 C2.835,14.652 2.644,14.190 2.492,13.716 L2.025,13.716 C0.909,13.716 -0.000,12.807 -0.000,11.690 L-0.000,10.310 C-0.000,9.193 0.909,8.284 2.025,8.284 L2.492,8.284 C2.644,7.810 2.835,7.348 3.065,6.905 L2.734,6.574 C1.932,5.773 1.954,4.489 2.734,3.710 L3.710,2.734 C4.490,1.952 5.774,1.933 6.574,2.734 L6.905,3.065 C7.348,2.835 7.810,2.644 8.284,2.492 L8.284,2.025 C8.284,0.909 9.193,-0.000 10.310,-0.000 L11.690,-0.000 C12.807,-0.000 13.716,0.909 13.716,2.025 L13.716,2.492 C14.190,2.644 14.652,2.835 15.095,3.065 L15.426,2.734 C16.228,1.931 17.512,1.955 18.290,2.734 L19.266,3.710 C20.046,4.489 20.068,5.773 19.266,6.574 L18.935,6.905 C19.164,7.348 19.356,7.810 19.508,8.284 L19.975,8.284 C21.091,8.284 22.000,9.193 22.000,10.310 L22.000,11.690 C22.000,12.807 21.091,13.716 19.975,13.716 ZM20.711,10.310 C20.711,9.904 20.381,9.573 19.975,9.573 L19.023,9.573 C18.729,9.573 18.472,9.375 18.399,9.090 C18.221,8.399 17.946,7.736 17.582,7.121 C17.432,6.867 17.473,6.545 17.681,6.337 L18.355,5.663 C18.646,5.372 18.638,4.905 18.355,4.622 L17.379,3.645 C17.095,3.362 16.629,3.354 16.338,3.645 L15.663,4.320 C15.455,4.528 15.133,4.568 14.879,4.419 C14.264,4.054 13.601,3.779 12.910,3.601 C12.625,3.528 12.427,3.271 12.427,2.977 L12.427,2.025 C12.427,1.619 12.096,1.289 11.690,1.289 L10.310,1.289 C9.904,1.289 9.573,1.619 9.573,2.025 L9.573,2.977 C9.573,3.271 9.375,3.528 9.090,3.601 C8.399,3.779 7.736,4.054 7.121,4.418 C6.867,4.568 6.545,4.527 6.337,4.319 L5.663,3.645 C5.372,3.354 4.905,3.361 4.622,3.645 L3.645,4.621 C3.362,4.904 3.353,5.371 3.645,5.662 L4.319,6.337 C4.527,6.545 4.568,6.867 4.418,7.121 C4.054,7.736 3.779,8.399 3.601,9.090 C3.527,9.375 3.271,9.573 2.977,9.573 L2.025,9.573 C1.619,9.573 1.289,9.904 1.289,10.310 L1.289,11.690 C1.289,12.096 1.619,12.427 2.025,12.427 L2.977,12.427 C3.271,12.427 3.527,12.625 3.601,12.910 C3.779,13.601 4.054,14.264 4.418,14.879 C4.568,15.132 4.527,15.455 4.319,15.663 L3.645,16.337 C3.354,16.628 3.361,17.095 3.645,17.378 L4.621,18.355 C4.904,18.638 5.371,18.646 5.662,18.355 L6.337,17.680 C6.490,17.527 6.809,17.397 7.121,17.582 C7.736,17.946 8.399,18.221 9.090,18.399 C9.375,18.472 9.573,18.729 9.573,19.023 L9.573,19.975 C9.573,20.381 9.904,20.711 10.310,20.711 L11.690,20.711 C12.096,20.711 12.427,20.381 12.427,19.975 L12.427,19.023 C12.427,18.729 12.625,18.472 12.910,18.399 C13.601,18.221 14.264,17.946 14.879,17.582 C15.133,17.432 15.455,17.472 15.663,17.681 L16.337,18.355 C16.628,18.646 17.095,18.639 17.378,18.355 L18.355,17.378 C18.638,17.096 18.647,16.629 18.355,16.338 L17.681,15.663 C17.473,15.455 17.432,15.133 17.582,14.879 C17.946,14.264 18.221,13.601 18.399,12.910 C18.472,12.625 18.729,12.427 19.023,12.427 L19.975,12.427 C20.381,12.427 20.711,12.096 20.711,11.690 L20.711,10.310 ZM11.000,15.787 C8.361,15.787 6.213,13.639 6.213,11.000 C6.213,8.361 8.361,6.213 11.000,6.213 C13.639,6.213 15.787,8.361 15.787,11.000 C15.787,13.639 13.639,15.787 11.000,15.787 ZM11.000,7.502 C9.071,7.502 7.502,9.071 7.502,11.000 C7.502,12.929 9.071,14.498 11.000,14.498 C12.929,14.498 14.498,12.929 14.498,11.000 C14.498,9.071 12.929,7.502 11.000,7.502 Z" />
-          </svg>
-          Settings
-        </nuxt-link>
-      </div>
-      <div class="w-5/6 bg-ligth_blue_bg px-10 py-6">
+          <nuxt-link to="/settings" class="flex items-center nav_link px-10 self-end pb-7">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              xmlns:xlink="http://www.w3.org/1999/xlink" 
+              preserveAspectRatio="xMidYMid" 
+              width="22" height="21" 
+              viewBox="0 0 22 21"
+              class="mr-7"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #6d61b0;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path d="M19.975,13.716 L19.508,13.716 C19.356,14.190 19.164,14.652 18.935,15.095 L19.266,15.426 C20.068,16.227 20.046,17.511 19.266,18.290 L18.290,19.266 C17.510,20.048 16.226,20.067 15.425,19.266 L15.095,18.935 C14.652,19.164 14.190,19.356 13.716,19.508 L13.716,19.975 C13.716,21.091 12.807,22.000 11.690,22.000 L10.310,22.000 C9.193,22.000 8.284,21.091 8.284,19.975 L8.284,19.508 C7.810,19.356 7.348,19.164 6.905,18.935 L6.574,19.266 C5.772,20.069 4.488,20.045 3.710,19.266 L2.734,18.290 C1.954,17.511 1.931,16.227 2.734,15.426 L3.065,15.095 C2.835,14.652 2.644,14.190 2.492,13.716 L2.025,13.716 C0.909,13.716 -0.000,12.807 -0.000,11.690 L-0.000,10.310 C-0.000,9.193 0.909,8.284 2.025,8.284 L2.492,8.284 C2.644,7.810 2.835,7.348 3.065,6.905 L2.734,6.574 C1.932,5.773 1.954,4.489 2.734,3.710 L3.710,2.734 C4.490,1.952 5.774,1.933 6.574,2.734 L6.905,3.065 C7.348,2.835 7.810,2.644 8.284,2.492 L8.284,2.025 C8.284,0.909 9.193,-0.000 10.310,-0.000 L11.690,-0.000 C12.807,-0.000 13.716,0.909 13.716,2.025 L13.716,2.492 C14.190,2.644 14.652,2.835 15.095,3.065 L15.426,2.734 C16.228,1.931 17.512,1.955 18.290,2.734 L19.266,3.710 C20.046,4.489 20.068,5.773 19.266,6.574 L18.935,6.905 C19.164,7.348 19.356,7.810 19.508,8.284 L19.975,8.284 C21.091,8.284 22.000,9.193 22.000,10.310 L22.000,11.690 C22.000,12.807 21.091,13.716 19.975,13.716 ZM20.711,10.310 C20.711,9.904 20.381,9.573 19.975,9.573 L19.023,9.573 C18.729,9.573 18.472,9.375 18.399,9.090 C18.221,8.399 17.946,7.736 17.582,7.121 C17.432,6.867 17.473,6.545 17.681,6.337 L18.355,5.663 C18.646,5.372 18.638,4.905 18.355,4.622 L17.379,3.645 C17.095,3.362 16.629,3.354 16.338,3.645 L15.663,4.320 C15.455,4.528 15.133,4.568 14.879,4.419 C14.264,4.054 13.601,3.779 12.910,3.601 C12.625,3.528 12.427,3.271 12.427,2.977 L12.427,2.025 C12.427,1.619 12.096,1.289 11.690,1.289 L10.310,1.289 C9.904,1.289 9.573,1.619 9.573,2.025 L9.573,2.977 C9.573,3.271 9.375,3.528 9.090,3.601 C8.399,3.779 7.736,4.054 7.121,4.418 C6.867,4.568 6.545,4.527 6.337,4.319 L5.663,3.645 C5.372,3.354 4.905,3.361 4.622,3.645 L3.645,4.621 C3.362,4.904 3.353,5.371 3.645,5.662 L4.319,6.337 C4.527,6.545 4.568,6.867 4.418,7.121 C4.054,7.736 3.779,8.399 3.601,9.090 C3.527,9.375 3.271,9.573 2.977,9.573 L2.025,9.573 C1.619,9.573 1.289,9.904 1.289,10.310 L1.289,11.690 C1.289,12.096 1.619,12.427 2.025,12.427 L2.977,12.427 C3.271,12.427 3.527,12.625 3.601,12.910 C3.779,13.601 4.054,14.264 4.418,14.879 C4.568,15.132 4.527,15.455 4.319,15.663 L3.645,16.337 C3.354,16.628 3.361,17.095 3.645,17.378 L4.621,18.355 C4.904,18.638 5.371,18.646 5.662,18.355 L6.337,17.680 C6.490,17.527 6.809,17.397 7.121,17.582 C7.736,17.946 8.399,18.221 9.090,18.399 C9.375,18.472 9.573,18.729 9.573,19.023 L9.573,19.975 C9.573,20.381 9.904,20.711 10.310,20.711 L11.690,20.711 C12.096,20.711 12.427,20.381 12.427,19.975 L12.427,19.023 C12.427,18.729 12.625,18.472 12.910,18.399 C13.601,18.221 14.264,17.946 14.879,17.582 C15.133,17.432 15.455,17.472 15.663,17.681 L16.337,18.355 C16.628,18.646 17.095,18.639 17.378,18.355 L18.355,17.378 C18.638,17.096 18.647,16.629 18.355,16.338 L17.681,15.663 C17.473,15.455 17.432,15.133 17.582,14.879 C17.946,14.264 18.221,13.601 18.399,12.910 C18.472,12.625 18.729,12.427 19.023,12.427 L19.975,12.427 C20.381,12.427 20.711,12.096 20.711,11.690 L20.711,10.310 ZM11.000,15.787 C8.361,15.787 6.213,13.639 6.213,11.000 C6.213,8.361 8.361,6.213 11.000,6.213 C13.639,6.213 15.787,8.361 15.787,11.000 C15.787,13.639 13.639,15.787 11.000,15.787 ZM11.000,7.502 C9.071,7.502 7.502,9.071 7.502,11.000 C7.502,12.929 9.071,14.498 11.000,14.498 C12.929,14.498 14.498,12.929 14.498,11.000 C14.498,9.071 12.929,7.502 11.000,7.502 Z" />
+            </svg>
+            Settings
+          </nuxt-link>
+        </div>
+      </transition>
+      <div class="lg:2/3 xl:w-5/6 w-full bg-ligth_blue_bg px-10 py-6">
         <nuxt />
       </div>
     </div>
@@ -301,10 +331,20 @@
             name: 'Developer',
             path: 'M21.807,5.149 L17.681,9.381 C17.355,9.715 16.801,9.475 16.801,9.008 L16.801,5.832 L0.502,5.832 C0.217,5.832 -0.013,5.595 -0.013,5.304 L-0.013,4.247 C-0.013,3.955 0.217,3.719 0.502,3.719 L16.801,3.719 L16.802,0.543 C16.802,0.072 17.357,-0.163 17.681,0.169 L21.807,4.401 C22.008,4.608 22.008,4.942 21.807,5.149 L21.807,5.149 ZM0.138,13.600 L4.264,17.833 C4.587,18.164 5.143,17.929 5.143,17.459 L5.143,14.283 L21.443,14.283 C21.727,14.283 21.958,14.046 21.958,13.755 L21.958,12.698 C21.958,12.407 21.727,12.170 21.443,12.170 L5.143,12.170 L5.143,8.994 C5.143,8.526 4.589,8.287 4.264,8.621 L0.138,12.853 C-0.064,13.059 -0.063,13.394 0.138,13.600 Z'
           }
-        ]
+        ],
+        isShow: true
       }
     },
     methods: {
+      toggleSidebar(){
+        this.isShow = !this.isShow
+        // let isHidden = this.$refs.sidebar.classList.contains('hidden')
+        // if(isHidden){
+        //   this.$refs.sidebar.classList.remove('hidden')
+        // }else{
+        //   this.$refs.sidebar.classList.add('hidden')
+        // }
+      },
       showChildren(index) {
         this.dashList.forEach(elem => {
           if(elem.children){
@@ -315,6 +355,15 @@
           this.dashList[index].show = true
         }
       }
+    },
+    created(){
+      if (process.client) {
+        window.innerWidth <= 767 ? this.isShow = false : this.isShow = true
+        
+        window.addEventListener("resize", () => {
+          window.innerWidth <= 767 ? this.isShow = false : this.isShow = true
+        });
+      }
     }
   }
 </script>
@@ -322,6 +371,10 @@
 <style lang="scss" scoped>
 .nav_items_wrap{
   height: calc(100vh - 65px);
+  @media (max-width: 767px) {
+    height: auto;
+    z-index: 2;
+  }
 }
 .dash_nav_wrap{
   background-color: #15212a;
@@ -376,4 +429,12 @@
   display: inline-block;
 }
 
+.slide-side-dashboard-enter-active,
+.slide-side-dashboard-leave-active {
+  transition: all 0.3s ease-out;
+}
+.slide-side-dashboard-enter,
+.slide-side-dashboard-leave-to {
+  transform: translateX(-100%);
+}
 </style>

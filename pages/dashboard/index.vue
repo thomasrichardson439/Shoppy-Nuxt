@@ -2,7 +2,7 @@
   <div>
     <h1 class="font-bold text-3xl mb-10">Dashboard</h1>
     <div class="flex flex-wrap metrics justify-between">
-      <div class="metric p-6">
+      <div class="metric p-6 mb-4">
         <div class="title flex items-center justify-between">
           <p class="text-base font-medium">Revenue</p>
           <div class="relative">
@@ -16,7 +16,7 @@
             </div>
           </div>
         </div>
-        <p class="price manrope_font font-bold text-black mt-4">1440,00 $</p>
+        <p class="price manrope_font font-bold text-black mt-4">1440,0 $</p>
         <div class="behave flex items-center mt-4">
           <img src="~assets/images/dashboard/increase.svg" alt="" class="mr-3">
           <span class="manrope_font text-gray-500 font-medium text-xs behave_text">
@@ -24,9 +24,9 @@
           </span>
         </div>
       </div>
-      <div class="metric p-6">
+      <div class="metric p-6 mb-4">
       </div>
-      <div class="metric p-6">
+      <div class="metric p-6 mb-4">
         <div class="title flex items-center justify-between">
           <p class="text-base font-medium">Orders</p>
           <div class="relative">
@@ -48,7 +48,7 @@
           </span>
         </div>
       </div>
-      <div class="metric p-6">
+      <div class="metric p-6 mb-4">
         <div class="title flex items-center justify-between">
           <p class="text-base font-medium">Total orders</p>
         </div>
@@ -72,6 +72,9 @@
   border-radius: 10px;
   color: #5d6569;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  @media (max-width: 1279px) {
+    width: 48%;
+  }
   @media (max-width: 767px) {
     width: 100%;
   }
