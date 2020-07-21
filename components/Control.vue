@@ -5,7 +5,6 @@
         :class="actualClass"
         :name="name"
         :rules="rules"
-        mode="eager"
     >
         <slot name="title" :validation="{ errors }"></slot>
         <input
