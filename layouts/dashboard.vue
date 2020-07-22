@@ -218,7 +218,7 @@
           </nuxt-link>
         </div>
       </transition>
-      <div class="lg:2/3 xl:w-5/6 w-full bg-ligth_blue_bg px-10 py-6">
+      <div class="md:w-2/3 lg:2/3 xl:w-5/6 w-full bg-ligth_blue_bg px-10 py-6">
         <nuxt />
       </div>
     </div>
