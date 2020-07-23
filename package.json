@@ -24,9 +24,14 @@
         "nuxt": "^2.13.0",
         "sass-loader": "^8.0.2",
         "showdown": "^1.9.1",
+        "tiptap": "^1.29.1",
+        "tiptap-extensions": "^1.31.1",
         "vee-validate": "^3.3.5",
+        "vue-awesome": "^4.1.0",
         "vue-js-modal": "^2.0.0-rc.3",
         "vue-password-strength-meter": "^1.7.2",
+        "vue-select": "^3.10.7",
+        "vue-slider-component": "^3.2.2",
         "zxcvbn": "^4.4.2"
     },
     "devDependencies": {

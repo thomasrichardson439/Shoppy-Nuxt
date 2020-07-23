@@ -185,7 +185,7 @@
                     v-for="child in item.children"
                     :key="child.name"
                   >
-                    <nuxt-link :to="child.url" class="flex items-center nav_link pt-3">
+                    <nuxt-link :to="`/dashboard${child.url}`" class="flex items-center nav_link pt-3">
                       {{ child.name }}
                     </nuxt-link>
                   </li>
@@ -242,11 +242,11 @@
             children: [
               {
                 name: 'All Products',
-                url: '/all-products',
+                url: '/products',
               },
               {
                 name: 'Create Product',
-                url: '/create-producntt'
+                url: '/products/create'
               }
             ],
             show: false

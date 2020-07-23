@@ -56,10 +56,11 @@ export default {
     plugins: [
         '~/plugins/components',
         '~/plugins/axios',
-
+        '~plugins/vue-awesome.js',
         '~/plugins/dropdown',
+        { src: '~plugins/vue-slider.js', ssr: false },
         { src: '~/plugins/validation', ssr: false },
-        { src: '~/plugins/modal', ssr: false }
+        { src: '~/plugins/modal', ssr: false },
     ],
     /*
      ** Nuxt.js dev-modules
@@ -118,9 +119,9 @@ export default {
             'raw-loader',
             'vue-code-highlight',
             'dotenv',
-            'vee-validate'
+            'vee-validate',
+            /^vue-awesome/
         ],
-
         postcss: {
             preset: {
                 features: {
