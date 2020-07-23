@@ -1,13 +1,12 @@
 <template>
   <div>
-    groups page
+    simulate webhooks
   </div>
 </template>
 
 <script>
   export default {
-    layout: 'dashboard',
-    name: 'dashboardGroups',
+      
   }
 </script>
 
