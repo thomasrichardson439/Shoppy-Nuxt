@@ -76,7 +76,7 @@
         <p class="price manrope_font font-bold text-black mt-4">27.81k</p>
       </div>
     </div>
-    <div class="flex flex-wrap metrics justify-between">
+    <div class="flex flex-wrap metrics xl:justify-between sm:justify-center">
       <div class="big_metric metric_bg p-2 mb-4">
         <div class="title flex items-center justify-between">
           <p class="text-base font-medium pt-4 pl-4 pb-2">Revenue</p>
