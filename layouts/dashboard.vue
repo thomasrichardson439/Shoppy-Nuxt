@@ -272,11 +272,11 @@
             children: [
               {
                 name: 'All Coupons',
-                url: '/all-coupons'
+                url: '/coupons'
               },
               {
                 name: 'Create coupon',
-                url: '/create-coupon'
+                url: '/coupons/create'
               }
             ],
             show: false
