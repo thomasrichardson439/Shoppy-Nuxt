@@ -257,11 +257,11 @@
             children: [
               {
                 name: 'All Groups',
-                url: '/all-groups'
+                url: '/groups'
               },
               {
                 name: 'Create Group',
-                url: '/create-group'
+                url: '/groups/create'
               }
             ],
             show: false
