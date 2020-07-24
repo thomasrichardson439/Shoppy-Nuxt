@@ -33,7 +33,11 @@
           </thead>
           <tbody>
             <tr>
-              <td class="px-4 py-2">Intro to CSS</td>
+              <td class="px-4 py-2">
+                <nuxt-link :to="`/dashboard/products/1`">
+                  Intro to CSS
+                </nuxt-link>
+              </td>
               <td class="px-4 py-2">Adam</td>
               <td class="px-4 py-2">
                 <styled-button type="submit">
@@ -42,7 +46,37 @@
               </td>
               <td class="px-4 py-2">∞</td>
               <td class="px-4 py-2" align="right">
-                <div class="flex">
+                <div class="flex justify-end">
+                  <span class="flex items-center cursor-pointer mx-1">
+                    <icon name="edit"/>  
+                    Edit
+                  </span>
+                  <span class="flex items-center cursor-pointer mx-1">
+                    <icon name="share"/>  
+                    Share
+                  </span>
+                  <span class="flex items-center cursor-pointer mx-1">
+                    <icon name="trash"/>  
+                    Delete
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2">
+                <nuxt-link :to="`/dashboard/products/1`">
+                  Intro to CSS
+                </nuxt-link>
+              </td>
+              <td class="px-4 py-2">Adam</td>
+              <td class="px-4 py-2">
+                <styled-button type="submit">
+                  Service
+                </styled-button>
+              </td>
+              <td class="px-4 py-2">∞</td>
+              <td class="px-4 py-2" align="right">
+                <div class="flex justify-end">
                   <span class="flex items-center cursor-pointer mx-1">
                     <icon name="edit"/>  
                     Edit
@@ -59,7 +93,11 @@
               </td>
             </tr>
              <tr>
-              <td class="px-4 py-2">Intro to CSS</td>
+              <td class="px-4 py-2">
+                <nuxt-link :to="`/dashboard/products/1`">
+                  Intro to CSS
+                </nuxt-link>
+              </td>
               <td class="px-4 py-2">Adam</td>
               <td class="px-4 py-2">
                 <styled-button type="submit">
@@ -68,33 +106,7 @@
               </td>
               <td class="px-4 py-2">∞</td>
               <td class="px-4 py-2" align="right">
-                <div class="flex">
-                  <span class="flex items-center cursor-pointer mx-1">
-                    <icon name="edit"/>  
-                    Edit
-                  </span>
-                  <span class="flex items-center cursor-pointer mx-1">
-                    <icon name="share"/>  
-                    Share
-                  </span>
-                  <span class="flex items-center cursor-pointer mx-1">
-                    <icon name="trash"/>  
-                    Delete
-                  </span>
-                </div>
-              </td>
-            </tr>
-             <tr>
-              <td class="px-4 py-2">Intro to CSS</td>
-              <td class="px-4 py-2">Adam</td>
-              <td class="px-4 py-2">
-                <styled-button type="submit">
-                  Service
-                </styled-button>
-              </td>
-              <td class="px-4 py-2">∞</td>
-              <td class="px-4 py-2" align="right">
-                <div class="flex">
+                <div class="flex justify-end">
                   <span class="flex items-center cursor-pointer mx-1">
                     <icon name="edit"/>  
                     Edit
