@@ -26,7 +26,7 @@
       </div>
       <div class="metric metric_bg metric_height mb-4">
         <div class="title flex items-center justify-between p-6">
-          <p class="text-base font-medium">Revenue</p>
+          <p class="text-base font-medium">Orders Per Day</p>
           <div class="relative">
             <select class="block text-xs appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-8 leading-tight focus:outline-none" id="grid-state">
               <option>Last 24 hours</option>

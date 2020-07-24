@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="flex flex-wrap">
-        <p class="w-full block text-gray-700 text-sm font-bold mb-2">Description</p>
+        <p class="w-full block text-gray-700 text-sm font-bold mb-2">Payment Gateways</p>
         <label class="flex items-center text-gray-500 font-bold mr-3">
           <input class="mr-2 leading-tight" type="checkbox">
           <span class="text-sm">
@@ -154,7 +154,7 @@
         </styled-button>
       </div>
       <div class="flex flex-wrap justify-between">
-        <div class="mb-4 w-full md:w-5/12 md:pr-2">
+        <div class="mb-4 w-full md:w-7/12 md:pr-2">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
             Field name
           </label>
@@ -173,11 +173,11 @@
             />
           </div>
         </div>
-        <div class="mb-4 w-1/6 md:pl-2 text-center">
+        <div class="mb-4 w-1/12 md:pl-2 text-center">
           <p class="block text-gray-700 text-sm font-bold mb-2">Required</p>
           <input class="mt-2 leading-tight" type="checkbox">
         </div>
-        <div class="mb-4 w-1/6 md:pl-2 text-right">
+        <div class="mb-4 w-1/12 md:pl-6 text-center">
           <p class="block text-gray-700 text-sm font-bold mb-8"></p>
           <icon name="trash" class="text-red-600 cursor-pointer"/>
         </div>
@@ -201,7 +201,7 @@
             placeholder="Receive a HTTP request for events" 
           >
         </div>
-        <div class="mb-4 w-1/6 md:pl-2 text-right">
+        <div class="mb-4 w-1/6 md:pr-10 text-right">
           <p class="block text-gray-700 text-sm font-bold mb-2"></p>
           <icon name="trash" class="text-red-600 cursor-pointer"/>
         </div>
