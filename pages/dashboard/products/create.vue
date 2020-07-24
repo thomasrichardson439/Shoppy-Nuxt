@@ -177,7 +177,7 @@
           <p class="block text-gray-700 text-sm font-bold mb-2">Required</p>
           <input class="mt-2 leading-tight" type="checkbox">
         </div>
-        <div class="mb-4 w-1/6 md:pl-2 text-center">
+        <div class="mb-4 w-1/6 md:pl-2 text-right">
           <p class="block text-gray-700 text-sm font-bold mb-8"></p>
           <icon name="trash" class="text-red-600 cursor-pointer"/>
         </div>
@@ -201,7 +201,7 @@
             placeholder="Receive a HTTP request for events" 
           >
         </div>
-        <div class="mb-4 w-1/6 md:pl-2 text-center">
+        <div class="mb-4 w-1/6 md:pl-2 text-right">
           <p class="block text-gray-700 text-sm font-bold mb-2"></p>
           <icon name="trash" class="text-red-600 cursor-pointer"/>
         </div>
@@ -424,6 +424,7 @@
 .vs__dropdown-toggle{
   height: 38px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  min-width: 94px;
 }
 .shoppy-flag {
     background: url(~assets/images/dashboard/flags.png) no-repeat;
