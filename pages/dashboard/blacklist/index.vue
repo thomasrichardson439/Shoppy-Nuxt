@@ -26,11 +26,11 @@
           </div>
         </div>
 
-        <!-- <line-chart
+        <line-chart
           :data="lineChartDataTop"
           :options="lineChartOptionsTop"
           :height="110"
-        /> -->
+        />
 
       </div>
       <div class="metric bg-white metric_height p-6 mb-4 md:mr-2">
@@ -86,7 +86,7 @@
 </template>
 
 <script>
-//   import LineChart from '~/components/charts/LineChart'
+  import LineChart from '~/components/charts/LineChart'
 
   const chartColors = {
     lightGreen: '#30ccdb'
@@ -96,7 +96,7 @@
     layout: 'dashboard',
     name: 'dashboardBlacklist',
     components: {
-    //   LineChart,
+      LineChart,
     },
     data() {
       return {

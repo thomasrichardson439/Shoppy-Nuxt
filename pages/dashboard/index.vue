@@ -39,12 +39,12 @@
           </div>
         </div>
 
-        <!-- <line-chart
+        <line-chart
           :data="lineChartDataTop"
           :options="lineChartOptionsTop"
           :height="110"
           :gradient="chartTopGradient"
-        /> -->
+        />
 
       </div>
       <div class="metric metric_bg metric_height p-6 mb-4">
@@ -81,14 +81,14 @@
         <div class="title flex items-center justify-between">
           <p class="text-base font-medium pt-4 pl-4 pb-2">Revenue</p>
         </div>
-        <!-- <line-chart :data="lineChartData" :options="lineChartOptions" :height="200" /> -->
+        <line-chart :data="lineChartData" :options="lineChartOptions" :height="200" />
       </div>
       <div class="metric metric_bg mb-4">
         <div class="title flex items-center p-2 justify-between">
           <p class="text-base font-medium pt-4 pl-4 pb-2">Total orders</p>
         </div>
         <div class="side_donut_chart">
-          <!-- <doughnut :data="doughnuttData" :options="doughnuttOptions" :height="400" /> -->
+          <doughnut :data="doughnuttData" :options="doughnuttOptions" :height="400" />
         </div>
       </div>
     </div>
@@ -96,8 +96,8 @@
 </template>
 
 <script>
-//   import Doughnut from '~/components/charts/Doughnut'
-//   import LineChart from '~/components/charts/LineChart'
+  import Doughnut from '~/components/charts/Doughnut'
+  import LineChart from '~/components/charts/LineChart'
 
   const chartColors = {
     red: 'rgb(255, 99, 132)',
@@ -119,8 +119,8 @@
     },
     layout: 'dashboard',
     components: {
-    //   Doughnut,
-    //   LineChart
+      Doughnut,
+      LineChart
     },
     data(){
       return {
@@ -282,15 +282,6 @@
         }
       }
     },
-    computed: {
-
-    },
-    mounted(){
-      // var gradientFill = this.$refs.lineChartTop.createLinearGradient(500, 0, 100, 0);
-      console.log(this.$refs)
-      // gradientFill.addColorStop(0, "rgba(128, 182, 244, 0.6)");
-      // gradientFill.addColorStop(1, "rgba(244, 144, 128, 0.6)");
-    }
   }
 </script>
 
