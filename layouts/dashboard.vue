@@ -291,7 +291,7 @@
             children: [
               {
                 name: 'Reports',
-                url: '/reports'
+                url: '/analytics/reports'
               }
             ],
             show: false

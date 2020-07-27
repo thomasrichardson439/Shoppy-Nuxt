@@ -1,17 +1,38 @@
 <template>
   <div>
-    <div class="flex justify-between mb-3">
+    <div class="flex flex-wrap justify-between mb-3 relative">
       <h1 class="font-bold text-4xl leading-tight">
-        Blacklists
+        Analytics
       </h1>
-      <nuxt-link to="/dashboard/blacklist/create">
-        <styled-button type="submit">
-          Add blacklist
-        </styled-button>
-      </nuxt-link>
+      <span 
+        class="flex flex-wrap justify-center items-center h-12 w-48 border rounded text-gray-700 bg-white" 
+        @click="isShowRange = !isShowRange"
+      >
+        {{ range }}
+      </span>
+      <date-range-picker 
+        v-show="isShowRange"
+        v-model="range"
+        :from="rangeFrom" 
+        :to="rangeTo"
+        @update="updateRange"
+        class="absolute right-0 dateRange z-10 bg-white"
+      />
     </div>
     <div class="flex flex-wrap metrics">
-      <div class="metric bg-white metric_height mb-4 md:mr-2 w-full sm:w-auto">
+      <div class="w-full sm:w-1/2 xl:w-3/12 p-6 mb-4 sm:mr-4 shadow-md bg-white">
+        <div class="title">
+          <p class="text-base font-medium">Revenue</p>
+        </div>
+        <p class="price manrope_font font-bold text-black mt-4 text-5xl">0,00 €</p>
+      </div>
+      <div class="w-full sm:w-3/12 p-6 mb-4 sm:mr-4 shadow-md bg-white">
+        <div class="title">
+          <p class="text-base font-medium">Orders</p>
+        </div>
+        <p class="price manrope_font font-bold text-black mt-4 text-5xl">0</p>
+      </div>
+      <div class="mb-4 md:mr-2 w-full bg-white shadow-md">
         <div class="title flex items-center justify-between p-6">
           <p class="text-base font-medium">Events Per Day</p>
           <div class="relative">
@@ -29,58 +50,10 @@
         <line-chart
           :data="lineChartDataTop" 
           :options="lineChartOptionsTop" 
-          :height="110"
+          :height="200"
         />
 
       </div>
-      <div class="metric bg-white metric_height p-6 mb-4 md:mr-2">
-        <div class="title">
-          <p class="text-base font-medium">Total events</p>
-        </div>
-        <p class="price manrope_font font-bold text-black mt-4 text-5xl">32</p>
-      </div>
-    </div>
-
-    <div class="p-4 bg-white rounded-lg shadow-md mb-4">
-      <p class="w-full mb-5">VPN / Proxies</p>
-      <label class="flex items-center text-gray-500 font-bold">
-        <input class="mr-2 leading-tight" type="checkbox">
-        <span class="text-sm">
-          Block buyers using a VPN/Proxy for risky payment methods (PayPal, Stripe)
-        </span>
-      </label>
-    </div>
-
-    <div class="overflow-x-auto mt-8">
-      <table class="table-auto overflow-scroll products_table bg-white">
-        <thead>
-          <tr class="border-b">
-            <th class="px-4 py-2 text-left">TYPE</th>
-            <th class="px-4 py-2 text-left">BLOCKED DATA</th>
-            <th class="px-4 py-2 text-left">NOTE</th>
-            <th class="px-4 py-2 text-left text-right">OPTIONS</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="px-4 py-2">Email</td>
-            <td class="px-4 py-2">ytrjrj@dgdfg.dfg</td>
-            <td class="px-4 py-2">dfgsgsgsdfgsdfg</td>
-            <td class="px-4 py-2" align="right">
-              <div class="flex justify-end">
-                <span class="flex items-center cursor-pointer mx-1">
-                  <icon name="edit" class="mr-1"/>  
-                  View
-                </span>
-                <span class="flex items-center cursor-pointer mx-1">
-                  <icon name="trash" class="mr-1"/>  
-                  Delete
-                </span>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </div>
 </template>
@@ -94,12 +67,16 @@
 
   export default {
     layout: 'dashboard',
-    name: 'dashboardBlacklist',
+    name: 'dashboardAnalytics',
     components: {
       LineChart,
     },
     data() {
       return {
+        range: null,
+        rangeFrom: null,
+        rangeTo: null,
+        isShowRange: false,
         lineChartDataTop: {
           labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
           datasets: [
@@ -129,8 +106,7 @@
             yAxes: [
               {
                 ticks: {
-                  beginAtZero: true,
-                  display: false
+                  beginAtZero: true
                 },
                 gridLines: {
                   display: false
@@ -140,8 +116,7 @@
             xAxes: [
               {
                 ticks: {
-                  beginAtZero: true,
-                  display: false
+                  beginAtZero: true
                 },
                 gridLines: {
                   display: false
@@ -156,12 +131,36 @@
           }
         },
       }
+    },
+    methods: {
+      updateRange(date){
+        if(date){
+          this.range = `${this.$moment(date.from).format('MMM Do YY')} - ${this.$moment(date.to).format('MMM Do YY')}`
+          this.rangeFrom = date.from
+          this.rangeTo = date.to
+
+          this.isShowRange = false
+        }else{
+          let from = this.$moment()
+          let to = this.$moment().add(3, 'months')
+
+          this.range = `${from.format('MMM Do YY')} - ${to.format('MMM Do YY')}`
+          this.rangeFrom = String(from.unix())
+          this.rangeTo = String(to.unix())
+        }
+      }
+    },
+    mounted(){
+      this.updateRange()
     }
   }
 </script>
 
 <style lang="scss" scoped>
-.products_table{
-  width: calc(100% - 1px);
+.dateRange{
+  top: 100%;
+  @media (max-width: 425px) {
+    right: -50px;
+  }
 }
 </style>

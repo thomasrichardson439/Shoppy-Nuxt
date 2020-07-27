@@ -22,7 +22,6 @@
         <v-select 
           v-model="productsSelected"
           :options="products"
-          :closeOnSelect="false"
           multiple
           label="label"
           class="w-full"

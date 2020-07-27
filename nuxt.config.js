@@ -59,6 +59,7 @@ export default {
         '~plugins/vue-awesome.js',
         '~/plugins/dropdown',
         { src: '~plugins/vue-slider.js', ssr: false },
+        { src:'~plugins/mj-daterangepicker.js', ssr: false },
         { src: '~/plugins/validation', ssr: false },
         { src: '~/plugins/modal', ssr: false },
     ],
