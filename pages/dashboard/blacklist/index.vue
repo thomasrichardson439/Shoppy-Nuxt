@@ -26,11 +26,11 @@
           </div>
         </div>
 
-        <line-chart
-          :data="lineChartDataTop" 
-          :options="lineChartOptionsTop" 
+        <!-- <line-chart
+          :data="lineChartDataTop"
+          :options="lineChartOptionsTop"
           :height="110"
-        />
+        /> -->
 
       </div>
       <div class="metric bg-white metric_height p-6 mb-4 md:mr-2">
@@ -69,11 +69,11 @@
             <td class="px-4 py-2" align="right">
               <div class="flex justify-end">
                 <span class="flex items-center cursor-pointer mx-1">
-                  <icon name="edit" class="mr-1"/>  
+                  <icon name="edit" class="mr-1"/>
                   View
                 </span>
                 <span class="flex items-center cursor-pointer mx-1">
-                  <icon name="trash" class="mr-1"/>  
+                  <icon name="trash" class="mr-1"/>
                   Delete
                 </span>
               </div>
@@ -86,7 +86,7 @@
 </template>
 
 <script>
-  import LineChart from '~/components/charts/LineChart'
+//   import LineChart from '~/components/charts/LineChart'
 
   const chartColors = {
     lightGreen: '#30ccdb'
@@ -96,7 +96,7 @@
     layout: 'dashboard',
     name: 'dashboardVlacklist',
     components: {
-      LineChart,
+    //   LineChart,
     },
     data() {
       return {
